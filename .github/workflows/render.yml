@@ -1,0 +1,42 @@
+name: Render Video on Cloud (Free)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  render:
+    name: Render Reel Video
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install System Dependencies (FFmpeg & Chromium)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Install NPM Dependencies
+        run: npm ci || npm install
+
+      - name: Render Polished Reel
+        run: |
+          npx remotion render ReelPolish out/video_polished.mp4 --concurrency=4 --gl=angle
+
+      - name: Upload Finished MP4
+        uses: actions/upload-artifact@v4
+        with:
+          name: video_polished
+          path: out/video_polished.mp4
+          retention-days: 7

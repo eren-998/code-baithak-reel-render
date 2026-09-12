@@ -1,0 +1,22 @@
+{
+  "name": "talking-head-remotion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@remotion/captions": "^4.0.506",
+    "@remotion/cli": "^4.0.506",
+    "@remotion/media": "^4.0.506",
+    "@remotion/shapes": "^4.0.506",
+    "@remotion/transitions": "^4.0.506",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "remotion": "^4.0.506"
+  }
+}

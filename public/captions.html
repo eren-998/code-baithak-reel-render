@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Caption Studio & SRT Downloader - Code_baithak</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background: #090D16;
+      color: #F8FAFC;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 960px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 28px;
+      padding: 28px 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(0, 149, 246, 0.18);
+      color: #38BDF8;
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px;
+      color: #FFFFFF;
+    }
+    p.subtitle {
+      color: #94A3B8;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    /* Video Player Layout */
+    .studio-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: start;
+    }
+    @media (max-width: 768px) {
+      .studio-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Video Frame 9:16 vertical */
+    .video-viewport-wrapper {
+      display: flex;
+      justifyContent: center;
+    }
+    .video-viewport {
+      position: relative;
+      width: 100%;
+      max-width: 360px;
+      aspect-ratio: 9 / 16;
+      background: #000000;
+      border-radius: 24px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 149, 246, 0.2);
+    }
+    video#mainVideo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .caption-overlay {
+      position: absolute;
+      bottom: 60px;
+      left: 0;
+      width: 100%;
+      padding: 0 16px;
+      display: flex;
+      justifyContent: center;
+      pointer-events: none;
+      z-index: 10;
+      transition: all 0.15s ease;
+    }
+    .caption-pill {
+      background: rgba(10, 15, 26, 0.82);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1.5px solid rgba(255, 255, 255, 0.22);
+      border-radius: 24px;
+      padding: 10px 20px;
+      max-width: 95%;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+      color: #FFFFFF;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1.35;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+      animation: popIn 0.12s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: translateY(8px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    /* Controls Column */
+    .controls-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .section-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #F1F5F9;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .upload-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(30, 41, 59, 0.8);
+      border: 1.5px dashed rgba(255, 255, 255, 0.25);
+      border-radius: 16px;
+      padding: 14px 18px;
+      color: #F8FAFC;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .upload-btn:hover {
+      border-color: #38BDF8;
+      background: rgba(56, 189, 248, 0.1);
+    }
+    .quick-btn {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 12px;
+      padding: 10px 14px;
+      color: #CBD5E1;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.15s ease;
+    }
+    .quick-btn:hover, .quick-btn.active {
+      background: rgba(0, 149, 246, 0.2);
+      border-color: #0095F6;
+      color: #FFFFFF;
+    }
+    .btn-burn {
+      background: linear-gradient(135deg, #0284C7 0%, #0369A1 100%);
+      color: #FFFFFF;
+      border: none;
+      padding: 16px 22px;
+      border-radius: 16px;
+      font-size: 16px;
+      font-weight: 800;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      box-shadow: 0 6px 20px rgba(2, 132, 199, 0.45);
+      transition: all 0.15s ease;
+    }
+    .btn-burn:hover {
+      background: linear-gradient(135deg, #0369A1 0%, #075985 100%);
+      transform: scale(1.02);
+    }
+    .btn-burn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .spinner {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: #FFFFFF;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* SRT Downloader Actions Grid */
+    .download-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin-top: 12px;
+    }
+    .dl-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 16px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .btn-download-srt {
+      background: rgba(56, 189, 248, 0.18);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38BDF8;
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+    }
+    .btn-download-srt:hover {
+      background: rgba(56, 189, 248, 0.3);
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Header -->
+    <div class="header">
+      <div class="badge">Code_baithak • Studio</div>
+      <h1>Video Caption Studio</h1>
+      <p class="subtitle">Upload any video, attach Hinglish SRT subtitles, preview live in real-time, or burn & export MP4 directly.</p>
+    </div>
+
+    <!-- Interactive Studio Grid -->
+    <div class="card">
+      <div class="studio-grid">
+        <!-- Column 1: Video Viewport -->
+        <div class="video-viewport-wrapper">
+          <div class="video-viewport">
+            <video id="mainVideo" controls playsinline></video>
+            <!-- Real-Time Caption Pill Overlay -->
+            <div class="caption-overlay" id="captionOverlay" style="display: none;">
+              <div class="caption-pill" id="captionText">...</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Controls -->
+        <div class="controls-panel">
+          <!-- Step 1: Select Video -->
+          <div class="section-title">1. Select / Upload Video</div>
+          <div class="btn-group">
+            <label class="upload-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+              <span>Upload Video File (.mp4, .mov)</span>
+              <input type="file" id="videoFileInput" accept="video/*" style="display: none;">
+            </label>
+            <button class="quick-btn active" id="btnLoadSample" onclick="loadSampleVideo()">
+              <span>🎬 Preload Current Video (Video_for edit.mp4)</span>
+              <span style="font-size: 11px; opacity: 0.7;">Ready</span>
+            </button>
+          </div>
+
+          <!-- Step 2: Select Subtitles -->
+          <div class="section-title" style="margin-top: 8px;">2. Select Subtitle (.SRT)</div>
+          <div class="btn-group">
+            <label class="upload-btn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              <span>Upload Custom .SRT File</span>
+              <input type="file" id="srtFileInput" accept=".srt,.txt" style="display: none;">
+            </label>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+              <button class="quick-btn active" id="btnPhrases" onclick="usePreloadedSrt('phrases')">
+                <span>Phrases SRT (30 cues)</span>
+                <span>✓</span>
+              </button>
+              <button class="quick-btn" id="btnWords" onclick="usePreloadedSrt('words')">
+                <span>Word-Level (185 cues)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Burn & Export -->
+          <div class="section-title" style="margin-top: 8px;">3. Export Video with Captions</div>
+          <button class="btn-burn" id="burnButton" onclick="burnAndExport()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <span id="burnBtnText">Burn Captions & Download MP4</span>
+          </button>
+          <div id="statusNotice" style="font-size: 13px; color: #94A3B8; text-align: center; display: none;"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Direct SRT Download Section -->
+    <div class="card">
+      <div class="section-title">Standalone SRT Downloads</div>
+      <p style="color: #94A3B8; font-size: 14px; margin-top: 4px;">Download the raw subtitle files directly to use in Premiere Pro, CapCut, VN, or DaVinci Resolve.</p>
+      <div class="download-grid">
+        <div class="dl-card">
+          <div style="font-size: 15px; font-weight: 700;">Word-Level Synced SRT</div>
+          <div style="font-size: 12px; color: #94A3B8;">185 individual words with exact timings for kinetic popup captions.</div>
+          <button class="btn-download-srt" onclick="downloadSrt(rawWordsSrt, 'captions_word_by_word.srt')">
+            Download Word-Level .SRT
+          </button>
+        </div>
+        <div class="dl-card">
+          <div style="font-size: 15px; font-weight: 700;">Phrases Hinglish SRT</div>
+          <div style="font-size: 12px; color: #94A3B8;">30 natural sentences in Roman script. Clean and readable.</div>
+          <button class="btn-download-srt" onclick="downloadSrt(rawPhrasesSrt, 'captions_phrases.srt')">
+            Download Phrases .SRT
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const rawPhrasesSrt = "1\n00:00:00,000 --> 00:00:02,120\nYaar as a content creator\n\n2\n00:00:02,120 --> 00:00:03,860\ncontent banana toh aa gaya tha\n\n3\n00:00:03,860 --> 00:00:05,640\nlekin ek question hamesha dimag mein tha\n\n4\n00:00:05,640 --> 00:00:06,900\nki isse paise kaise kamaye jaayein\n\n5\n00:00:07,440 --> 00:00:08,640\nso I had to ask this question\n\n6\n00:00:08,640 --> 00:00:09,760\nfrom bunch other creators\n\n7\n00:00:09,760 --> 00:00:11,600\nand honestly maine simple rakha\n\n8\n00:00:11,600 --> 00:00:13,400\nki bhai main apne 1:1 session\n\n9\n00:00:13,400 --> 00:00:14,340\nya apne technical course\n\n10\n00:00:14,340 --> 00:00:15,420\nse paise kaise kama sakta hoon\n\n11\n00:00:15,620 --> 00:00:17,120\nJust give platform\n\n12\n00:00:17,120 --> 00:00:19,300\nand surprisingly everyone gave me the same platform\n\n13\n00:00:19,300 --> 00:00:21,360\nAlso this platform is not just for\n\n14\n00:00:21,560 --> 00:00:23,600\nAgar aapke paas koi bhi skill set hai\n\n15\n00:00:23,600 --> 00:00:24,860\naap tarot card read kar sakte ho\n\n16\n00:00:24,860 --> 00:00:26,140\naap resume vetting session le sakte ho\n\n17\n00:00:26,140 --> 00:00:27,620\naap technical one on one sessions le sakte ho\n\n18\n00:00:27,620 --> 00:00:29,160\nanything, you just need to\n\n19\n00:00:29,160 --> 00:00:29,960\nhave one skill set\n\n20\n00:00:29,960 --> 00:00:31,040\nand your time\n\n21\n00:00:31,040 --> 00:00:33,220\nand this platform can give you money,\n\n22\n00:00:33,220 --> 00:00:35,040\nso if you have ever thought of doing so,\n\n23\n00:00:35,040 --> 00:00:35,860\ntoh kuch mat karo\n\n24\n00:00:35,860 --> 00:00:37,300\nis video mein comment kar do money,\n\n25\n00:00:37,300 --> 00:00:38,760\nand main tum sabke ke DM's ke andar\n\n26\n00:00:38,760 --> 00:00:40,220\nis tool ka link bhej dunga\n\n27\n00:00:40,220 --> 00:00:42,100\njo actually mein ek single platform hai\n\n28\n00:00:42,100 --> 00:00:43,320\njo tumhari help kar sakta hai\n\n29\n00:00:43,320 --> 00:00:44,280\naur videos ke liye\n\n30\n00:00:44,280 --> 00:00:46,380\ntoh tum bhai ke channel ko follow kar sakte ho\n";
+    const rawWordsSrt = "1\n00:00:00,000 --> 00:00:00,660\nYaar\n\n2\n00:00:00,660 --> 00:00:01,000\nas\n\n3\n00:00:01,000 --> 00:00:01,180\na\n\n4\n00:00:01,180 --> 00:00:01,600\ncontent\n\n5\n00:00:01,600 --> 00:00:02,120\ncreator\n\n6\n00:00:02,120 --> 00:00:02,600\ncontent\n\n7\n00:00:02,600 --> 00:00:03,220\nbanana\n\n8\n00:00:03,220 --> 00:00:03,340\ntoh\n\n9\n00:00:03,340 --> 00:00:03,480\naa\n\n10\n00:00:03,480 --> 00:00:03,600\ngaya\n\n11\n00:00:03,600 --> 00:00:03,860\ntha\n\n12\n00:00:03,860 --> 00:00:04,160\nlekin\n\n13\n00:00:04,160 --> 00:00:04,400\nek\n\n14\n00:00:04,400 --> 00:00:04,760\nquestion\n\n15\n00:00:04,760 --> 00:00:05,060\nhamesha\n\n16\n00:00:05,060 --> 00:00:05,440\ndimag\n\n17\n00:00:05,440 --> 00:00:05,500\nmein\n\n18\n00:00:05,500 --> 00:00:05,640\ntha\n\n19\n00:00:05,640 --> 00:00:05,780\nki\n\n20\n00:00:05,780 --> 00:00:05,960\nisse\n\n21\n00:00:05,960 --> 00:00:06,220\npaise\n\n22\n00:00:06,220 --> 00:00:06,420\nkaise\n\n23\n00:00:06,420 --> 00:00:06,700\nkamaye\n\n24\n00:00:06,700 --> 00:00:06,900\njaayein\n\n25\n00:00:07,440 --> 00:00:07,540\nso\n\n26\n00:00:07,540 --> 00:00:07,680\nI\n\n27\n00:00:07,680 --> 00:00:07,860\nhad\n\n28\n00:00:07,860 --> 00:00:08,020\nto\n\n29\n00:00:08,020 --> 00:00:08,180\nask\n\n30\n00:00:08,180 --> 00:00:08,340\nthis\n\n31\n00:00:08,340 --> 00:00:08,640\nquestion\n\n32\n00:00:08,640 --> 00:00:08,840\nfrom\n\n33\n00:00:08,840 --> 00:00:09,180\nbunch\n\n34\n00:00:09,180 --> 00:00:09,380\nother\n\n35\n00:00:09,380 --> 00:00:09,760\ncreators\n\n36\n00:00:09,760 --> 00:00:10,400\nand\n\n37\n00:00:10,400 --> 00:00:10,780\nhonestly\n\n38\n00:00:10,780 --> 00:00:11,000\nmaine\n\n39\n00:00:11,000 --> 00:00:11,300\nsimple\n\n40\n00:00:11,300 --> 00:00:11,600\nrakha\n\n41\n00:00:11,600 --> 00:00:12,080\nki\n\n42\n00:00:12,080 --> 00:00:12,220\nbhai\n\n43\n00:00:12,220 --> 00:00:12,400\nmain\n\n44\n00:00:12,400 --> 00:00:12,620\napne\n\n45\n00:00:12,620 --> 00:00:13,020\n1:1\n\n46\n00:00:13,020 --> 00:00:13,400\nsession\n\n47\n00:00:13,400 --> 00:00:13,540\nya\n\n48\n00:00:13,540 --> 00:00:13,660\napne\n\n49\n00:00:13,660 --> 00:00:14,040\ntechnical\n\n50\n00:00:14,040 --> 00:00:14,340\ncourse\n\n51\n00:00:14,340 --> 00:00:14,420\nse\n\n52\n00:00:14,420 --> 00:00:14,640\npaise\n\n53\n00:00:14,640 --> 00:00:14,820\nkaise\n\n54\n00:00:14,820 --> 00:00:15,040\nkama\n\n55\n00:00:15,040 --> 00:00:15,360\nsakta\n\n56\n00:00:15,360 --> 00:00:15,420\nhoon\n\n57\n00:00:15,620 --> 00:00:15,960\nJust\n\n58\n00:00:15,960 --> 00:00:16,160\ngive\n\n59\n00:00:16,160 --> 00:00:17,120\nplatform\n\n60\n00:00:17,120 --> 00:00:17,320\nand\n\n61\n00:00:17,320 --> 00:00:17,760\nsurprisingly\n\n62\n00:00:17,760 --> 00:00:17,880\neveryone\n\n63\n00:00:17,880 --> 00:00:18,280\ngave\n\n64\n00:00:18,280 --> 00:00:18,600\nme\n\n65\n00:00:18,600 --> 00:00:18,720\nthe\n\n66\n00:00:18,720 --> 00:00:18,860\nsame\n\n67\n00:00:18,860 --> 00:00:19,300\nplatform\n\n68\n00:00:19,300 --> 00:00:20,100\nAlso\n\n69\n00:00:20,100 --> 00:00:20,360\nthis\n\n70\n00:00:20,360 --> 00:00:20,720\nplatform\n\n71\n00:00:20,720 --> 00:00:20,880\nis\n\n72\n00:00:20,880 --> 00:00:21,080\nnot\n\n73\n00:00:21,080 --> 00:00:21,260\njust\n\n74\n00:00:21,260 --> 00:00:21,360\nfor\n\n75\n00:00:21,560 --> 00:00:22,060\nAgar\n\n76\n00:00:22,060 --> 00:00:22,340\naapke\n\n77\n00:00:22,340 --> 00:00:22,520\npaas\n\n78\n00:00:22,520 --> 00:00:22,900\nkoi\n\n79\n00:00:22,900 --> 00:00:23,020\nbhi\n\n80\n00:00:23,020 --> 00:00:23,260\nskill\n\n81\n00:00:23,260 --> 00:00:23,480\nset\n\n82\n00:00:23,480 --> 00:00:23,600\nhai\n\n83\n00:00:23,600 --> 00:00:23,680\naap\n\n84\n00:00:23,680 --> 00:00:23,940\ntarot\n\n85\n00:00:23,940 --> 00:00:24,140\ncard\n\n86\n00:00:24,140 --> 00:00:24,280\nread\n\n87\n00:00:24,280 --> 00:00:24,420\nkar\n\n88\n00:00:24,420 --> 00:00:24,700\nsakte\n\n89\n00:00:24,700 --> 00:00:24,860\nho\n\n90\n00:00:24,860 --> 00:00:24,940\naap\n\n91\n00:00:24,940 --> 00:00:25,200\nresume\n\n92\n00:00:25,200 --> 00:00:25,440\nvetting\n\n93\n00:00:25,440 --> 00:00:25,700\nsession\n\n94\n00:00:25,700 --> 00:00:25,820\nle\n\n95\n00:00:25,820 --> 00:00:26,040\nsakte\n\n96\n00:00:26,040 --> 00:00:26,140\nho\n\n97\n00:00:26,140 --> 00:00:26,220\naap\n\n98\n00:00:26,220 --> 00:00:26,540\ntechnical\n\n99\n00:00:26,540 --> 00:00:26,820\none\n\n100\n00:00:26,820 --> 00:00:26,840\non\n\n101\n00:00:26,840 --> 00:00:26,940\none\n\n102\n00:00:26,940 --> 00:00:27,180\nsessions\n\n103\n00:00:27,180 --> 00:00:27,300\nle\n\n104\n00:00:27,300 --> 00:00:27,520\nsakte\n\n105\n00:00:27,520 --> 00:00:27,620\nho\n\n106\n00:00:27,620 --> 00:00:28,580\nanything,\n\n107\n00:00:28,580 --> 00:00:28,660\nyou\n\n108\n00:00:28,660 --> 00:00:28,800\njust\n\n109\n00:00:28,800 --> 00:00:29,020\nneed\n\n110\n00:00:29,020 --> 00:00:29,160\nto\n\n111\n00:00:29,160 --> 00:00:29,300\nhave\n\n112\n00:00:29,300 --> 00:00:29,520\none\n\n113\n00:00:29,520 --> 00:00:29,780\nskill\n\n114\n00:00:29,780 --> 00:00:29,960\nset\n\n115\n00:00:29,960 --> 00:00:30,600\nand\n\n116\n00:00:30,600 --> 00:00:30,720\nyour\n\n117\n00:00:30,720 --> 00:00:31,040\ntime\n\n118\n00:00:31,040 --> 00:00:31,400\nand\n\n119\n00:00:31,400 --> 00:00:31,560\nthis\n\n120\n00:00:31,560 --> 00:00:31,860\nplatform\n\n121\n00:00:31,860 --> 00:00:32,040\ncan\n\n122\n00:00:32,040 --> 00:00:32,240\ngive\n\n123\n00:00:32,240 --> 00:00:32,340\nyou\n\n124\n00:00:32,340 --> 00:00:33,220\nmoney,\n\n125\n00:00:33,220 --> 00:00:33,320\nso\n\n126\n00:00:33,320 --> 00:00:33,420\nif\n\n127\n00:00:33,420 --> 00:00:33,600\nyou\n\n128\n00:00:33,600 --> 00:00:33,680\nhave\n\n129\n00:00:33,680 --> 00:00:33,960\never\n\n130\n00:00:33,960 --> 00:00:34,240\nthought\n\n131\n00:00:34,240 --> 00:00:34,400\nof\n\n132\n00:00:34,400 --> 00:00:34,640\ndoing\n\n133\n00:00:34,640 --> 00:00:35,040\nso,\n\n134\n00:00:35,040 --> 00:00:35,120\ntoh\n\n135\n00:00:35,120 --> 00:00:35,380\nkuch\n\n136\n00:00:35,380 --> 00:00:35,540\nmat\n\n137\n00:00:35,540 --> 00:00:35,860\nkaro\n\n138\n00:00:35,860 --> 00:00:35,880\nis\n\n139\n00:00:35,880 --> 00:00:36,080\nvideo\n\n140\n00:00:36,080 --> 00:00:36,200\nmein\n\n141\n00:00:36,200 --> 00:00:36,480\ncomment\n\n142\n00:00:36,480 --> 00:00:36,700\nkar\n\n143\n00:00:36,700 --> 00:00:36,740\ndo\n\n144\n00:00:36,740 --> 00:00:37,300\nmoney,\n\n145\n00:00:37,300 --> 00:00:37,420\nand\n\n146\n00:00:37,420 --> 00:00:37,500\nmain\n\n147\n00:00:37,500 --> 00:00:37,660\ntum\n\n148\n00:00:37,660 --> 00:00:37,960\nsabke\n\n149\n00:00:37,960 --> 00:00:38,140\nke\n\n150\n00:00:38,140 --> 00:00:38,460\nDM's\n\n151\n00:00:38,460 --> 00:00:38,580\nke\n\n152\n00:00:38,580 --> 00:00:38,760\nandar\n\n153\n00:00:38,760 --> 00:00:39,020\nis\n\n154\n00:00:39,020 --> 00:00:39,240\ntool\n\n155\n00:00:39,240 --> 00:00:39,360\nka\n\n156\n00:00:39,360 --> 00:00:39,500\nlink\n\n157\n00:00:39,500 --> 00:00:39,720\nbhej\n\n158\n00:00:39,720 --> 00:00:40,220\ndunga\n\n159\n00:00:40,220 --> 00:00:40,300\njo\n\n160\n00:00:40,300 --> 00:00:40,640\nactually\n\n161\n00:00:40,640 --> 00:00:40,760\nmein\n\n162\n00:00:40,760 --> 00:00:40,840\nek\n\n163\n00:00:40,840 --> 00:00:41,160\nsingle\n\n164\n00:00:41,000 --> 00:00:41,980\nplatform\n\n165\n00:00:41,980 --> 00:00:42,100\nhai\n\n166\n00:00:42,100 --> 00:00:42,220\njo\n\n167\n00:00:42,220 --> 00:00:42,460\ntumhari\n\n168\n00:00:42,460 --> 00:00:42,640\nhelp\n\n169\n00:00:42,640 --> 00:00:42,800\nkar\n\n170\n00:00:42,800 --> 00:00:43,120\nsakta\n\n171\n00:00:43,120 --> 00:00:43,320\nhai\n\n172\n00:00:43,320 --> 00:00:43,560\naur\n\n173\n00:00:43,560 --> 00:00:44,080\nvideos\n\n174\n00:00:44,080 --> 00:00:44,240\nke\n\n175\n00:00:44,240 --> 00:00:44,280\nliye\n\n176\n00:00:44,280 --> 00:00:44,380\ntoh\n\n177\n00:00:44,380 --> 00:00:44,500\ntum\n\n178\n00:00:44,500 --> 00:00:44,640\nbhai\n\n179\n00:00:44,640 --> 00:00:44,780\nke\n\n180\n00:00:44,780 --> 00:00:44,920\nchannel\n\n181\n00:00:44,920 --> 00:00:45,440\nko\n\n182\n00:00:45,440 --> 00:00:45,900\nfollow\n\n183\n00:00:45,900 --> 00:00:46,040\nkar\n\n184\n00:00:46,040 --> 00:00:46,300\nsakte\n\n185\n00:00:46,300 --> 00:00:46,380\nho\n";
+
+    let activeSrtText = rawPhrasesSrt;
+    let parsedCues = [];
+    let selectedVideoBlob = null;
+
+    const videoElem = document.getElementById("mainVideo");
+    const overlayElem = document.getElementById("captionOverlay");
+    const textElem = document.getElementById("captionText");
+
+    // Parse SRT format into milliseconds
+    function parseSrt(srt) {
+      const regex = /(\d+)\s+(\d{2}):(\d{2}):(\d{2}),(\d{3})\s+-->\s+(\d{2}):(\d{2}):(\d{2}),(\d{3})\s+([\s\S]*?)(?=
+
+|
+*$)/g;
+      const cues = [];
+      let match;
+      while ((match = regex.exec(srt)) !== null) {
+        const startMs =
+          parseInt(match[2]) * 3600000 +
+          parseInt(match[3]) * 60000 +
+          parseInt(match[4]) * 1000 +
+          parseInt(match[5]);
+        const endMs =
+          parseInt(match[6]) * 3600000 +
+          parseInt(match[7]) * 60000 +
+          parseInt(match[8]) * 1000 +
+          parseInt(match[9]);
+        const text = match[10].replace(/\r?\n/g, " ").trim();
+        cues.push({ startMs, endMs, text });
+      }
+      return cues;
+    }
+
+    parsedCues = parseSrt(activeSrtText);
+
+    // Synchronize captions with video playback
+    function onVideoTimeUpdate() {
+      if (!parsedCues.length) return;
+      const currentTimeMs = videoElem.currentTime * 1000;
+      const cue = parsedCues.find(c => currentTimeMs >= c.startMs && currentTimeMs <= c.endMs);
+      if (cue) {
+        textElem.textContent = cue.text;
+        overlayElem.style.display = "flex";
+      } else {
+        overlayElem.style.display = "none";
+      }
+    }
+
+    videoElem.addEventListener("timeupdate", onVideoTimeUpdate);
+    videoElem.addEventListener("seeked", onVideoTimeUpdate);
+
+    // Preload current video
+    function loadSampleVideo() {
+      videoElem.src = "/api/sample_video";
+      videoElem.load();
+      document.getElementById("btnLoadSample").classList.add("active");
+      fetch("/api/sample_video")
+        .then(r => r.blob())
+        .then(blob => { selectedVideoBlob = blob; });
+    }
+
+    // Local Video upload
+    document.getElementById("videoFileInput").addEventListener("change", function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        selectedVideoBlob = file;
+        videoElem.src = URL.createObjectURL(file);
+        videoElem.load();
+        document.getElementById("btnLoadSample").classList.remove("active");
+      }
+    });
+
+    // Custom SRT upload
+    document.getElementById("srtFileInput").addEventListener("change", function(e) {
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          activeSrtText = evt.target.result;
+          parsedCues = parseSrt(activeSrtText);
+          document.getElementById("btnPhrases").classList.remove("active");
+          document.getElementById("btnWords").classList.remove("active");
+          alert("Custom SRT loaded! " + parsedCues.length + " caption cues found.");
+        };
+        reader.readAsText(file);
+      }
+    });
+
+    // Switch between preloaded SRTs
+    function usePreloadedSrt(type) {
+      if (type === "phrases") {
+        activeSrtText = rawPhrasesSrt;
+        document.getElementById("btnPhrases").classList.add("active");
+        document.getElementById("btnWords").classList.remove("active");
+      } else {
+        activeSrtText = rawWordsSrt;
+        document.getElementById("btnWords").classList.add("active");
+        document.getElementById("btnPhrases").classList.remove("active");
+      }
+      parsedCues = parseSrt(activeSrtText);
+    }
+
+    // Direct SRT download
+    function downloadSrt(content, filename) {
+      const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // Burn & Export via Server Endpoint
+    async function burnAndExport() {
+      if (!selectedVideoBlob) {
+        alert("Please load or upload a video first!");
+        return;
+      }
+
+      const btn = document.getElementById("burnButton");
+      const text = document.getElementById("burnBtnText");
+      const status = document.getElementById("statusNotice");
+
+      btn.disabled = true;
+      text.innerHTML = `<span class="spinner"></span> Processing with FFmpeg...`;
+      status.style.display = "block";
+      status.textContent = "Burning captions into video on server... This takes ~15-30 seconds.";
+
+      try {
+        const formData = new FormData();
+        formData.append("video", selectedVideoBlob, "input.mp4");
+        formData.append("srt", new Blob([activeSrtText], { type: "text/plain" }), "captions.srt");
+
+        const res = await fetch("/api/burn", {
+          method: "POST",
+          body: formData,
+        });
+
+        if (!res.ok) throw new Error("Server failed to burn subtitles");
+
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "captioned_video.mp4";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        status.textContent = "Done! Captioned MP4 downloaded successfully and saved to Downloads folder.";
+      } catch (err) {
+        console.error(err);
+        alert("Error burning captions: " + err.message);
+        status.textContent = "Processing failed: " + err.message;
+      } finally {
+        btn.disabled = false;
+        text.textContent = "Burn Captions & Download MP4";
+      }
+    }
+
+    // Auto-load sample video on first load
+    loadSampleVideo();
+  </script>
+</body>
+</html>

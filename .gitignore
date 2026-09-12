@@ -1,0 +1,8 @@
+node_modules/
+build/
+out/
+*.png
+preview.log
+public/video.mp4
+public/video_1080p.mp4
+public/video_fast.mp4
