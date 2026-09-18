@@ -3,13 +3,16 @@ import { OffthreadVideo, staticFile } from "remotion";
 import { BlackFooterFade } from "./components/BlackFooterFade";
 import { MinimalCaptions } from "./components/MinimalCaptions";
 import { FollowCard } from "./components/FollowCard";
-import { MinimalCommentCTA } from "./components/MinimalCommentCTA";
+import { SaveThisReelCTA } from "./components/SaveThisReelCTA";
+import { TechnicalMotionEssence } from "./components/TechnicalMotionEssence";
 import {
-  HeroContentCreatorCard,
-  HeroMonetizeQuestionCard,
-  HeroOfferingsCard,
-  HeroSkillsListCard,
-  HeroRevenueCard,
+  JWTHookCard,
+  GenZEpisodeIntro,
+  HeaderCard,
+  PayloadCard,
+  PayloadWarningCard,
+  SignatureCard,
+  RecapDiagramCard,
 } from "./components/MotionGraphics";
 import captionsData from "../public/captions.json";
 
@@ -40,20 +43,40 @@ export const PolishedReelVideo: React.FC = () => {
       {/* Layer 2: Black footer vignette */}
       <BlackFooterFade height={450} />
 
-      {/* Layer 3: Word-Level Synced Bold Hinglish Captions */}
+      {/* Layer 3: Word-Level Synced Hinglish Captions (Bottom: 190px) */}
       <MinimalCaptions captions={captionsData} />
 
-      {/* Layer 4: Prominent Hero Motion Graphics */}
-      <HeroContentCreatorCard />
-      <HeroMonetizeQuestionCard />
-      <HeroOfferingsCard />
-      <HeroSkillsListCard />
-      <HeroRevenueCard />
-      <MinimalCommentCTA startFrame={1075} keyword="MONEY" />
+      {/* Layer 4: Technical Motion Essence Micro-Chips (Bottom: 285px) */}
+      <TechnicalMotionEssence />
 
-      {/* Layer 5: Code_baithak Follow Card (Top-Right) */}
+      {/* Layer 5: Upper Hero Motion Graphics (Above Face: top 90px - 340px) */}
+      {/* Hook: 0-8s → JWT = 3 Components 🔥 */}
+      <JWTHookCard />
+
+      {/* Gen Z Episode 17 Intro: 9.3s - 15.5s → Stylish kinetic typography & streak */}
+      <GenZEpisodeIntro />
+
+      {/* Header section: 16.2s - 23.7s → HEADER → HOW? + Algorithm highlight */}
+      <HeaderCard />
+
+      {/* Payload section: 23.8s - 32.5s → PAYLOAD → WHAT? + User claims data */}
+      <PayloadCard />
+
+      {/* Warning: 32.6s - 41.0s → ENCODED ≠ ENCRYPTED + ❌ Passwords in Payload */}
+      <PayloadWarningCard />
+
+      {/* Signature section: 41.2s - 49.2s → SIGNATURE → AUTHENTIC? 🔐 + Tamper check */}
+      <SignatureCard />
+
+      {/* Recap diagram: 49.2s - 56.5s → Fast cuts 3-part summary */}
+      <RecapDiagramCard />
+
+      {/* Layer 6: Save This Reel CTA (Replaces Comment CTA) at ~56.5s */}
+      <SaveThisReelCTA startFrame={1695} />
+
+      {/* Layer 7: Follow Card for @code_baithak at ~58.0s */}
       <FollowCard
-        startFrame={1300}
+        startFrame={1740}
         pageName="Code_baithak"
         handle="@code_baithak"
         avatarFileName="avatar.jpg"
