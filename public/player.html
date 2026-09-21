@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Baithak - Polished Reel</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #07090e;
+      color: #ffffff;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 24px 16px 48px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: linear-gradient(135deg, rgba(0, 240, 255, 0.15) 0%, rgba(168, 85, 247, 0.2) 100%);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      color: #00F0FF;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 12px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #FFFFFF 0%, #CBD5E1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      color: #94A3B8;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .container {
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 18px;
+    }
+    .video-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border-radius: 28px;
+      overflow: hidden;
+      background: #000000;
+      border: 2px solid rgba(255, 255, 255, 0.12);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 240, 255, 0.15);
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .meta-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+    .meta-box {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 10px;
+      border-radius: 16px;
+      text-align: center;
+    }
+    .meta-label {
+      font-size: 11px;
+      color: #64748B;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 2px;
+    }
+    .meta-value {
+      font-size: 14px;
+      color: #F1F5F9;
+      font-weight: 800;
+    }
+    .download-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #00F0FF 0%, #0088FF 50%, #7C3AED 100%);
+      color: #FFFFFF;
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      padding: 18px 24px;
+      border-radius: 22px;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(0, 149, 255, 0.4), 0 0 20px rgba(124, 58, 237, 0.3);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .download-btn:active {
+      transform: scale(0.98);
+      box-shadow: 0 6px 16px rgba(0, 149, 255, 0.3);
+    }
+    .download-btn svg {
+      width: 22px;
+      height: 22px;
+      stroke-width: 2.5;
+    }
+    .footer {
+      margin-top: 14px;
+      color: #475569;
+      font-size: 12px;
+      font-weight: 600;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="badge">
+      <span>⚡</span>
+      <span>Cloud Rendered · 1080x1920</span>
+    </div>
+    <h1>Code Baithak - Reel</h1>
+    <p class="subtitle">Episode 17 / 40 · JWT 3 Components</p>
+  </div>
+
+  <div class="container">
+    <div class="video-wrapper">
+      <video controls playsinline autoplay loop preload="auto">
+        <source src="video_code_baithak_polished.mp4" type="video/mp4" />
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <div class="meta-grid">
+      <div class="meta-box">
+        <div class="meta-label">Resolution</div>
+        <div class="meta-value">1080 × 1920</div>
+      </div>
+      <div class="meta-box">
+        <div class="meta-label">Framerate</div>
+        <div class="meta-value">30 FPS</div>
+      </div>
+      <div class="meta-box">
+        <div class="meta-label">Length</div>
+        <div class="meta-value">60.9s</div>
+      </div>
+    </div>
+
+    <a href="video_code_baithak_polished.mp4" download="video_code_baithak_polished.mp4" class="download-btn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" strokeLinejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+      Download Video (MP4)
+    </a>
+
+    <p class="footer">Ready for Instagram Reels & YouTube Shorts · @code_baithak</p>
+  </div>
+
+</body>
+</html>

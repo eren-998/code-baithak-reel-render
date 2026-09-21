@@ -2,17 +2,21 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
 
 interface SaveThisReelCTAProps {
-  startFrame: number;
+  startFrame?: number;
+  endFrame?: number;
+  subtitle?: string;
 }
 
 export const SaveThisReelCTA: React.FC<SaveThisReelCTAProps> = ({
-  startFrame = 1695,
+  startFrame = 2760,
+  endFrame = 2950,
+  subtitle = "Part 2 A-to-Z Roadmap dropping next!",
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const localFrame = frame - startFrame;
 
-  if (localFrame < 0) return null;
+  if (localFrame < 0 || frame > endFrame) return null;
 
   // Spring entrance
   const enterSpring = spring({
@@ -21,7 +25,12 @@ export const SaveThisReelCTA: React.FC<SaveThisReelCTAProps> = ({
     config: { damping: 15, stiffness: 120 },
   });
 
-  const opacity = interpolate(enterSpring, [0, 1], [0, 1]);
+  const exit = interpolate(frame, [endFrame - 15, endFrame], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
+  });
+
+  const opacity = interpolate(enterSpring, [0, 1], [0, 1]) * exit;
   const translateY = interpolate(enterSpring, [0, 1], [35, 0]);
   const scale = interpolate(enterSpring, [0, 1], [0.88, 1]);
 
@@ -125,7 +134,7 @@ export const SaveThisReelCTA: React.FC<SaveThisReelCTAProps> = ({
               letterSpacing: "0.02em",
             }}
           >
-            Never forget JWT in interviews
+            {subtitle}
           </span>
         </div>
       </div>

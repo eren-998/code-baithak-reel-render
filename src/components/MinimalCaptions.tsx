@@ -34,19 +34,19 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
 
   if (!activeCaption) return null;
 
-  // Local spring entrance for the pill
+  // Local spring entrance for the caption group
   const captionStartFrame = Math.floor((activeCaption.startMs / 1000) * fps);
   const localFrame = frame - captionStartFrame;
 
   const enterSpring = spring({
     frame: localFrame,
     fps,
-    config: { damping: 16, stiffness: 140 },
+    config: { damping: 14, stiffness: 180 },
   });
 
   const opacity = interpolate(enterSpring, [0, 1], [0, 1]);
-  const translateY = interpolate(enterSpring, [0, 1], [15, 0]);
-  const scale = interpolate(enterSpring, [0, 1], [0.94, 1]);
+  const translateY = interpolate(enterSpring, [0, 1], [18, 0]);
+  const scale = interpolate(enterSpring, [0, 1], [0.92, 1]);
 
   const words = activeCaption.words || [];
 
@@ -54,13 +54,13 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 190,
+        bottom: 210,
         left: 0,
         width: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "0 40px",
+        padding: "0 36px",
         zIndex: 42,
         opacity,
         transform: `translateY(${translateY}px) scale(${scale})`,
@@ -69,20 +69,20 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     >
       <div
         style={{
-          backgroundColor: "rgba(10, 15, 26, 0.72)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          padding: "16px 36px",
-          borderRadius: 32,
-          border: "1.5px solid rgba(255, 255, 255, 0.18)",
-          boxShadow: "0 12px 40px rgba(0, 0, 0, 0.55), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
-          maxWidth: 960,
-          display: "flex",
+          backgroundColor: "rgba(8, 12, 22, 0.55)",
+          backdropFilter: "blur(18px)",
+          WebkitBackdropFilter: "blur(18px)",
+          padding: "12px 26px",
+          borderRadius: 30,
+          border: "1.5px solid rgba(255, 255, 255, 0.15)",
+          boxShadow: "0 10px 35px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
+          maxWidth: 860,
+          display: "inline-flex",
           flexWrap: "wrap",
           justifyContent: "center",
           alignItems: "center",
-          columnGap: "12px",
-          rowGap: "8px",
+          columnGap: "10px",
+          rowGap: "6px",
           textAlign: "center",
         }}
       >
@@ -91,21 +91,45 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
             const isWordActive =
               currentTimeMs >= w.startMs && currentTimeMs <= w.endMs;
 
+            const wordStartFrame = Math.floor((w.startMs / 1000) * fps);
+            const wordLocalFrame = Math.max(0, frame - wordStartFrame);
+
+            // After Effects style elastic pop per word
+            const wordPopSpring = spring({
+              frame: wordLocalFrame,
+              fps,
+              config: { damping: 10, stiffness: 220 },
+            });
+
+            const wordScale = isWordActive
+              ? interpolate(wordPopSpring, [0, 1], [0.95, 1.16])
+              : 1;
+
+            const wordY = isWordActive
+              ? interpolate(wordPopSpring, [0, 1], [3, -2])
+              : 0;
+
+            const isKeyTechWord = ["AI", "Google", "developer", "developers", "product", "automate", "automation", "whitewash", "CodeBaithak", "SAVE"].some(
+              (term) => w.word.toLowerCase().includes(term.toLowerCase())
+            );
+
+            const activeColor = isKeyTechWord ? "#00F0FF" : "#FFE600";
+
             return (
               <span
                 key={idx}
                 style={{
                   display: "inline-block",
-                  color: isWordActive ? "#FFE500" : "#FFFFFF",
-                  fontSize: 40,
+                  color: isWordActive ? activeColor : "#FFFFFF",
+                  fontSize: 38,
                   fontWeight: isWordActive ? 900 : 800,
                   letterSpacing: "-0.02em",
                   fontFamily: "'Inter', system-ui, sans-serif",
                   textShadow: isWordActive
-                    ? "0 0 25px rgba(255, 229, 0, 0.85), 0 2px 8px rgba(0, 0, 0, 0.8)"
-                    : "0 2px 6px rgba(0, 0, 0, 0.7)",
-                  transform: isWordActive ? "scale(1.12)" : "scale(1)",
-                  transition: "color 0.08s ease, transform 0.08s ease",
+                    ? `0 0 25px ${activeColor}, 0 2px 10px rgba(0, 0, 0, 0.95)`
+                    : "0 2px 8px rgba(0, 0, 0, 0.8)",
+                  transform: `translateY(${wordY}px) scale(${wordScale})`,
+                  transition: "color 0.06s ease",
                 }}
               >
                 {w.word}
@@ -116,7 +140,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
           <span
             style={{
               color: "#FFFFFF",
-              fontSize: 40,
+              fontSize: 42,
               fontWeight: 800,
               fontFamily: "'Inter', system-ui, sans-serif",
             }}

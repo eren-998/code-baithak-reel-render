@@ -16,7 +16,7 @@ interface FollowCardProps {
 }
 
 export const FollowCard: React.FC<FollowCardProps> = ({
-  startFrame = 1300,
+  startFrame = 3100,
   pageName = "Code_baithak",
   handle = "@code_baithak",
   avatarFileName = "avatar.jpg",
@@ -27,21 +27,21 @@ export const FollowCard: React.FC<FollowCardProps> = ({
 
   if (localFrame < 0) return null;
 
-  // Slide in from right edge
+  // Slide in from right edge with bouncy elastic spring
   const enterSpring = spring({
     frame: localFrame,
     fps,
-    config: { damping: 14, stiffness: 85 },
+    config: { damping: 12, stiffness: 95 },
   });
 
-  const translateX = interpolate(enterSpring, [0, 1], [300, 0]);
+  const translateX = interpolate(enterSpring, [0, 1], [350, 0]);
   const opacity = interpolate(enterSpring, [0, 1], [0, 1]);
   const scale = interpolate(enterSpring, [0, 1], [0.85, 1]);
 
   const pulseSpring = spring({
-    frame: localFrame - 20,
+    frame: localFrame - 15,
     fps,
-    config: { damping: 10, stiffness: 140 },
+    config: { damping: 10, stiffness: 150 },
   });
   const buttonScale = interpolate(pulseSpring, [0, 1], [0.8, 1]);
 
@@ -49,9 +49,9 @@ export const FollowCard: React.FC<FollowCardProps> = ({
     <div
       style={{
         position: "absolute",
-        top: 90,
+        top: 100,
         right: 40,
-        zIndex: 55,
+        zIndex: 60,
         opacity,
         transform: `translateX(${translateX}px) scale(${scale})`,
       }}
@@ -60,31 +60,31 @@ export const FollowCard: React.FC<FollowCardProps> = ({
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 14,
-          backgroundColor: "rgba(10, 15, 26, 0.92)",
-          backdropFilter: "blur(24px)",
-          WebkitBackdropFilter: "blur(24px)",
-          padding: "12px 22px 12px 12px",
-          borderRadius: 50,
-          border: "1.5px solid rgba(255, 255, 255, 0.2)",
+          gap: 16,
+          backgroundColor: "rgba(10, 15, 26, 0.95)",
+          backdropFilter: "blur(28px)",
+          WebkitBackdropFilter: "blur(28px)",
+          padding: "14px 26px 14px 14px",
+          borderRadius: 60,
+          border: "2px solid rgba(255, 255, 255, 0.28)",
           boxShadow:
-            "0 20px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 149, 246, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.25)",
+            "0 24px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 149, 246, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.3)",
         }}
       >
-        {/* Avatar with Instagram Gradient Ring */}
+        {/* Avatar with Instagram Gradient Ring (Enlarged to 70px) */}
         <div
           style={{
             position: "relative",
-            width: 56,
-            height: 56,
+            width: 70,
+            height: 70,
             borderRadius: "50%",
             background:
               "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-            padding: 2.5,
+            padding: 3,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            boxShadow: "0 4px 16px rgba(220, 39, 67, 0.35)",
+            boxShadow: "0 6px 20px rgba(220, 39, 67, 0.45)",
             flexShrink: 0,
           }}
         >
@@ -95,19 +95,19 @@ export const FollowCard: React.FC<FollowCardProps> = ({
               height: "100%",
               borderRadius: "50%",
               objectFit: "cover",
-              border: "2px solid #0a0f1a",
+              border: "2.5px solid #0a0f1a",
             }}
           />
         </div>
 
         {/* Page Name + Handle */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+        <div style={{ display: "flex", flexDirection: "column", gap: 3 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <span
               style={{
                 color: "#FFFFFF",
-                fontSize: 20,
-                fontWeight: 800,
+                fontSize: 24,
+                fontWeight: 900,
                 letterSpacing: "-0.01em",
                 fontFamily: "'Inter', system-ui, sans-serif",
               }}
@@ -116,8 +116,8 @@ export const FollowCard: React.FC<FollowCardProps> = ({
             </span>
             {/* Verified Badge */}
             <svg
-              width="18"
-              height="18"
+              width="22"
+              height="22"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -135,8 +135,8 @@ export const FollowCard: React.FC<FollowCardProps> = ({
           <span
             style={{
               color: "#0095F6",
-              fontSize: 14,
-              fontWeight: 700,
+              fontSize: 16,
+              fontWeight: 800,
               letterSpacing: "0.01em",
               fontFamily: "'Inter', system-ui, sans-serif",
             }}
@@ -148,32 +148,32 @@ export const FollowCard: React.FC<FollowCardProps> = ({
         {/* Divider */}
         <div
           style={{
-            width: 1,
-            height: 30,
-            backgroundColor: "rgba(255, 255, 255, 0.16)",
-            margin: "0 4px",
+            width: 1.5,
+            height: 38,
+            backgroundColor: "rgba(255, 255, 255, 0.2)",
+            margin: "0 6px",
           }}
         />
 
-        {/* Follow Button */}
+        {/* Follow Button (Enlarged) */}
         <div
           style={{
             background: "linear-gradient(135deg, #0095F6 0%, #0066CC 100%)",
             color: "#FFFFFF",
-            fontSize: 14,
-            fontWeight: 800,
-            padding: "9px 18px",
-            borderRadius: 24,
-            boxShadow: "0 4px 18px rgba(0, 149, 246, 0.45)",
+            fontSize: 16,
+            fontWeight: 900,
+            padding: "11px 22px",
+            borderRadius: 28,
+            boxShadow: "0 6px 22px rgba(0, 149, 246, 0.5)",
             display: "flex",
             alignItems: "center",
-            gap: 5,
+            gap: 6,
             letterSpacing: "0.02em",
             fontFamily: "'Inter', system-ui, sans-serif",
             transform: `scale(${buttonScale})`,
           }}
         >
-          <span style={{ fontSize: 16, lineHeight: 1, fontWeight: 900 }}>+</span>{" "}
+          <span style={{ fontSize: 18, lineHeight: 1, fontWeight: 900 }}>+</span>{" "}
           Follow
         </div>
       </div>

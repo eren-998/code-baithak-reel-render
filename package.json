@@ -18,5 +18,8 @@
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "remotion": "^4.0.506"
+  },
+  "optionalDependencies": {
+    "@esbuild/linux-arm64": "^0.28.2"
   }
 }
