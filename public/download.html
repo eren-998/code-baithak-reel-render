@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Download — AI Relevant Polished Reel</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      background: #0a0e1a;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      color: #fff;
+      padding: 24px;
+    }
+    .card {
+      background: rgba(15, 20, 35, 0.95);
+      backdrop-filter: blur(24px);
+      border: 1.5px solid rgba(255,255,255,0.12);
+      border-radius: 24px;
+      padding: 32px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 40px rgba(0,149,246,0.15);
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0,240,255,0.1);
+      border: 1px solid rgba(0,240,255,0.3);
+      border-radius: 50px;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #00F0FF;
+      letter-spacing: 0.1em;
+      margin-bottom: 20px;
+    }
+    .badge svg { flex-shrink: 0; }
+    h1 {
+      font-size: 22px;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .meta {
+      color: #64748b;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    .video-wrap {
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-bottom: 24px;
+      background: #000;
+    }
+    video {
+      width: 100%;
+      max-height: 55vh;
+      display: block;
+    }
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 16px 24px;
+      background: linear-gradient(135deg, #0095F6 0%, #0066CC 100%);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 800;
+      border: none;
+      border-radius: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 30px rgba(0,149,246,0.4);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+      letter-spacing: 0.01em;
+    }
+    .download-btn:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,149,246,0.55);
+    }
+    .download-btn:active { transform: scale(0.98); }
+    .download-btn svg { flex-shrink: 0; }
+    .footer {
+      margin-top: 20px;
+      color: #475569;
+      font-size: 11px;
+      font-weight: 600;
+    }
+    .footer span { color: #0095F6; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00F0FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+      </svg>
+      CLOUD RENDERED
+    </div>
+
+    <h1>AI Relevant — Polished Reel</h1>
+    <p class="meta">1080 × 1920 · 30fps · 107.7s · 150 MB</p>
+
+    <div class="video-wrap">
+      <video controls preload="metadata" playsinline>
+        <source src="Ai_relevent_video_polished.mp4" type="video/mp4" />
+        Your browser does not support video playback.
+      </video>
+    </div>
+
+    <a class="download-btn" href="Ai_relevent_video_polished.mp4" download="Ai_relevent_video_polished.mp4">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+      </svg>
+      Download MP4
+    </a>
+
+    <p class="footer">Rendered by <span>@code_baithak</span> via GitHub Actions</p>
+  </div>
+</body>
+</html>

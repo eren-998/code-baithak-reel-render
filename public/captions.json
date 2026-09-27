@@ -1,2364 +1,548 @@
 [
   {
-    "text": "Bhai ye saari ki saari",
-    "startMs": 0,
-    "endMs": 1840,
+    "text": "So this website teaches you",
+    "startMs": 380,
+    "endMs": 1680,
     "words": [
       {
-        "word": "Bhai",
-        "startMs": 0,
-        "endMs": 920
+        "text": "So",
+        "startMs": 380,
+        "endMs": 460,
+        "word": "So"
       },
       {
-        "word": "ye",
-        "startMs": 920,
-        "endMs": 1140
+        "text": "this",
+        "startMs": 460,
+        "endMs": 620,
+        "word": "this"
       },
       {
-        "word": "saari",
-        "startMs": 1140,
-        "endMs": 1480
+        "text": "website",
+        "startMs": 620,
+        "endMs": 1040,
+        "word": "website"
       },
       {
-        "word": "ki",
-        "startMs": 1480,
-        "endMs": 1580
+        "text": "teaches",
+        "startMs": 1040,
+        "endMs": 1440,
+        "word": "teaches"
       },
       {
-        "word": "saari",
-        "startMs": 1580,
-        "endMs": 1760
+        "text": "you",
+        "startMs": 1440,
+        "endMs": 1680,
+        "word": "you"
       }
     ]
   },
   {
-    "text": "company hamara pagal bana rahi",
-    "startMs": 1760,
-    "endMs": 3160,
+    "text": "how to code as simple as a game.",
+    "startMs": 1680,
+    "endMs": 4000,
     "words": [
       {
-        "word": "company",
-        "startMs": 1760,
-        "endMs": 2060
+        "text": "how",
+        "startMs": 1680,
+        "endMs": 1900,
+        "word": "how"
       },
       {
-        "word": "hamara",
-        "startMs": 2060,
-        "endMs": 2480
+        "text": "to",
+        "startMs": 1900,
+        "endMs": 2120,
+        "word": "to"
       },
       {
-        "word": "pagal",
-        "startMs": 2480,
-        "endMs": 2740
+        "text": "code",
+        "startMs": 2120,
+        "endMs": 2400,
+        "word": "code"
       },
       {
-        "word": "bana",
-        "startMs": 2740,
-        "endMs": 3020
+        "text": "as",
+        "startMs": 2400,
+        "endMs": 2760,
+        "word": "as"
       },
       {
-        "word": "rahi",
-        "startMs": 3020,
-        "endMs": 3080
-      }
-    ]
-  },
-  {
-    "text": "hai aur hum bane jaa",
-    "startMs": 3080,
-    "endMs": 3840,
-    "words": [
-      {
-        "word": "hai",
-        "startMs": 3080,
-        "endMs": 3100
+        "text": "simple",
+        "startMs": 2760,
+        "endMs": 3100,
+        "word": "simple"
       },
       {
-        "word": "aur",
+        "text": "as",
         "startMs": 3100,
-        "endMs": 3200
+        "endMs": 3300,
+        "word": "as"
       },
       {
-        "word": "hum",
-        "startMs": 3200,
-        "endMs": 3280
+        "text": "a",
+        "startMs": 3300,
+        "endMs": 3460,
+        "word": "a"
       },
       {
-        "word": "bane",
-        "startMs": 3280,
-        "endMs": 3580
-      },
-      {
-        "word": "jaa",
-        "startMs": 3580,
-        "endMs": 3760
+        "text": "game.",
+        "startMs": 3460,
+        "endMs": 4000,
+        "word": "game."
       }
     ]
   },
   {
-    "text": "rahe hain aur hum aaj",
-    "startMs": 3760,
-    "endMs": 4920,
+    "text": "So simply visit this website",
+    "startMs": 4000,
+    "endMs": 5320,
     "words": [
       {
-        "word": "rahe",
-        "startMs": 3760,
-        "endMs": 3860
+        "text": "So",
+        "startMs": 4000,
+        "endMs": 4080,
+        "word": "So"
       },
       {
-        "word": "hain",
-        "startMs": 3860,
-        "endMs": 4059
+        "text": "simply",
+        "startMs": 4080,
+        "endMs": 4440,
+        "word": "simply"
       },
       {
-        "word": "aur",
-        "startMs": 3780,
-        "endMs": 4420
+        "text": "visit",
+        "startMs": 4440,
+        "endMs": 4760,
+        "word": "visit"
       },
       {
-        "word": "hum",
-        "startMs": 4420,
-        "endMs": 4520
+        "text": "this",
+        "startMs": 4760,
+        "endMs": 4960,
+        "word": "this"
       },
       {
-        "word": "aaj",
-        "startMs": 4520,
-        "endMs": 4840
+        "text": "website",
+        "startMs": 4960,
+        "endMs": 5320,
+        "word": "website"
       }
     ]
   },
   {
-    "text": "mein aankhein khol ke dekh",
-    "startMs": 4840,
-    "endMs": 5700,
+    "text": "and follow the instructions",
+    "startMs": 5320,
+    "endMs": 6520,
     "words": [
       {
-        "word": "mein",
-        "startMs": 4840,
-        "endMs": 4940
-      },
-      {
-        "word": "aankhein",
-        "startMs": 4940,
-        "endMs": 5100
-      },
-      {
-        "word": "khol",
-        "startMs": 5100,
-        "endMs": 5320
-      },
-      {
-        "word": "ke",
+        "text": "and",
         "startMs": 5320,
-        "endMs": 5460
+        "endMs": 5740,
+        "word": "and"
       },
       {
-        "word": "dekh",
-        "startMs": 5460,
-        "endMs": 5620
-      }
-    ]
-  },
-  {
-    "text": "nahi rahe hai ki ho",
-    "startMs": 5620,
-    "endMs": 6220,
-    "words": [
-      {
-        "word": "nahi",
-        "startMs": 5620,
-        "endMs": 5740
-      },
-      {
-        "word": "rahe",
+        "text": "follow",
         "startMs": 5740,
-        "endMs": 5840
+        "endMs": 6060,
+        "word": "follow"
       },
       {
-        "word": "hai",
-        "startMs": 5840,
-        "endMs": 5880
+        "text": "the",
+        "startMs": 6060,
+        "endMs": 6220,
+        "word": "the"
       },
       {
-        "word": "ki",
-        "startMs": 5880,
-        "endMs": 5980
-      },
-      {
-        "word": "ho",
-        "startMs": 5980,
-        "endMs": 6140
+        "text": "instructions",
+        "startMs": 6220,
+        "endMs": 6520,
+        "word": "instructions"
       }
     ]
   },
   {
-    "text": "kya raha hai",
-    "startMs": 6140,
-    "endMs": 6640,
+    "text": "on the left side",
+    "startMs": 6520,
+    "endMs": 7060,
     "words": [
       {
-        "word": "kya",
-        "startMs": 6140,
-        "endMs": 6320
-      },
-      {
-        "word": "raha",
-        "startMs": 6320,
-        "endMs": 6520
-      },
-      {
-        "word": "hai",
+        "text": "on",
         "startMs": 6520,
-        "endMs": 6560
+        "endMs": 6900,
+        "word": "on"
+      },
+      {
+        "text": "the",
+        "startMs": 6900,
+        "endMs": 7060,
+        "word": "the"
+      },
+      {
+        "text": "left",
+        "startMs": 7060,
+        "endMs": 7060,
+        "word": "left"
+      },
+      {
+        "text": "side",
+        "startMs": 7260,
+        "endMs": 7060,
+        "word": "side"
       }
     ]
   },
   {
-    "text": "dhyan se sun",
-    "startMs": 7100,
-    "endMs": 7700,
+    "text": "and you can write your code",
+    "startMs": 7060,
+    "endMs": 8860,
     "words": [
       {
-        "word": "dhyan",
-        "startMs": 7100,
-        "endMs": 7380
+        "text": "and",
+        "startMs": 7060,
+        "endMs": 8100,
+        "word": "and"
       },
       {
-        "word": "se",
-        "startMs": 7380,
-        "endMs": 7520
+        "text": "you",
+        "startMs": 8100,
+        "endMs": 8240,
+        "word": "you"
       },
       {
-        "word": "sun",
-        "startMs": 7520,
-        "endMs": 7620
+        "text": "can",
+        "startMs": 8240,
+        "endMs": 8400,
+        "word": "can"
+      },
+      {
+        "text": "write",
+        "startMs": 8400,
+        "endMs": 8580,
+        "word": "write"
+      },
+      {
+        "text": "your",
+        "startMs": 8580,
+        "endMs": 8700,
+        "word": "your"
+      },
+      {
+        "text": "code",
+        "startMs": 8700,
+        "endMs": 8860,
+        "word": "code"
       }
     ]
   },
   {
-    "text": "yesterday I met a AI",
-    "startMs": 8119,
+    "text": "on the right side.",
+    "startMs": 8860,
     "endMs": 9600,
     "words": [
       {
-        "word": "yesterday",
-        "startMs": 8119,
-        "endMs": 8620
-      },
-      {
-        "word": "I",
-        "startMs": 8620,
-        "endMs": 8860
-      },
-      {
-        "word": "met",
+        "text": "on",
         "startMs": 8860,
-        "endMs": 9080
+        "endMs": 8960,
+        "word": "on"
       },
       {
-        "word": "a",
+        "text": "the",
+        "startMs": 8960,
+        "endMs": 9080,
+        "word": "the"
+      },
+      {
+        "text": "right",
         "startMs": 9080,
-        "endMs": 9220
+        "endMs": 9260,
+        "word": "right"
       },
       {
-        "word": "AI",
-        "startMs": 9220,
-        "endMs": 9520
+        "text": "side.",
+        "startMs": 9260,
+        "endMs": 9600,
+        "word": "side."
       }
     ]
   },
   {
-    "text": "consultant aur tujhe AI consultant",
-    "startMs": 9520,
-    "endMs": 11340,
+    "text": "As you go ahead in the journey,",
+    "startMs": 9600,
+    "endMs": 10880,
     "words": [
       {
-        "word": "consultant",
-        "startMs": 9520,
-        "endMs": 9960
+        "text": "As",
+        "startMs": 9600,
+        "endMs": 9720,
+        "word": "As"
       },
       {
-        "word": "aur",
-        "startMs": 10140,
-        "endMs": 10280
+        "text": "you",
+        "startMs": 9720,
+        "endMs": 9880,
+        "word": "you"
       },
       {
-        "word": "tujhe",
-        "startMs": 10280,
-        "endMs": 10480
+        "text": "go",
+        "startMs": 9880,
+        "endMs": 10020,
+        "word": "go"
       },
       {
-        "word": "AI",
-        "startMs": 10480,
-        "endMs": 10820
+        "text": "ahead",
+        "startMs": 10020,
+        "endMs": 10320,
+        "word": "ahead"
       },
       {
-        "word": "consultant",
-        "startMs": 10820,
-        "endMs": 11260
+        "text": "in",
+        "startMs": 10320,
+        "endMs": 10440,
+        "word": "in"
+      },
+      {
+        "text": "the",
+        "startMs": 10440,
+        "endMs": 10560,
+        "word": "the"
+      },
+      {
+        "text": "journey,",
+        "startMs": 10560,
+        "endMs": 10880,
+        "word": "journey,"
       }
     ]
   },
   {
-    "text": "nahi pata toh pehle jaake",
-    "startMs": 11260,
-    "endMs": 12160,
+    "text": "you will make a lot of projects here",
+    "startMs": 10880,
+    "endMs": 11880,
     "words": [
       {
-        "word": "nahi",
-        "startMs": 11260,
-        "endMs": 11460
+        "text": "you",
+        "startMs": 10880,
+        "endMs": 10920,
+        "word": "you"
       },
       {
-        "word": "pata",
-        "startMs": 11460,
-        "endMs": 11680
+        "text": "will",
+        "startMs": 10920,
+        "endMs": 10960,
+        "word": "will"
       },
       {
-        "word": "toh",
-        "startMs": 11680,
-        "endMs": 11780
+        "text": "make",
+        "startMs": 10960,
+        "endMs": 11120,
+        "word": "make"
       },
       {
-        "word": "pehle",
+        "text": "a",
+        "startMs": 11120,
+        "endMs": 11280,
+        "word": "a"
+      },
+      {
+        "text": "lot",
+        "startMs": 11280,
+        "endMs": 11340,
+        "word": "lot"
+      },
+      {
+        "text": "of",
+        "startMs": 11340,
+        "endMs": 11440,
+        "word": "of"
+      },
+      {
+        "text": "projects",
+        "startMs": 11440,
+        "endMs": 11780,
+        "word": "projects"
+      },
+      {
+        "text": "here",
         "startMs": 11780,
-        "endMs": 11940
-      },
-      {
-        "word": "jaake",
-        "startMs": 11940,
-        "endMs": 12080
+        "endMs": 11880,
+        "word": "here"
       }
     ]
   },
   {
-    "text": "Google karke aa",
-    "startMs": 12080,
-    "endMs": 12820,
+    "text": "and will make your coding journey very easy.",
+    "startMs": 11880,
+    "endMs": 13380,
     "words": [
       {
-        "word": "Google",
-        "startMs": 12080,
-        "endMs": 12380
+        "text": "and",
+        "startMs": 11880,
+        "endMs": 12220,
+        "word": "and"
       },
       {
-        "word": "karke",
-        "startMs": 12380,
-        "endMs": 12640
+        "text": "will",
+        "startMs": 12220,
+        "endMs": 12360,
+        "word": "will"
       },
       {
-        "word": "aa",
-        "startMs": 12640,
-        "endMs": 12740
-      }
-    ]
-  },
-  {
-    "text": "Bhai I had a very",
-    "startMs": 13300,
-    "endMs": 14080,
-    "words": [
+        "text": "make",
+        "startMs": 12360,
+        "endMs": 12560,
+        "word": "make"
+      },
       {
-        "word": "Bhai",
+        "text": "your",
+        "startMs": 12560,
+        "endMs": 12720,
+        "word": "your"
+      },
+      {
+        "text": "coding",
+        "startMs": 12720,
+        "endMs": 12960,
+        "word": "coding"
+      },
+      {
+        "text": "journey",
+        "startMs": 12960,
+        "endMs": 13300,
+        "word": "journey"
+      },
+      {
+        "text": "very",
         "startMs": 13300,
-        "endMs": 13500
+        "endMs": 13380,
+        "word": "very"
       },
       {
-        "word": "I",
-        "startMs": 13500,
-        "endMs": 13620
-      },
-      {
-        "word": "had",
-        "startMs": 13620,
-        "endMs": 13780
-      },
-      {
-        "word": "a",
-        "startMs": 13780,
-        "endMs": 13900
-      },
-      {
-        "word": "very",
-        "startMs": 13900,
-        "endMs": 14000
+        "text": "easy.",
+        "startMs": 13600,
+        "endMs": 13380,
+        "word": "easy."
       }
     ]
   },
   {
-    "text": "deep conversation with him and",
-    "startMs": 14000,
-    "endMs": 15440,
+    "text": "If you want the link for the website,",
+    "startMs": 13380,
+    "endMs": 15640,
     "words": [
       {
-        "word": "deep",
-        "startMs": 14000,
-        "endMs": 14200
+        "text": "If",
+        "startMs": 13380,
+        "endMs": 14100,
+        "word": "If"
       },
       {
-        "word": "conversation",
+        "text": "you",
+        "startMs": 14100,
+        "endMs": 14200,
+        "word": "you"
+      },
+      {
+        "text": "want",
         "startMs": 14200,
-        "endMs": 14620
+        "endMs": 14480,
+        "word": "want"
       },
       {
-        "word": "with",
-        "startMs": 14620,
-        "endMs": 14860
+        "text": "the",
+        "startMs": 14480,
+        "endMs": 14640,
+        "word": "the"
       },
       {
-        "word": "him",
-        "startMs": 14860,
-        "endMs": 15000
+        "text": "link",
+        "startMs": 14640,
+        "endMs": 14760,
+        "word": "link"
       },
       {
-        "word": "and",
-        "startMs": 15020,
-        "endMs": 15360
+        "text": "for",
+        "startMs": 14760,
+        "endMs": 14880,
+        "word": "for"
+      },
+      {
+        "text": "the",
+        "startMs": 14880,
+        "endMs": 14960,
+        "word": "the"
+      },
+      {
+        "text": "website,",
+        "startMs": 14960,
+        "endMs": 15640,
+        "word": "website,"
       }
     ]
   },
   {
-    "text": "he told me a lot",
-    "startMs": 15360,
-    "endMs": 16720,
+    "text": "comment anything",
+    "startMs": 15640,
+    "endMs": 16040,
     "words": [
       {
-        "word": "he",
-        "startMs": 15360,
-        "endMs": 15500
+        "text": "comment",
+        "startMs": 15640,
+        "endMs": 15660,
+        "word": "comment"
       },
       {
-        "word": "told",
-        "startMs": 15500,
-        "endMs": 15840
-      },
+        "text": "anything",
+        "startMs": 15660,
+        "endMs": 16040,
+        "word": "anything"
+      }
+    ]
+  },
+  {
+    "text": "and I'll share it to your DMs.",
+    "startMs": 16040,
+    "endMs": 17370,
+    "words": [
       {
-        "word": "me",
-        "startMs": 15840,
-        "endMs": 16040
-      },
-      {
-        "word": "a",
+        "text": "and",
         "startMs": 16040,
-        "endMs": 16480
+        "endMs": 16220,
+        "word": "and"
       },
       {
-        "word": "lot",
-        "startMs": 16480,
-        "endMs": 16640
-      }
-    ]
-  },
-  {
-    "text": "of things jo companies kar",
-    "startMs": 16640,
-    "endMs": 18040,
-    "words": [
-      {
-        "word": "of",
-        "startMs": 16640,
-        "endMs": 16860
-      },
-      {
-        "word": "things",
-        "startMs": 16860,
-        "endMs": 17180
-      },
-      {
-        "word": "jo",
-        "startMs": 16680,
-        "endMs": 17280
-      },
-      {
-        "word": "companies",
-        "startMs": 17280,
-        "endMs": 17640
-      },
-      {
-        "word": "kar",
-        "startMs": 17640,
-        "endMs": 17960
-      }
-    ]
-  },
-  {
-    "text": "rahi hain jisme se ek",
-    "startMs": 17960,
-    "endMs": 18820,
-    "words": [
-      {
-        "word": "rahi",
-        "startMs": 17960,
-        "endMs": 18060
-      },
-      {
-        "word": "hain",
-        "startMs": 18060,
-        "endMs": 18220
-      },
-      {
-        "word": "jisme",
-        "startMs": 18220,
-        "endMs": 18400
-      },
-      {
-        "word": "se",
-        "startMs": 18400,
-        "endMs": 18520
-      },
-      {
-        "word": "ek",
-        "startMs": 18520,
-        "endMs": 18740
-      }
-    ]
-  },
-  {
-    "text": "cheez mere dimaag mein tab",
-    "startMs": 18740,
-    "endMs": 20060,
-    "words": [
-      {
-        "word": "cheez",
-        "startMs": 18740,
-        "endMs": 18940
-      },
-      {
-        "word": "mere",
-        "startMs": 18620,
-        "endMs": 19220
-      },
-      {
-        "word": "dimaag",
-        "startMs": 19220,
-        "endMs": 19640
-      },
-      {
-        "word": "mein",
-        "startMs": 19640,
-        "endMs": 19800
-      },
-      {
-        "word": "tab",
-        "startMs": 19800,
-        "endMs": 19980
-      }
-    ]
-  },
-  {
-    "text": "se baithi hui hai jo",
-    "startMs": 19980,
-    "endMs": 21540,
-    "words": [
-      {
-        "word": "se",
-        "startMs": 19980,
-        "endMs": 20080
-      },
-      {
-        "word": "baithi",
-        "startMs": 20080,
-        "endMs": 20500
-      },
-      {
-        "word": "hui",
-        "startMs": 20500,
-        "endMs": 20620
-      },
-      {
-        "word": "hai",
-        "startMs": 20620,
-        "endMs": 20820
-      },
-      {
-        "word": "jo",
-        "startMs": 20540,
-        "endMs": 21460
-      }
-    ]
-  },
-  {
-    "text": "nahi nikal rahi jiske liye",
-    "startMs": 21460,
-    "endMs": 22860,
-    "words": [
-      {
-        "word": "nahi",
-        "startMs": 21460,
-        "endMs": 21640
-      },
-      {
-        "word": "nikal",
-        "startMs": 21640,
-        "endMs": 21860
-      },
-      {
-        "word": "rahi",
-        "startMs": 21860,
-        "endMs": 22340
-      },
-      {
-        "word": "jiske",
-        "startMs": 22340,
-        "endMs": 22640
-      },
-      {
-        "word": "liye",
-        "startMs": 22640,
-        "endMs": 22780
-      }
-    ]
-  },
-  {
-    "text": "main ye video bana raha",
-    "startMs": 22340,
-    "endMs": 23620,
-    "words": [
-      {
-        "word": "main",
-        "startMs": 22340,
-        "endMs": 23000
-      },
-      {
-        "word": "ye",
-        "startMs": 23000,
-        "endMs": 23080
-      },
-      {
-        "word": "video",
-        "startMs": 23080,
-        "endMs": 23260
-      },
-      {
-        "word": "bana",
-        "startMs": 23260,
-        "endMs": 23500
-      },
-      {
-        "word": "raha",
-        "startMs": 23500,
-        "endMs": 23540
-      }
-    ]
-  },
-  {
-    "text": "hoon Bhai he said exact",
-    "startMs": 23540,
-    "endMs": 25900,
-    "words": [
-      {
-        "word": "hoon",
-        "startMs": 23540,
-        "endMs": 24520
-      },
-      {
-        "word": "Bhai",
-        "startMs": 24520,
-        "endMs": 24620
-      },
-      {
-        "word": "he",
-        "startMs": 24620,
-        "endMs": 24760
-      },
-      {
-        "word": "said",
-        "startMs": 24760,
-        "endMs": 25120
-      },
-      {
-        "word": "exact",
-        "startMs": 24660,
-        "endMs": 25820
-      }
-    ]
-  },
-  {
-    "text": "statements",
-    "startMs": 25820,
-    "endMs": 26400,
-    "words": [
-      {
-        "word": "statements",
-        "startMs": 25820,
-        "endMs": 26320
-      }
-    ]
-  },
-  {
-    "text": "ki mere aage tum duniya",
-    "startMs": 26960,
-    "endMs": 28380,
-    "words": [
-      {
-        "word": "ki",
-        "startMs": 26960,
-        "endMs": 27120
-      },
-      {
-        "word": "mere",
-        "startMs": 27120,
-        "endMs": 27440
-      },
-      {
-        "word": "aage",
-        "startMs": 27440,
-        "endMs": 27720
-      },
-      {
-        "word": "tum",
-        "startMs": 27720,
-        "endMs": 28000
-      },
-      {
-        "word": "duniya",
-        "startMs": 28000,
-        "endMs": 28300
-      }
-    ]
-  },
-  {
-    "text": "ka koi bhi product le",
-    "startMs": 28300,
-    "endMs": 29460,
-    "words": [
-      {
-        "word": "ka",
-        "startMs": 28300,
-        "endMs": 28440
-      },
-      {
-        "word": "koi",
-        "startMs": 28440,
-        "endMs": 28660
-      },
-      {
-        "word": "bhi",
-        "startMs": 28660,
-        "endMs": 28800
-      },
-      {
-        "word": "product",
-        "startMs": 28340,
-        "endMs": 29240
-      },
-      {
-        "word": "le",
-        "startMs": 29240,
-        "endMs": 29380
-      }
-    ]
-  },
-  {
-    "text": "aao main usme AI integrate",
-    "startMs": 29380,
-    "endMs": 30840,
-    "words": [
-      {
-        "word": "aao",
-        "startMs": 29380,
-        "endMs": 30020
-      },
-      {
-        "word": "main",
-        "startMs": 30020,
-        "endMs": 30100
-      },
-      {
-        "word": "usme",
-        "startMs": 30100,
-        "endMs": 30260
-      },
-      {
-        "word": "AI",
-        "startMs": 30260,
-        "endMs": 30440
-      },
-      {
-        "word": "integrate",
-        "startMs": 30440,
-        "endMs": 30760
-      }
-    ]
-  },
-  {
-    "text": "kar dunga",
-    "startMs": 30760,
-    "endMs": 31320,
-    "words": [
-      {
-        "word": "kar",
-        "startMs": 30760,
-        "endMs": 31020
-      },
-      {
-        "word": "dunga",
-        "startMs": 31020,
-        "endMs": 31240
-      }
-    ]
-  },
-  {
-    "text": "what iska matlab",
-    "startMs": 32460,
-    "endMs": 33880,
-    "words": [
-      {
-        "word": "what",
-        "startMs": 32460,
-        "endMs": 33240
-      },
-      {
-        "word": "iska",
-        "startMs": 32800,
-        "endMs": 33580
-      },
-      {
-        "word": "matlab",
-        "startMs": 33580,
-        "endMs": 33800
-      }
-    ]
-  },
-  {
-    "text": "Bhai jo hum saare itne",
-    "startMs": 33800,
-    "endMs": 35140,
-    "words": [
-      {
-        "word": "Bhai",
-        "startMs": 33800,
-        "endMs": 33940
-      },
-      {
-        "word": "jo",
-        "startMs": 33940,
-        "endMs": 34260
-      },
-      {
-        "word": "hum",
-        "startMs": 34260,
-        "endMs": 34540
-      },
-      {
-        "word": "saare",
-        "startMs": 34540,
-        "endMs": 34940
-      },
-      {
-        "word": "itne",
-        "startMs": 34940,
-        "endMs": 35060
-      }
-    ]
-  },
-  {
-    "text": "saare log kar rahe hain",
-    "startMs": 35060,
-    "endMs": 35820,
-    "words": [
-      {
-        "word": "saare",
-        "startMs": 35060,
-        "endMs": 35240
-      },
-      {
-        "word": "log",
-        "startMs": 34760,
-        "endMs": 35400
-      },
-      {
-        "word": "kar",
-        "startMs": 35400,
-        "endMs": 35600
-      },
-      {
-        "word": "rahe",
-        "startMs": 35600,
-        "endMs": 35720
-      },
-      {
-        "word": "hain",
-        "startMs": 35720,
-        "endMs": 35740
-      }
-    ]
-  },
-  {
-    "text": "tum aur main jo developers",
-    "startMs": 35740,
-    "endMs": 36720,
-    "words": [
-      {
-        "word": "tum",
-        "startMs": 35740,
-        "endMs": 35940
-      },
-      {
-        "word": "aur",
-        "startMs": 35940,
-        "endMs": 36120
-      },
-      {
-        "word": "main",
-        "startMs": 36120,
-        "endMs": 36240
-      },
-      {
-        "word": "jo",
-        "startMs": 36240,
-        "endMs": 36340
-      },
-      {
-        "word": "developers",
-        "startMs": 36340,
-        "endMs": 36640
-      }
-    ]
-  },
-  {
-    "text": "kar rahe hain hum log",
-    "startMs": 36640,
-    "endMs": 37480,
-    "words": [
-      {
-        "word": "kar",
-        "startMs": 36640,
-        "endMs": 36940
-      },
-      {
-        "word": "rahe",
-        "startMs": 36940,
-        "endMs": 37000
-      },
-      {
-        "word": "hain",
-        "startMs": 37000,
-        "endMs": 37060
-      },
-      {
-        "word": "hum",
-        "startMs": 36760,
-        "endMs": 37200
-      },
-      {
-        "word": "log",
-        "startMs": 37200,
-        "endMs": 37400
-      }
-    ]
-  },
-  {
-    "text": "whitewash ho jayenge",
-    "startMs": 37400,
-    "endMs": 38280,
-    "words": [
-      {
-        "word": "whitewash",
-        "startMs": 37400,
-        "endMs": 37860
-      },
-      {
-        "word": "ho",
-        "startMs": 37860,
-        "endMs": 38000
-      },
-      {
-        "word": "jayenge",
-        "startMs": 38000,
-        "endMs": 38200
-      }
-    ]
-  },
-  {
-    "text": "Bhai bohot easily whitewash ho",
-    "startMs": 38200,
-    "endMs": 39460,
-    "words": [
-      {
-        "word": "Bhai",
-        "startMs": 38200,
-        "endMs": 38360
-      },
-      {
-        "word": "bohot",
-        "startMs": 38360,
-        "endMs": 38620
-      },
-      {
-        "word": "easily",
-        "startMs": 38620,
-        "endMs": 38880
-      },
-      {
-        "word": "whitewash",
-        "startMs": 38880,
-        "endMs": 39220
-      },
-      {
-        "word": "ho",
-        "startMs": 38780,
-        "endMs": 39380
-      }
-    ]
-  },
-  {
-    "text": "jayenge koi kaam hi nahi",
-    "startMs": 39380,
-    "endMs": 40940,
-    "words": [
-      {
-        "word": "jayenge",
-        "startMs": 39380,
-        "endMs": 39660
-      },
-      {
-        "word": "koi",
-        "startMs": 39660,
-        "endMs": 40360
-      },
-      {
-        "word": "kaam",
-        "startMs": 40360,
-        "endMs": 40640
-      },
-      {
-        "word": "hi",
-        "startMs": 40640,
-        "endMs": 40760
-      },
-      {
-        "word": "nahi",
-        "startMs": 40760,
-        "endMs": 40860
-      }
-    ]
-  },
-  {
-    "text": "hai hamara bas hum abhi",
-    "startMs": 40860,
-    "endMs": 41740,
-    "words": [
-      {
-        "word": "hai",
-        "startMs": 40860,
-        "endMs": 40960
-      },
-      {
-        "word": "hamara",
-        "startMs": 40960,
-        "endMs": 41160
-      },
-      {
-        "word": "bas",
-        "startMs": 40700,
-        "endMs": 41380
-      },
-      {
-        "word": "hum",
-        "startMs": 41380,
-        "endMs": 41500
-      },
-      {
-        "word": "abhi",
-        "startMs": 41500,
-        "endMs": 41660
-      }
-    ]
-  },
-  {
-    "text": "ek substitute ki tarah kaam",
-    "startMs": 41660,
-    "endMs": 43320,
-    "words": [
-      {
-        "word": "ek",
-        "startMs": 41660,
-        "endMs": 42140
-      },
-      {
-        "word": "substitute",
-        "startMs": 42140,
-        "endMs": 42640
-      },
-      {
-        "word": "ki",
-        "startMs": 42640,
-        "endMs": 42920
-      },
-      {
-        "word": "tarah",
-        "startMs": 42920,
-        "endMs": 43000
-      },
-      {
-        "word": "kaam",
-        "startMs": 43000,
-        "endMs": 43240
-      }
-    ]
-  },
-  {
-    "text": "kar rahe hain and one",
-    "startMs": 42800,
-    "endMs": 44300,
-    "words": [
-      {
-        "word": "kar",
-        "startMs": 42800,
-        "endMs": 43480
-      },
-      {
-        "word": "rahe",
-        "startMs": 43480,
-        "endMs": 43560
-      },
-      {
-        "word": "hain",
-        "startMs": 43560,
-        "endMs": 43640
-      },
-      {
-        "word": "and",
-        "startMs": 43640,
-        "endMs": 43940
-      },
-      {
-        "word": "one",
-        "startMs": 43940,
-        "endMs": 44220
-      }
-    ]
-  },
-  {
-    "text": "day boom thank you so",
-    "startMs": 44220,
-    "endMs": 45060,
-    "words": [
-      {
-        "word": "day",
-        "startMs": 44220,
-        "endMs": 44380
-      },
-      {
-        "word": "boom",
-        "startMs": 44380,
-        "endMs": 44540
-      },
-      {
-        "word": "thank",
-        "startMs": 44540,
-        "endMs": 44760
-      },
-      {
-        "word": "you",
-        "startMs": 44760,
-        "endMs": 44820
-      },
-      {
-        "word": "so",
-        "startMs": 44820,
-        "endMs": 44980
-      }
-    ]
-  },
-  {
-    "text": "much saare company AI AI",
-    "startMs": 44980,
-    "endMs": 45960,
-    "words": [
-      {
-        "word": "much",
-        "startMs": 44980,
-        "endMs": 45100
-      },
-      {
-        "word": "saare",
-        "startMs": 44640,
-        "endMs": 45340
-      },
-      {
-        "word": "company",
-        "startMs": 45340,
-        "endMs": 45620
-      },
-      {
-        "word": "AI",
-        "startMs": 45620,
-        "endMs": 45840
-      },
-      {
-        "word": "AI",
-        "startMs": 45840,
-        "endMs": 45880
-      }
-    ]
-  },
-  {
-    "text": "AI automate kar rahe hain",
-    "startMs": 45880,
-    "endMs": 46760,
-    "words": [
-      {
-        "word": "AI",
-        "startMs": 45880,
-        "endMs": 45900
-      },
-      {
-        "word": "automate",
-        "startMs": 45900,
-        "endMs": 46240
-      },
-      {
-        "word": "kar",
-        "startMs": 46240,
-        "endMs": 46580
-      },
-      {
-        "word": "rahe",
-        "startMs": 46580,
-        "endMs": 46600
-      },
-      {
-        "word": "hain",
-        "startMs": 46600,
-        "endMs": 46680
-      }
-    ]
-  },
-  {
-    "text": "legi aur khatam",
-    "startMs": 46680,
-    "endMs": 48280,
-    "words": [
-      {
-        "word": "legi",
-        "startMs": 46680,
-        "endMs": 47500
-      },
-      {
-        "word": "aur",
-        "startMs": 47500,
-        "endMs": 47760
-      },
-      {
-        "word": "khatam",
-        "startMs": 47760,
-        "endMs": 48200
-      }
-    ]
-  },
-  {
-    "text": "Bhai tha matlab",
-    "startMs": 48200,
-    "endMs": 49980,
-    "words": [
-      {
-        "word": "Bhai",
-        "startMs": 48200,
-        "endMs": 48420
-      },
-      {
-        "word": "tha",
-        "startMs": 48420,
-        "endMs": 49760
-      },
-      {
-        "word": "matlab",
-        "startMs": 49760,
-        "endMs": 49900
-      }
-    ]
-  },
-  {
-    "text": "what but logical move unhe",
-    "startMs": 49900,
-    "endMs": 56240,
-    "words": [
-      {
-        "word": "what",
-        "startMs": 49900,
-        "endMs": 52220
-      },
-      {
-        "word": "but",
-        "startMs": 52220,
-        "endMs": 53240
-      },
-      {
-        "word": "logical",
-        "startMs": 53240,
-        "endMs": 54700
-      },
-      {
-        "word": "move",
-        "startMs": 54700,
-        "endMs": 55060
-      },
-      {
-        "word": "unhe",
-        "startMs": 55060,
-        "endMs": 56160
-      }
-    ]
-  },
-  {
-    "text": "AI automation karne log chahiye",
-    "startMs": 56160,
-    "endMs": 59200,
-    "words": [
-      {
-        "word": "AI",
-        "startMs": 56160,
-        "endMs": 56400
-      },
-      {
-        "word": "automation",
-        "startMs": 56400,
-        "endMs": 56920
-      },
-      {
-        "word": "karne",
-        "startMs": 56920,
-        "endMs": 57380
-      },
-      {
-        "word": "log",
-        "startMs": 57380,
-        "endMs": 58800
-      },
-      {
-        "word": "chahiye",
-        "startMs": 58800,
-        "endMs": 59120
-      }
-    ]
-  },
-  {
-    "text": "chahiye",
-    "startMs": 59120,
-    "endMs": 59720,
-    "words": [
-      {
-        "word": "chahiye",
-        "startMs": 59120,
-        "endMs": 59640
-      }
-    ]
-  },
-  {
-    "text": "jo ye kaam kar payen",
-    "startMs": 61020,
-    "endMs": 63500,
-    "words": [
-      {
-        "word": "jo",
-        "startMs": 61020,
-        "endMs": 61860
-      },
-      {
-        "word": "ye",
-        "startMs": 61860,
-        "endMs": 62240
-      },
-      {
-        "word": "kaam",
-        "startMs": 62240,
-        "endMs": 62560
-      },
-      {
-        "word": "kar",
-        "startMs": 62560,
-        "endMs": 62960
-      },
-      {
-        "word": "payen",
-        "startMs": 62960,
-        "endMs": 63420
-      }
-    ]
-  },
-  {
-    "text": "jo kaam kar payen toh",
-    "startMs": 63420,
-    "endMs": 67100,
-    "words": [
-      {
-        "word": "jo",
-        "startMs": 63420,
-        "endMs": 64480
-      },
-      {
-        "word": "kaam",
-        "startMs": 64480,
-        "endMs": 64860
-      },
-      {
-        "word": "kar",
-        "startMs": 64860,
-        "endMs": 65060
-      },
-      {
-        "word": "payen",
-        "startMs": 65060,
-        "endMs": 65360
-      },
-      {
-        "word": "toh",
-        "startMs": 65360,
-        "endMs": 67020
-      }
-    ]
-  },
-  {
-    "text": "after long ko conversation hum",
-    "startMs": 67020,
-    "endMs": 69200,
-    "words": [
-      {
-        "word": "after",
-        "startMs": 67020,
-        "endMs": 67520
-      },
-      {
-        "word": "long",
-        "startMs": 67520,
-        "endMs": 68080
-      },
-      {
-        "word": "ko",
-        "startMs": 68080,
-        "endMs": 68280
-      },
-      {
-        "word": "conversation",
-        "startMs": 68280,
-        "endMs": 68840
-      },
-      {
-        "word": "hum",
-        "startMs": 68840,
-        "endMs": 69120
-      }
-    ]
-  },
-  {
-    "text": "log humne kuch parameters kuch",
-    "startMs": 69120,
-    "endMs": 71040,
-    "words": [
-      {
-        "word": "log",
-        "startMs": 69120,
-        "endMs": 69280
-      },
-      {
-        "word": "humne",
-        "startMs": 69280,
-        "endMs": 69420
-      },
-      {
-        "word": "kuch",
-        "startMs": 69420,
-        "endMs": 70060
-      },
-      {
-        "word": "parameters",
-        "startMs": 70060,
-        "endMs": 70800
-      },
-      {
-        "word": "kuch",
-        "startMs": 70800,
-        "endMs": 70960
-      }
-    ]
-  },
-  {
-    "text": "cheezein kuch skill set kuch",
-    "startMs": 71160,
-    "endMs": 72400,
-    "words": [
-      {
-        "word": "cheezein",
-        "startMs": 71160,
-        "endMs": 71400
-      },
-      {
-        "word": "kuch",
-        "startMs": 71400,
-        "endMs": 71600
-      },
-      {
-        "word": "skill",
-        "startMs": 71600,
-        "endMs": 71880
-      },
-      {
-        "word": "set",
-        "startMs": 71880,
-        "endMs": 72180
-      },
-      {
-        "word": "kuch",
-        "startMs": 72180,
-        "endMs": 72320
-      }
-    ]
-  },
-  {
-    "text": "technology ke baare mein discuss",
-    "startMs": 72320,
-    "endMs": 73620,
-    "words": [
-      {
-        "word": "technology",
-        "startMs": 72320,
-        "endMs": 72840
-      },
-      {
-        "word": "ke",
-        "startMs": 72840,
-        "endMs": 73060
-      },
-      {
-        "word": "baare",
-        "startMs": 73060,
-        "endMs": 73140
-      },
-      {
-        "word": "mein",
-        "startMs": 73140,
-        "endMs": 73240
-      },
-      {
-        "word": "discuss",
-        "startMs": 73240,
-        "endMs": 73540
-      }
-    ]
-  },
-  {
-    "text": "kiya ki Bhai ye cheezein",
-    "startMs": 73540,
-    "endMs": 74860,
-    "words": [
-      {
-        "word": "kiya",
-        "startMs": 73540,
-        "endMs": 73820
-      },
-      {
-        "word": "ki",
-        "startMs": 73820,
-        "endMs": 73900
-      },
-      {
-        "word": "Bhai",
-        "startMs": 73900,
-        "endMs": 74060
-      },
-      {
-        "word": "ye",
-        "startMs": 74060,
-        "endMs": 74400
-      },
-      {
-        "word": "cheezein",
-        "startMs": 74400,
-        "endMs": 74780
-      }
-    ]
-  },
-  {
-    "text": "agar aapne kar li toh",
-    "startMs": 74780,
-    "endMs": 76500,
-    "words": [
-      {
-        "word": "agar",
-        "startMs": 74780,
-        "endMs": 75060
-      },
-      {
-        "word": "aapne",
-        "startMs": 75060,
-        "endMs": 75400
-      },
-      {
-        "word": "kar",
-        "startMs": 75400,
-        "endMs": 75740
-      },
-      {
-        "word": "li",
-        "startMs": 75740,
-        "endMs": 75840
-      },
-      {
-        "word": "toh",
-        "startMs": 75840,
-        "endMs": 76420
-      }
-    ]
-  },
-  {
-    "text": "you will be there in",
-    "startMs": 76420,
-    "endMs": 77260,
-    "words": [
-      {
-        "word": "you",
-        "startMs": 76420,
-        "endMs": 76520
-      },
-      {
-        "word": "will",
-        "startMs": 76340,
-        "endMs": 76780
-      },
-      {
-        "word": "be",
-        "startMs": 76780,
-        "endMs": 76920
-      },
-      {
-        "word": "there",
-        "startMs": 76920,
-        "endMs": 77080
-      },
-      {
-        "word": "in",
-        "startMs": 77080,
-        "endMs": 77180
-      }
-    ]
-  },
-  {
-    "text": "the market no matter",
-    "startMs": 77180,
-    "endMs": 77920,
-    "words": [
-      {
-        "word": "the",
-        "startMs": 77180,
-        "endMs": 77240
-      },
-      {
-        "word": "market",
-        "startMs": 77240,
-        "endMs": 77500
-      },
-      {
-        "word": "no",
-        "startMs": 77500,
-        "endMs": 77620
-      },
-      {
-        "word": "matter",
-        "startMs": 77620,
-        "endMs": 77840
-      }
-    ]
-  },
-  {
-    "text": "what happens is par yaar",
-    "startMs": 77840,
-    "endMs": 79020,
-    "words": [
-      {
-        "word": "what",
-        "startMs": 77840,
-        "endMs": 77980
-      },
-      {
-        "word": "happens",
-        "startMs": 77980,
-        "endMs": 78220
-      },
-      {
-        "word": "is",
-        "startMs": 78220,
-        "endMs": 78360
-      },
-      {
-        "word": "par",
-        "startMs": 78360,
-        "endMs": 78500
-      },
-      {
-        "word": "yaar",
-        "startMs": 78500,
-        "endMs": 78940
-      }
-    ]
-  },
-  {
-    "text": "video bohot zyada badi ho",
-    "startMs": 78940,
-    "endMs": 80060,
-    "words": [
-      {
-        "word": "video",
-        "startMs": 78940,
-        "endMs": 79100
-      },
-      {
-        "word": "bohot",
-        "startMs": 79100,
-        "endMs": 79280
-      },
-      {
-        "word": "zyada",
-        "startMs": 79280,
-        "endMs": 79440
-      },
-      {
-        "word": "badi",
-        "startMs": 79440,
-        "endMs": 79760
-      },
-      {
-        "word": "ho",
-        "startMs": 79760,
-        "endMs": 79980
-      }
-    ]
-  },
-  {
-    "text": "jayegi isliye main is video",
-    "startMs": 79980,
-    "endMs": 80820,
-    "words": [
-      {
-        "word": "jayegi",
-        "startMs": 79980,
-        "endMs": 80200
-      },
-      {
-        "word": "isliye",
-        "startMs": 80200,
-        "endMs": 80400
-      },
-      {
-        "word": "main",
-        "startMs": 80400,
-        "endMs": 80540
-      },
-      {
-        "word": "is",
-        "startMs": 80540,
-        "endMs": 80600
-      },
-      {
-        "word": "video",
-        "startMs": 80600,
-        "endMs": 80740
-      }
-    ]
-  },
-  {
-    "text": "nahi share kar lekin",
-    "startMs": 80940,
-    "endMs": 82380,
-    "words": [
-      {
-        "word": "nahi",
-        "startMs": 80940,
-        "endMs": 81520
-      },
-      {
-        "word": "share",
-        "startMs": 81520,
-        "endMs": 81880
-      },
-      {
-        "word": "kar",
-        "startMs": 81880,
-        "endMs": 82060
-      },
-      {
-        "word": "lekin",
-        "startMs": 82060,
-        "endMs": 82300
-      }
-    ]
-  },
-  {
-    "text": "part to of is video",
-    "startMs": 82300,
-    "endMs": 83460,
-    "words": [
-      {
-        "word": "part",
-        "startMs": 82300,
-        "endMs": 82540
-      },
-      {
-        "word": "to",
-        "startMs": 82540,
-        "endMs": 82820
-      },
-      {
-        "word": "of",
-        "startMs": 82820,
-        "endMs": 83020
-      },
-      {
-        "word": "is",
-        "startMs": 83020,
-        "endMs": 83180
-      },
-      {
-        "word": "video",
-        "startMs": 83180,
-        "endMs": 83380
-      }
-    ]
-  },
-  {
-    "text": "ke andar main shortly saari",
-    "startMs": 83380,
-    "endMs": 85100,
-    "words": [
-      {
-        "word": "ke",
-        "startMs": 83380,
-        "endMs": 83640
-      },
-      {
-        "word": "andar",
-        "startMs": 83640,
-        "endMs": 83760
-      },
-      {
-        "word": "main",
-        "startMs": 83760,
-        "endMs": 84000
-      },
-      {
-        "word": "shortly",
-        "startMs": 84000,
-        "endMs": 84620
-      },
-      {
-        "word": "saari",
-        "startMs": 84620,
-        "endMs": 85020
-      }
-    ]
-  },
-  {
-    "text": "cheezein from A to Z jo aap",
-    "startMs": 85020,
-    "endMs": 86420,
-    "words": [
-      {
-        "word": "cheezein",
-        "startMs": 85020,
-        "endMs": 85280
-      },
-      {
-        "word": "from",
-        "startMs": 85280,
-        "endMs": 85480
+        "text": "I'll",
+        "startMs": 16220,
+        "endMs": 16340,
+        "word": "I'll"
       },
       {
-        "word": "A to Z",
-        "startMs": 85480,
-        "endMs": 86020
+        "text": "share",
+        "startMs": 16340,
+        "endMs": 16580,
+        "word": "share"
       },
       {
-        "word": "jo",
-        "startMs": 86020,
-        "endMs": 86200
+        "text": "it",
+        "startMs": 16580,
+        "endMs": 16700,
+        "word": "it"
       },
       {
-        "word": "aap",
-        "startMs": 86200,
-        "endMs": 86340
-      }
-    ]
-  },
-  {
-    "text": "logon ko chahiye to become",
-    "startMs": 85940,
-    "endMs": 87460,
-    "words": [
-      {
-        "word": "logon",
-        "startMs": 85940,
-        "endMs": 86580
-      },
-      {
-        "word": "ko",
-        "startMs": 86580,
-        "endMs": 86600
-      },
-      {
-        "word": "chahiye",
-        "startMs": 86600,
-        "endMs": 86960
-      },
-      {
-        "word": "to",
-        "startMs": 86960,
-        "endMs": 87100
-      },
-      {
-        "word": "become",
-        "startMs": 87100,
-        "endMs": 87380
-      }
-    ]
-  },
-  {
-    "text": "AI developer which actually relevant",
-    "startMs": 87380,
-    "endMs": 89800,
-    "words": [
-      {
-        "word": "AI",
-        "startMs": 87380,
-        "endMs": 87760
-      },
-      {
-        "word": "developer",
-        "startMs": 87760,
-        "endMs": 88480
-      },
-      {
-        "word": "which",
-        "startMs": 88480,
-        "endMs": 88980
-      },
-      {
-        "word": "actually",
-        "startMs": 88980,
-        "endMs": 89440
-      },
-      {
-        "word": "relevant",
-        "startMs": 89440,
-        "endMs": 89720
-      }
-    ]
-  },
-  {
-    "text": "in the market share karne",
-    "startMs": 89720,
-    "endMs": 91200,
-    "words": [
-      {
-        "word": "in",
-        "startMs": 89720,
-        "endMs": 89900
-      },
-      {
-        "word": "the",
-        "startMs": 89900,
-        "endMs": 89940
-      },
-      {
-        "word": "market",
-        "startMs": 89940,
-        "endMs": 90280
-      },
-      {
-        "word": "share",
-        "startMs": 90280,
-        "endMs": 90840
-      },
-      {
-        "word": "karne",
-        "startMs": 90840,
-        "endMs": 91120
-      }
-    ]
-  },
-  {
-    "text": "wala hoon toh",
-    "startMs": 91120,
-    "endMs": 91840,
-    "words": [
-      {
-        "word": "wala",
-        "startMs": 91120,
-        "endMs": 91380
-      },
-      {
-        "word": "hoon",
-        "startMs": 91380,
-        "endMs": 91420
-      },
-      {
-        "word": "toh",
-        "startMs": 91420,
-        "endMs": 91760
-      }
-    ]
-  },
-  {
-    "text": "please make sure aap is",
-    "startMs": 91760,
-    "endMs": 93080,
-    "words": [
-      {
-        "word": "please",
-        "startMs": 91760,
-        "endMs": 92040
-      },
-      {
-        "word": "make",
-        "startMs": 92260,
-        "endMs": 92280
-      },
-      {
-        "word": "sure",
-        "startMs": 92280,
-        "endMs": 92540
-      },
-      {
-        "word": "aap",
-        "startMs": 92540,
-        "endMs": 92880
-      },
-      {
-        "word": "is",
-        "startMs": 92880,
-        "endMs": 93000
-      }
-    ]
-  },
-  {
-    "text": "video ko SAVE zaroor karein",
-    "startMs": 93000,
-    "endMs": 94520,
-    "words": [
-      {
-        "word": "video",
-        "startMs": 93000,
-        "endMs": 93300
-      },
-      {
-        "word": "ko",
-        "startMs": 93300,
-        "endMs": 93540
-      },
-      {
-        "word": "SAVE",
-        "startMs": 93540,
-        "endMs": 93840
-      },
-      {
-        "word": "zaroor",
-        "startMs": 93840,
-        "endMs": 94100
-      },
-      {
-        "word": "karein",
-        "startMs": 94100,
-        "endMs": 94440
-      }
-    ]
-  },
-  {
-    "text": "aur part to ko toh",
-    "startMs": 94440,
-    "endMs": 95620,
-    "words": [
-      {
-        "word": "aur",
-        "startMs": 94440,
-        "endMs": 94640
-      },
-      {
-        "word": "part",
-        "startMs": 94640,
-        "endMs": 95180
-      },
-      {
-        "word": "to",
-        "startMs": 95180,
-        "endMs": 95300
-      },
-      {
-        "word": "ko",
-        "startMs": 95300,
-        "endMs": 95460
-      },
-      {
-        "word": "toh",
-        "startMs": 95460,
-        "endMs": 95540
-      }
-    ]
-  },
-  {
-    "text": "zaroor dekhein isko skip kar",
-    "startMs": 95540,
-    "endMs": 97080,
-    "words": [
-      {
-        "word": "zaroor",
-        "startMs": 95540,
-        "endMs": 95740
-      },
-      {
-        "word": "dekhein",
-        "startMs": 95740,
-        "endMs": 96120
-      },
-      {
-        "word": "isko",
-        "startMs": 96120,
-        "endMs": 96600
+        "text": "to",
+        "startMs": 16700,
+        "endMs": 16800,
+        "word": "to"
       },
       {
-        "word": "skip",
-        "startMs": 96600,
-        "endMs": 96760
+        "text": "your",
+        "startMs": 16800,
+        "endMs": 16960,
+        "word": "your"
       },
-      {
-        "word": "kar",
-        "startMs": 96760,
-        "endMs": 97000
-      }
-    ]
-  },
-  {
-    "text": "do koi chakkar nahi lekin",
-    "startMs": 97000,
-    "endMs": 97920,
-    "words": [
-      {
-        "word": "do",
-        "startMs": 97000,
-        "endMs": 97100
-      },
-      {
-        "word": "koi",
-        "startMs": 97100,
-        "endMs": 97220
-      },
-      {
-        "word": "chakkar",
-        "startMs": 97220,
-        "endMs": 97560
-      },
-      {
-        "word": "nahi",
-        "startMs": 97220,
-        "endMs": 97680
-      },
-      {
-        "word": "lekin",
-        "startMs": 97680,
-        "endMs": 97840
-      }
-    ]
-  },
-  {
-    "text": "part to skip mat karna",
-    "startMs": 97840,
-    "endMs": 99040,
-    "words": [
-      {
-        "word": "part",
-        "startMs": 97840,
-        "endMs": 98080
-      },
-      {
-        "word": "to",
-        "startMs": 98080,
-        "endMs": 98160
-      },
-      {
-        "word": "skip",
-        "startMs": 98160,
-        "endMs": 98280
-      },
-      {
-        "word": "mat",
-        "startMs": 98280,
-        "endMs": 98580
-      },
-      {
-        "word": "karna",
-        "startMs": 98580,
-        "endMs": 98960
-      }
-    ]
-  },
-  {
-    "text": "and please please AI relevant",
-    "startMs": 98960,
-    "endMs": 101620,
-    "words": [
-      {
-        "word": "and",
-        "startMs": 98960,
-        "endMs": 99640
-      },
-      {
-        "word": "please",
-        "startMs": 99640,
-        "endMs": 100240
-      },
-      {
-        "word": "please",
-        "startMs": 100240,
-        "endMs": 100800
-      },
-      {
-        "word": "AI",
-        "startMs": 100800,
-        "endMs": 101160
-      },
-      {
-        "word": "relevant",
-        "startMs": 101160,
-        "endMs": 101540
-      }
-    ]
-  },
-  {
-    "text": "bano warna whitewash ho jaoge",
-    "startMs": 101540,
-    "endMs": 103680,
-    "words": [
-      {
-        "word": "bano",
-        "startMs": 101540,
-        "endMs": 102080
-      },
-      {
-        "word": "warna",
-        "startMs": 102080,
-        "endMs": 102480
-      },
-      {
-        "word": "whitewash",
-        "startMs": 102480,
-        "endMs": 102900
-      },
-      {
-        "word": "ho",
-        "startMs": 102900,
-        "endMs": 103240
-      },
-      {
-        "word": "jaoge",
-        "startMs": 103240,
-        "endMs": 103600
-      }
-    ]
-  },
-  {
-    "text": "and aur informative videos ke",
-    "startMs": 103600,
-    "endMs": 105560,
-    "words": [
-      {
-        "word": "and",
-        "startMs": 103600,
-        "endMs": 104120
-      },
-      {
-        "word": "aur",
-        "startMs": 104260,
-        "endMs": 104520
-      },
-      {
-        "word": "informative",
-        "startMs": 104520,
-        "endMs": 104900
-      },
-      {
-        "word": "videos",
-        "startMs": 104900,
-        "endMs": 105280
-      },
-      {
-        "word": "ke",
-        "startMs": 105280,
-        "endMs": 105480
-      }
-    ]
-  },
-  {
-    "text": "liye apne Bhai ki channel",
-    "startMs": 105480,
-    "endMs": 106200,
-    "words": [
-      {
-        "word": "liye",
-        "startMs": 105480,
-        "endMs": 105540
-      },
-      {
-        "word": "apne",
-        "startMs": 105540,
-        "endMs": 105700
-      },
-      {
-        "word": "Bhai",
-        "startMs": 105700,
-        "endMs": 105820
-      },
-      {
-        "word": "ki",
-        "startMs": 105820,
-        "endMs": 105940
-      },
-      {
-        "word": "channel",
-        "startMs": 105940,
-        "endMs": 106120
-      }
-    ]
-  },
-  {
-    "text": "CodeBaithak ko follow kar lena",
-    "startMs": 106120,
-    "endMs": 107720,
-    "words": [
-      {
-        "word": "CodeBaithak",
-        "startMs": 106120,
-        "endMs": 106560
-      },
-      {
-        "word": "ko",
-        "startMs": 106560,
-        "endMs": 106720
-      },
-      {
-        "word": "follow",
-        "startMs": 106720,
-        "endMs": 107000
-      },
-      {
-        "word": "kar",
-        "startMs": 107000,
-        "endMs": 107420
-      },
-      {
-        "word": "lena",
-        "startMs": 107420,
-        "endMs": 107640
-      }
-    ]
-  },
-  {
-    "text": "hai",
-    "startMs": 107640,
-    "endMs": 107760,
-    "words": [
       {
-        "word": "hai",
-        "startMs": 107640,
-        "endMs": 107680
+        "text": "DMs.",
+        "startMs": 16960,
+        "endMs": 17320,
+        "word": "DMs."
       }
     ]
   }

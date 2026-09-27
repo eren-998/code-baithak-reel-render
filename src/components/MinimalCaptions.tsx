@@ -109,7 +109,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
               ? interpolate(wordPopSpring, [0, 1], [3, -2])
               : 0;
 
-            const isKeyTechWord = ["AI", "Google", "developer", "developers", "product", "automate", "automation", "whitewash", "CodeBaithak", "SAVE"].some(
+            const isKeyTechWord = ["code", "coding", "website", "game", "projects", "journey", "link", "dms", "coddy"].some(
               (term) => w.word.toLowerCase().includes(term.toLowerCase())
             );
 
@@ -120,6 +120,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
                 key={idx}
                 style={{
                   display: "inline-block",
+                  margin: "0 6px",
                   color: isWordActive ? activeColor : "#FFFFFF",
                   fontSize: 38,
                   fontWeight: isWordActive ? 900 : 800,

@@ -3,15 +3,42 @@ import { PolishedReelVideo } from "./Composition";
 import { TalkingHeadComposition } from "./TalkingHeadComposition";
 import { TalkingHeadLightComposition } from "./TalkingHeadLightComposition";
 import { APUComposition } from "./apu/APUComposition";
+import { CarouselSequence } from "./carousel/CarouselSequence";
+import {
+  Slide1Cover,
+  Slide2,
+  Slide3,
+  Slide4,
+  Slide5,
+  Slide6,
+} from "./carousel";
+import { ShowreelMaster } from "./showreel/ShowreelMaster";
 
 export const RemotionRoot = () => {
   return (
     <>
+      {/* 15-Second Motion Designer Master Showreel */}
+      <Composition
+        id="AnnieShowreel"
+        component={ShowreelMaster}
+        durationInFrames={450}
+        fps={30}
+        width={1920}
+        height={1080}
+      />
+      {/* 6-Slide Jev AI Instagram Carousel */}
+      <Composition id="CarouselSlide1" component={Slide1Cover} durationInFrames={1} fps={30} width={1080} height={1080} />
+      <Composition id="CarouselSlide2" component={Slide2} durationInFrames={1} fps={30} width={1080} height={1080} />
+      <Composition id="CarouselSlide3" component={Slide3} durationInFrames={1} fps={30} width={1080} height={1080} />
+      <Composition id="CarouselSlide4" component={Slide4} durationInFrames={1} fps={30} width={1080} height={1080} />
+      <Composition id="CarouselSlide5" component={Slide5} durationInFrames={1} fps={30} width={1080} height={1080} />
+      <Composition id="CarouselSlide6" component={Slide6} durationInFrames={1} fps={30} width={1080} height={1080} />
+
       {/* Polished Reel Composition */}
       <Composition
         id="ReelPolish"
         component={PolishedReelVideo}
-        durationInFrames={3230}
+        durationInFrames={533}
         fps={30}
         width={1080}
         height={1920}
