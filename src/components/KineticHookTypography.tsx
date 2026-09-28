@@ -2,92 +2,72 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
 
 /* =========================================================================
-   REMOTION INTRO HOOK (SKILL 2 IMPLEMENTATION)
-   Zero dark box containers - Text & doodles float directly over footage
-   Positioned strictly in upper ceiling area (Y: 70px - 250px)
-   ABOVE head (Hair starts at Y: 320px) -> ZERO OVERLAP WITH HEAD
+   AFTER EFFECTS-GRADE INTRO HOOK (SKILL 2: REMOTION-INTRO-HOOK)
+   - ZERO BOXES / CONTAINERS: Pure kinetic typography floating over raw footage
+   - POSITIONED BELOW HEAD: Y = 770px (under chin & beard at Y=700px)
+   - ZERO SPOILERS: Does NOT reveal "PDF" early; builds suspense around "illegal use"
+   - Handcrafted stroke-based SVG doodles (Warning Shield + Secret Key)
+   - Multi-font pairing: JetBrains Mono (tech badge) + Inter 900 (clash punch)
+   - Compact sizing: 42px - 48px, punchy, elegant, no screen crowding
    ========================================================================= */
 
 const heavyTextShadow = `
-  0 4px 20px rgba(0, 0, 0, 0.98),
-  0 8px 36px rgba(0, 0, 0, 0.95),
-  0 0 30px rgba(0, 0, 0, 0.9),
-  0 2px 6px rgba(0, 0, 0, 0.9)
+  0 4px 18px rgba(0, 0, 0, 0.98),
+  0 8px 32px rgba(0, 0, 0, 0.96),
+  0 0 28px rgba(0, 0, 0, 0.9),
+  0 2px 5px rgba(0, 0, 0, 0.9)
 `;
 
 const strokeStyle: React.CSSProperties = {
-  WebkitTextStroke: "2.5px rgba(0, 0, 0, 0.95)",
+  WebkitTextStroke: "2px rgba(0, 0, 0, 0.95)",
   paintOrder: "stroke fill",
   textShadow: heavyTextShadow,
 };
 
-// Clean stroke-based SVG Code Brackets Doodle
-const CodeBracketsDoodle: React.FC<{ frame: number }> = ({ frame }) => {
-  const wobble = Math.sin(frame / 4) * 4;
+// Handcrafted SVG: Warning Shield Doodle (Stroke-based, round caps)
+const WarningShieldSVG: React.FC<{ frame: number }> = ({ frame }) => {
+  const wobble = Math.sin(frame / 4.5) * 4;
   return (
     <svg
-      width="54"
-      height="44"
-      viewBox="0 0 60 48"
+      width="46"
+      height="46"
+      viewBox="0 0 48 48"
       fill="none"
       style={{
         transform: `rotate(${wobble}deg)`,
-        filter: "drop-shadow(0 4px 12px rgba(0, 240, 255, 0.7))",
+        filter: "drop-shadow(0 4px 14px rgba(239, 68, 68, 0.75))",
       }}
     >
       <path
-        d="M20 10L6 24L20 38"
-        stroke="#00F0FF"
-        strokeWidth="6"
+        d="M24 4L8 10V22C8 32 15 40 24 44C33 40 40 32 40 22V10L24 4Z"
+        stroke="#EF4444"
+        strokeWidth="4"
         strokeLinecap="round"
         strokeLinejoin="round"
+        fill="rgba(239, 68, 68, 0.15)"
       />
-      <path
-        d="M40 10L54 24L40 38"
-        stroke="#00F0FF"
-        strokeWidth="6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M34 8L26 40"
-        stroke="#FFE600"
-        strokeWidth="5"
-        strokeLinecap="round"
-      />
+      <line x1="24" y1="16" x2="24" y2="26" stroke="#FFFFFF" strokeWidth="4" strokeLinecap="round" />
+      <circle cx="24" cy="32" r="2.5" fill="#FFE500" />
     </svg>
   );
 };
 
-// Game Controller Vector Doodle (Zero generic emojis)
-const GamepadDoodle: React.FC<{ frame: number }> = ({ frame }) => {
+// Handcrafted SVG: Secret Key / Lock Pick Doodle
+const SecretKeySVG: React.FC<{ frame: number }> = ({ frame }) => {
   const wobble = Math.sin(frame / 5) * 5;
   return (
     <svg
-      width="54"
-      height="44"
-      viewBox="0 0 64 48"
+      width="46"
+      height="46"
+      viewBox="0 0 48 48"
       fill="none"
       style={{
         transform: `rotate(${wobble}deg)`,
-        filter: "drop-shadow(0 4px 14px rgba(255, 230, 0, 0.8))",
+        filter: "drop-shadow(0 4px 14px rgba(0, 240, 255, 0.75))",
       }}
     >
-      <rect
-        x="6"
-        y="12"
-        width="52"
-        height="28"
-        rx="14"
-        stroke="#FFE600"
-        strokeWidth="5"
-        fill="rgba(20, 20, 20, 0.6)"
-      />
-      {/* D-pad */}
-      <path d="M18 20V32M12 26H24" stroke="#00F0FF" strokeWidth="4" strokeLinecap="round" />
-      {/* Buttons */}
-      <circle cx="44" cy="22" r="3" fill="#FF3366" />
-      <circle cx="50" cy="28" r="3" fill="#00F0FF" />
+      <circle cx="16" cy="20" r="10" stroke="#FFE500" strokeWidth="4" />
+      <path d="M23 27L40 44M33 37L39 31M37 41L43 35" stroke="#00F0FF" strokeWidth="4" strokeLinecap="round" />
     </svg>
   );
 };
@@ -96,47 +76,47 @@ export const KineticHookTypography: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Active during opening hook (0s - 3.7s, frames 0 to 110)
+  // Active during opening hook (0s - 3.7s | frames 0 to 110)
   if (frame > 112) return null;
 
-  // Phase 1: 0 - 52 frames (0.0s - 1.7s) -> "So this website teaches you"
-  // Phase 2: 52 - 110 frames (1.7s - 3.7s) -> "how to code as simple as a game"
-  const isPhase1 = frame >= 0 && frame < 52;
-  const isPhase2 = frame >= 52 && frame <= 112;
+  // Phase 1: 0 - 56 frames (0.0s - 1.86s) -> "Toh agar illegal tareeqe se use na karo"
+  // Phase 2: 56 - 110 frames (1.86s - 3.7s) -> "toh ek bohot badhiya website batata hoon main tumhe"
+  const isPhase1 = frame >= 0 && frame < 56;
+  const isPhase2 = frame >= 56 && frame <= 112;
 
-  // Spring animations for Phase 1
+  // Phase 1 Springs
   const sprBadgeP1 = spring({ frame, fps, config: { damping: 14, stiffness: 160 } });
-  const sprTitleP1 = spring({ frame: frame - 10, fps, config: { damping: 12, stiffness: 140, mass: 0.8 } });
-  const scaleP1 = interpolate(sprTitleP1, [0, 1], [0.6, 1]);
+  const sprTitleP1 = spring({ frame: frame - 8, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
+  const scaleP1 = interpolate(sprTitleP1, [0, 1], [0.75, 1]);
 
-  // Spring animations for Phase 2
-  const localFrameP2 = frame - 52;
+  // Phase 2 Springs
+  const localFrameP2 = frame - 56;
   const sprBadgeP2 = spring({ frame: localFrameP2, fps, config: { damping: 14, stiffness: 160 } });
-  const sprTitleP2 = spring({ frame: localFrameP2 - 8, fps, config: { damping: 11, stiffness: 150, mass: 0.8 } });
-  const scaleP2 = interpolate(sprTitleP2, [0, 1], [0.65, 1]);
+  const sprTitleP2 = spring({ frame: localFrameP2 - 8, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
+  const scaleP2 = interpolate(sprTitleP2, [0, 1], [0.75, 1]);
 
-  // Smooth exit fade at the end of hook
+  // Smooth exit transition
   const exitOpacity = frame > 102 ? interpolate(frame, [102, 112], [1, 0]) : 1;
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 75,
+        top: 1300, // Safely on chest, completely below chin & beard
         left: 0,
         width: 1080,
-        height: 220,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "flex-start",
+        justifyContent: "center",
         pointerEvents: "none",
         zIndex: 55,
         opacity: exitOpacity,
       }}
     >
       {/* ============================================================== */}
-      {/* PHASE 1: 0 - 52 frames (0.0s - 1.7s)                           */}
+      {/* PHASE 1: 0 - 56 frames (0.0s - 1.86s)                          */}
+      {/* Spoken: "Toh agar illegal tareeqe se use na karo..."           */}
       {/* ============================================================== */}
       {isPhase1 && (
         <div
@@ -147,53 +127,69 @@ export const KineticHookTypography: React.FC = () => {
             width: "100%",
           }}
         >
-          {/* Monospace Topic Pill */}
+          {/* Monospace Tech Badge (No Box) */}
           <div
             style={{
               opacity: sprBadgeP1,
-              transform: `translateY(${(1 - sprBadgeP1) * -20}px)`,
+              transform: `translateY(${(1 - sprBadgeP1) * -14}px)`,
               fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
-              fontSize: "26px",
+              fontSize: "22px",
               fontWeight: 800,
-              letterSpacing: "4px",
-              color: "#FFE600",
+              letterSpacing: "3px",
+              color: "#EF4444",
               textTransform: "uppercase",
               ...strokeStyle,
-              marginBottom: "8px",
+              marginBottom: "6px",
             }}
           >
-            ✦ LEARN TO CODE ✦
+            ✦ STRICT WARNING ✦
           </div>
 
-          {/* Clash Typography: LEARN CODING + Vector Doodle */}
+          {/* Headline + Warning Shield Doodle (No Box) */}
           <div
             style={{
               opacity: Math.min(1, sprTitleP1 * 2),
               transform: `scale(${scaleP1})`,
               display: "flex",
               alignItems: "center",
-              gap: "20px",
+              gap: "16px",
             }}
           >
-            <CodeBracketsDoodle frame={frame} />
-            <span
-              style={{
-                fontFamily: "'Inter', 'Impact', sans-serif",
-                fontSize: "66px",
-                fontWeight: 900,
-                color: "#FFFFFF",
-                letterSpacing: "-1px",
-                ...strokeStyle,
-              }}
-            >
-              SECRET CODING TOOL
-            </span>
+            <WarningShieldSVG frame={frame} />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+              <span
+                style={{
+                  fontFamily: "'Inter', 'Impact', sans-serif",
+                  fontSize: "48px",
+                  fontWeight: 900,
+                  color: "#FFFFFF",
+                  letterSpacing: "-0.5px",
+                  lineHeight: 1.1,
+                  ...strokeStyle,
+                }}
+              >
+                DON'T USE THIS ILLEGALLY!
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "26px",
+                  fontWeight: 800,
+                  color: "#FFE500",
+                  letterSpacing: "0.5px",
+                  ...strokeStyle,
+                }}
+              >
+                Galat Kaam Mein Use Mat Karna
+              </span>
+            </div>
           </div>
         </div>
       )}
 
       {/* ============================================================== */}
-      {/* PHASE 2: 52 - 112 frames (1.7s - 3.7s)                         */}
+      {/* PHASE 2: 56 - 112 frames (1.86s - 3.7s)                        */}
+      {/* Spoken: "toh ek bohot badhiya website batata hoon main tumhe"   */}
       {/* ============================================================== */}
       {isPhase2 && (
         <div
@@ -204,47 +200,62 @@ export const KineticHookTypography: React.FC = () => {
             width: "100%",
           }}
         >
-          {/* Monospace Topic Pill */}
+          {/* Monospace Tech Badge (No Box) */}
           <div
             style={{
               opacity: sprBadgeP2,
-              transform: `translateY(${(1 - sprBadgeP2) * -20}px)`,
+              transform: `translateY(${(1 - sprBadgeP2) * -14}px)`,
               fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
-              fontSize: "26px",
+              fontSize: "22px",
               fontWeight: 800,
-              letterSpacing: "4px",
+              letterSpacing: "3px",
               color: "#00F0FF",
               textTransform: "uppercase",
               ...strokeStyle,
-              marginBottom: "8px",
+              marginBottom: "6px",
             }}
           >
-            ✦ GAMIFIED LEARNING ✦
+            ✦ SECRET WEBSITE ✦
           </div>
 
-          {/* Clash Punchline: LIKE PLAYING A GAME + Gamepad Doodle */}
+          {/* Headline + Secret Key Doodle (No Box) */}
           <div
             style={{
               opacity: Math.min(1, sprTitleP2 * 2),
               transform: `scale(${scaleP2})`,
               display: "flex",
               alignItems: "center",
-              gap: "20px",
+              gap: "16px",
             }}
           >
-            <GamepadDoodle frame={frame} />
-            <span
-              style={{
-                fontFamily: "'Inter', 'Impact', sans-serif",
-                fontSize: "64px",
-                fontWeight: 900,
-                color: "#FFE600",
-                letterSpacing: "-1px",
-                ...strokeStyle,
-              }}
-            >
-              AS SIMPLE AS A GAME!
-            </span>
+            <SecretKeySVG frame={frame} />
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+              <span
+                style={{
+                  fontFamily: "'Inter', 'Impact', sans-serif",
+                  fontSize: "46px",
+                  fontWeight: 900,
+                  color: "#FFE500",
+                  letterSpacing: "-0.5px",
+                  lineHeight: 1.1,
+                  ...strokeStyle,
+                }}
+              >
+                BOHOT KAAM KI WEBSITE
+              </span>
+              <span
+                style={{
+                  fontFamily: "'Inter', sans-serif",
+                  fontSize: "26px",
+                  fontWeight: 800,
+                  color: "#00F0FF",
+                  letterSpacing: "0.5px",
+                  ...strokeStyle,
+                }}
+              >
+                Emergency Ke Liye Save Kar Lo
+              </span>
+            </div>
           </div>
         </div>
       )}

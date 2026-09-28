@@ -38,7 +38,7 @@ export const RemotionRoot = () => {
       <Composition
         id="ReelPolish"
         component={PolishedReelVideo}
-        durationInFrames={533}
+        durationInFrames={668}
         fps={30}
         width={1080}
         height={1920}
