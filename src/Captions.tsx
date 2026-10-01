@@ -51,8 +51,9 @@ export const Captions: React.FC = () => {
         alignItems: "center",
         paddingBottom: 420,
         pointerEvents: "none",
+        translate: "248.8px 263.1px"
       }}
-    >
+      from={-335}>
       <div
         style={{
           display: "flex",

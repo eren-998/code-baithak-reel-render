@@ -8,10 +8,12 @@ export const TalkingHeadComposition: React.FC = () => {
   const fps = 30;
 
   return (
-    <AbsoluteFill style={{
-      backgroundColor: "#000000",
-      translate: "-109.4px -386.4px"
-    }}>
+    <AbsoluteFill
+      style={{
+        backgroundColor: "#000000",
+        translate: "-127.7px -186.3px"
+      }}
+      from={-50}>
       {/* 
         Jump Cuts Sequence (Trimming silence & gaps):
         Segment 1: 0s to 9.34s (Frames 0 - 280)

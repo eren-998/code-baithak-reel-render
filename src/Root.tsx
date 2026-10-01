@@ -17,6 +17,16 @@ import { ShowreelMaster } from "./showreel/ShowreelMaster";
 export const RemotionRoot = () => {
   return (
     <>
+      {/* Polished Reel Composition (Default Preview) */}
+      <Composition
+        id="ReelPolish"
+        component={PolishedReelVideo}
+        durationInFrames={794}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+
       {/* 15-Second Motion Designer Master Showreel */}
       <Composition
         id="AnnieShowreel"
@@ -33,16 +43,6 @@ export const RemotionRoot = () => {
       <Composition id="CarouselSlide4" component={Slide4} durationInFrames={1} fps={30} width={1080} height={1080} />
       <Composition id="CarouselSlide5" component={Slide5} durationInFrames={1} fps={30} width={1080} height={1080} />
       <Composition id="CarouselSlide6" component={Slide6} durationInFrames={1} fps={30} width={1080} height={1080} />
-
-      {/* Polished Reel Composition */}
-      <Composition
-        id="ReelPolish"
-        component={PolishedReelVideo}
-        durationInFrames={668}
-        fps={30}
-        width={1080}
-        height={1920}
-      />
 
       {/* Aircraft APU Flowchart Explainer Video */}
       <Composition

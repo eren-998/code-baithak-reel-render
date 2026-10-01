@@ -109,9 +109,10 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
               ? interpolate(wordPopSpring, [0, 1], [3, -2])
               : 0;
 
-            const isKeyTechWord = ["code", "coding", "website", "game", "projects", "journey", "link", "dms", "coddy"].some(
-              (term) => w.word.toLowerCase().includes(term.toLowerCase())
-            );
+            const isKeyTechWord = [
+              "code", "coding", "output", "question", "developer", "developers",
+              "interview", "answer", "detail", "lakh", "company", "package", "better"
+            ].some((term) => w.word.toLowerCase().includes(term.toLowerCase()));
 
             const activeColor = isKeyTechWord ? "#00F0FF" : "#FFE600";
 

@@ -1,697 +1,506 @@
 [
   {
-    "text": "Toh agar illegal tareeqe se use na karo",
+    "text": "Haan bhai mere developers,",
     "startMs": 0,
-    "endMs": 2080,
+    "endMs": 1580,
     "words": [
       {
-        "text": "Toh",
-        "word": "Toh",
+        "word": "Haan",
         "startMs": 0,
-        "endMs": 440
+        "endMs": 280
       },
       {
-        "text": "agar",
-        "word": "agar",
-        "startMs": 440,
-        "endMs": 640
+        "word": "bhai",
+        "startMs": 280,
+        "endMs": 520
       },
       {
-        "text": "illegal",
-        "word": "illegal",
-        "startMs": 640,
-        "endMs": 1140
+        "word": "mere",
+        "startMs": 520,
+        "endMs": 820
       },
       {
-        "text": "tareeqe",
-        "word": "tareeqe",
-        "startMs": 1140,
-        "endMs": 1440
-      },
-      {
-        "text": "se",
-        "word": "se",
-        "startMs": 1440,
+        "word": "developers,",
+        "startMs": 820,
         "endMs": 1580
-      },
-      {
-        "text": "use",
-        "word": "use",
-        "startMs": 1580,
-        "endMs": 1760
-      },
-      {
-        "text": "na",
-        "word": "na",
-        "startMs": 1760,
-        "endMs": 1920
-      },
-      {
-        "text": "karo",
-        "word": "karo",
-        "startMs": 1920,
-        "endMs": 2080
       }
     ]
   },
   {
-    "text": "toh ek bohot badhiya website batata hoon main tumhe",
-    "startMs": 2080,
-    "endMs": 3680,
+    "text": "20-30 Lakh ki company ka sapna dekhte ho,",
+    "startMs": 1580,
+    "endMs": 3540,
     "words": [
       {
-        "text": "toh",
-        "word": "toh",
-        "startMs": 2080,
-        "endMs": 2180
+        "word": "20-30",
+        "startMs": 1580,
+        "endMs": 2160
       },
       {
-        "text": "ek",
-        "word": "ek",
-        "startMs": 2180,
+        "word": "Lakh",
+        "startMs": 2160,
         "endMs": 2280
       },
       {
-        "text": "bohot",
-        "word": "bohot",
+        "word": "ki",
         "startMs": 2280,
-        "endMs": 2500
+        "endMs": 2440
       },
       {
-        "text": "badhiya",
-        "word": "badhiya",
-        "startMs": 2500,
-        "endMs": 2640
+        "word": "company",
+        "startMs": 2440,
+        "endMs": 2720
       },
       {
-        "text": "website",
-        "word": "website",
-        "startMs": 2640,
-        "endMs": 3000
+        "word": "ka",
+        "startMs": 2720,
+        "endMs": 2860
       },
       {
-        "text": "batata",
-        "word": "batata",
-        "startMs": 3000,
-        "endMs": 3320
+        "word": "sapna",
+        "startMs": 2860,
+        "endMs": 3140
       },
       {
-        "text": "hoon",
-        "word": "hoon",
-        "startMs": 3320,
-        "endMs": 3400
+        "word": "dekhte",
+        "startMs": 3140,
+        "endMs": 3480
       },
       {
-        "text": "main",
-        "word": "main",
-        "startMs": 3400,
-        "endMs": 3520
-      },
-      {
-        "text": "tumhe",
-        "word": "tumhe",
-        "startMs": 3520,
-        "endMs": 3680
+        "word": "ho,",
+        "startMs": 3480,
+        "endMs": 3540
       }
     ]
   },
   {
-    "text": "Toh Google par search karo Sejda PDF",
-    "startMs": 3680,
-    "endMs": 5400,
+    "text": "To usse pehle kam se kam",
+    "startMs": 3540,
+    "endMs": 4400,
     "words": [
       {
-        "text": "Toh",
-        "word": "Toh",
-        "startMs": 3680,
-        "endMs": 3900
+        "word": "To",
+        "startMs": 3540,
+        "endMs": 3640
       },
       {
-        "text": "Google",
-        "word": "Google",
-        "startMs": 3900,
-        "endMs": 4100
+        "word": "usse",
+        "startMs": 3640,
+        "endMs": 3820
       },
       {
-        "text": "par",
-        "word": "par",
-        "startMs": 4100,
-        "endMs": 4260
+        "word": "pehle",
+        "startMs": 3820,
+        "endMs": 4020
       },
       {
-        "text": "search",
-        "word": "search",
-        "startMs": 4260,
-        "endMs": 4440
+        "word": "kam",
+        "startMs": 4020,
+        "endMs": 4160
       },
       {
-        "text": "karo",
-        "word": "karo",
-        "startMs": 4440,
-        "endMs": 4640
+        "word": "se",
+        "startMs": 4160,
+        "endMs": 4320
       },
       {
-        "text": "Sejda",
-        "word": "Sejda",
-        "startMs": 4640,
-        "endMs": 4900
-      },
-      {
-        "text": "PDF",
-        "word": "PDF",
-        "startMs": 4900,
-        "endMs": 5360
+        "word": "kam",
+        "startMs": 4320,
+        "endMs": 4400
       }
     ]
   },
   {
-    "text": "Ab wahan jaake tum koi bhi document upload kar sakte ho",
-    "startMs": 5440,
-    "endMs": 7820,
+    "text": "10-12 Lakh ki company ka sawal to laga jao yaar!",
+    "startMs": 4400,
+    "endMs": 6800,
     "words": [
       {
-        "text": "Ab",
-        "word": "Ab",
-        "startMs": 5440,
-        "endMs": 5720
+        "word": "10-12",
+        "startMs": 4400,
+        "endMs": 4860
       },
       {
-        "text": "wahan",
-        "word": "wahan",
-        "startMs": 5720,
-        "endMs": 5940
+        "word": "Lakh",
+        "startMs": 4860,
+        "endMs": 5040
       },
       {
-        "text": "jaake",
-        "word": "jaake",
-        "startMs": 5940,
-        "endMs": 6260
+        "word": "ki",
+        "startMs": 5040,
+        "endMs": 5120
       },
       {
-        "text": "tum",
-        "word": "tum",
-        "startMs": 6260,
-        "endMs": 6500
+        "word": "company",
+        "startMs": 5120,
+        "endMs": 5420
       },
       {
-        "text": "koi",
-        "word": "koi",
-        "startMs": 6500,
-        "endMs": 6760
+        "word": "ka",
+        "startMs": 5420,
+        "endMs": 5540
       },
       {
-        "text": "bhi",
-        "word": "bhi",
-        "startMs": 6760,
-        "endMs": 6840
+        "word": "sawal",
+        "startMs": 5540,
+        "endMs": 5820
       },
       {
-        "text": "document",
-        "word": "document",
-        "startMs": 6840,
-        "endMs": 7080
+        "word": "to",
+        "startMs": 5820,
+        "endMs": 5960
       },
       {
-        "text": "upload",
-        "word": "upload",
-        "startMs": 7080,
+        "word": "laga",
+        "startMs": 5960,
+        "endMs": 6200
+      },
+      {
+        "word": "jao",
+        "startMs": 6200,
+        "endMs": 6320
+      },
+      {
+        "word": "yaar!",
+        "startMs": 6320,
+        "endMs": 6560
+      }
+    ]
+  },
+  {
+    "text": "To screen par tumhe ek output based question de raha hoon,",
+    "startMs": 7200,
+    "endMs": 9150,
+    "words": [
+      {
+        "word": "To",
+        "startMs": 7200,
         "endMs": 7320
       },
       {
-        "text": "kar",
-        "word": "kar",
+        "word": "screen",
         "startMs": 7320,
-        "endMs": 7540
+        "endMs": 7640
       },
       {
-        "text": "sakte",
-        "word": "sakte",
-        "startMs": 7540,
-        "endMs": 7760
-      },
-      {
-        "text": "ho",
-        "word": "ho",
-        "startMs": 7760,
-        "endMs": 7820
-      }
-    ]
-  },
-  {
-    "text": "Chahe tumhara bijli ka bill ho",
-    "startMs": 7820,
-    "endMs": 8980,
-    "words": [
-      {
-        "text": "Chahe",
-        "word": "Chahe",
-        "startMs": 7820,
-        "endMs": 7980
-      },
-      {
-        "text": "tumhara",
-        "word": "tumhara",
-        "startMs": 7980,
-        "endMs": 8260
-      },
-      {
-        "text": "bijli",
-        "word": "bijli",
-        "startMs": 8260,
-        "endMs": 8580
-      },
-      {
-        "text": "ka",
-        "word": "ka",
-        "startMs": 8580,
-        "endMs": 8660
-      },
-      {
-        "text": "bill",
-        "word": "bill",
-        "startMs": 8660,
-        "endMs": 8840
-      },
-      {
-        "text": "ho",
-        "word": "ho",
-        "startMs": 8840,
-        "endMs": 8980
-      }
-    ]
-  },
-  {
-    "text": "Chahe tumhara offer letter ho ya experience letter",
-    "startMs": 8980,
-    "endMs": 11380,
-    "words": [
-      {
-        "text": "Chahe",
-        "word": "Chahe",
-        "startMs": 8980,
-        "endMs": 9440
-      },
-      {
-        "text": "tumhara",
-        "word": "tumhara",
-        "startMs": 9440,
-        "endMs": 9760
-      },
-      {
-        "text": "offer",
-        "word": "offer",
-        "startMs": 9760,
-        "endMs": 10120
-      },
-      {
-        "text": "letter",
-        "word": "letter",
-        "startMs": 10120,
-        "endMs": 10320
-      },
-      {
-        "text": "ho",
-        "word": "ho",
-        "startMs": 10320,
-        "endMs": 10500
-      },
-      {
-        "text": "ya",
-        "word": "ya",
-        "startMs": 10500,
-        "endMs": 10580
-      },
-      {
-        "text": "experience",
-        "word": "experience",
-        "startMs": 10580,
-        "endMs": 11000
-      },
-      {
-        "text": "letter",
-        "word": "letter",
-        "startMs": 11000,
-        "endMs": 11380
-      }
-    ]
-  },
-  {
-    "text": "Toh wahan par jaake use edit kar sakte ho",
-    "startMs": 11380,
-    "endMs": 13280,
-    "words": [
-      {
-        "text": "Toh",
-        "word": "Toh",
-        "startMs": 11380,
-        "endMs": 12080
-      },
-      {
-        "text": "wahan",
-        "word": "wahan",
-        "startMs": 12080,
-        "endMs": 12260
-      },
-      {
-        "text": "par",
         "word": "par",
-        "startMs": 12260,
-        "endMs": 12380
+        "startMs": 7640,
+        "endMs": 7800
       },
       {
-        "text": "jaake",
-        "word": "jaake",
-        "startMs": 12380,
-        "endMs": 12520
+        "word": "hum",
+        "startMs": 7800,
+        "endMs": 7900
       },
       {
-        "text": "use",
-        "word": "use",
-        "startMs": 12520,
-        "endMs": 12660
+        "word": "tumhe",
+        "startMs": 7900,
+        "endMs": 8000
       },
       {
-        "text": "edit",
-        "word": "edit",
-        "startMs": 12660,
-        "endMs": 12880
+        "word": "ek",
+        "startMs": 8000,
+        "endMs": 8120
       },
       {
-        "text": "kar",
-        "word": "kar",
-        "startMs": 12880,
-        "endMs": 13020
+        "word": "output",
+        "startMs": 8120,
+        "endMs": 8340
       },
       {
-        "text": "sakte",
-        "word": "sakte",
-        "startMs": 13020,
-        "endMs": 13200
+        "word": "based",
+        "startMs": 8340,
+        "endMs": 8540
       },
       {
-        "text": "ho",
-        "word": "ho",
-        "startMs": 13200,
-        "endMs": 13260
+        "word": "question",
+        "startMs": 8540,
+        "endMs": 8860
+      },
+      {
+        "word": "de",
+        "startMs": 8860,
+        "endMs": 9060
+      },
+      {
+        "word": "raha",
+        "startMs": 9060,
+        "endMs": 9100
+      },
+      {
+        "word": "hoon,",
+        "startMs": 9100,
+        "endMs": 9150
       }
     ]
   },
   {
-    "text": "aur font size mein bhi koi difference nahi hoga",
-    "startMs": 13280,
-    "endMs": 15100,
+    "text": "to video ke comment section mein likh dena DETAIL,",
+    "startMs": 15250,
+    "endMs": 17350,
     "words": [
       {
-        "text": "aur",
-        "word": "aur",
-        "startMs": 13280,
-        "endMs": 13400
+        "word": "to",
+        "startMs": 15250,
+        "endMs": 15660
       },
       {
-        "text": "font",
-        "word": "font",
-        "startMs": 13400,
-        "endMs": 13660
+        "word": "video",
+        "startMs": 15660,
+        "endMs": 16020
       },
       {
-        "text": "size",
-        "word": "size",
-        "startMs": 13660,
-        "endMs": 13860
-      },
-      {
-        "text": "mein",
-        "word": "mein",
-        "startMs": 13860,
-        "endMs": 13940
-      },
-      {
-        "text": "bhi",
-        "word": "bhi",
-        "startMs": 13940,
-        "endMs": 14040
-      },
-      {
-        "text": "koi",
-        "word": "koi",
-        "startMs": 14040,
-        "endMs": 14280
-      },
-      {
-        "text": "difference",
-        "word": "difference",
-        "startMs": 14280,
-        "endMs": 14640
-      },
-      {
-        "text": "nahi",
-        "word": "nahi",
-        "startMs": 14640,
-        "endMs": 14840
-      },
-      {
-        "text": "hoga",
-        "word": "hoga",
-        "startMs": 14840,
-        "endMs": 15060
-      }
-    ]
-  },
-  {
-    "text": "Par dhyan rakhna din mein sirf 3 edits free hain",
-    "startMs": 15460,
-    "endMs": 17500,
-    "words": [
-      {
-        "text": "Par",
-        "word": "Par",
-        "startMs": 15460,
-        "endMs": 15640
-      },
-      {
-        "text": "dhyan",
-        "word": "dhyan",
-        "startMs": 15640,
-        "endMs": 15880
-      },
-      {
-        "text": "rakhna",
-        "word": "rakhna",
-        "startMs": 15880,
-        "endMs": 16120
-      },
-      {
-        "text": "din",
-        "word": "din",
-        "startMs": 16120,
-        "endMs": 16300
-      },
-      {
-        "text": "mein",
-        "word": "mein",
-        "startMs": 16300,
-        "endMs": 16380
-      },
-      {
-        "text": "sirf",
-        "word": "sirf",
-        "startMs": 16380,
-        "endMs": 16580
-      },
-      {
-        "text": "3",
-        "word": "3",
-        "startMs": 16580,
-        "endMs": 16840
-      },
-      {
-        "text": "edits",
-        "word": "edits",
-        "startMs": 16840,
-        "endMs": 17120
-      },
-      {
-        "text": "free",
-        "word": "free",
-        "startMs": 17120,
-        "endMs": 17320
-      },
-      {
-        "text": "hain",
-        "word": "hain",
-        "startMs": 17320,
-        "endMs": 17500
-      }
-    ]
-  },
-  {
-    "text": "uske baad aapko Pro par subscribe karna padega",
-    "startMs": 17500,
-    "endMs": 19220,
-    "words": [
-      {
-        "text": "uske",
-        "word": "uske",
-        "startMs": 17500,
-        "endMs": 17720
-      },
-      {
-        "text": "baad",
-        "word": "baad",
-        "startMs": 17720,
-        "endMs": 17820
-      },
-      {
-        "text": "aapko",
-        "word": "aapko",
-        "startMs": 17820,
-        "endMs": 18060
-      },
-      {
-        "text": "Pro",
-        "word": "Pro",
-        "startMs": 18060,
-        "endMs": 18300
-      },
-      {
-        "text": "par",
-        "word": "par",
-        "startMs": 18300,
-        "endMs": 18380
-      },
-      {
-        "text": "subscribe",
-        "word": "subscribe",
-        "startMs": 18380,
-        "endMs": 18620
-      },
-      {
-        "text": "karna",
-        "word": "karna",
-        "startMs": 18620,
-        "endMs": 18920
-      },
-      {
-        "text": "padega",
-        "word": "padega",
-        "startMs": 18920,
-        "endMs": 19220
-      }
-    ]
-  },
-  {
-    "text": "Aur aisi aur videos ke liye",
-    "startMs": 19220,
-    "endMs": 20200,
-    "words": [
-      {
-        "text": "Aur",
-        "word": "Aur",
-        "startMs": 19220,
-        "endMs": 19420
-      },
-      {
-        "text": "aisi",
-        "word": "aisi",
-        "startMs": 19420,
-        "endMs": 19480
-      },
-      {
-        "text": "aur",
-        "word": "aur",
-        "startMs": 19480,
-        "endMs": 19600
-      },
-      {
-        "text": "videos",
-        "word": "videos",
-        "startMs": 19600,
-        "endMs": 19840
-      },
-      {
-        "text": "ke",
         "word": "ke",
-        "startMs": 19840,
-        "endMs": 20060
+        "startMs": 16020,
+        "endMs": 16140
       },
       {
-        "text": "liye",
-        "word": "liye",
-        "startMs": 20060,
-        "endMs": 20200
+        "word": "comment",
+        "startMs": 16140,
+        "endMs": 16360
+      },
+      {
+        "word": "section",
+        "startMs": 16360,
+        "endMs": 16560
+      },
+      {
+        "word": "mein",
+        "startMs": 16560,
+        "endMs": 16700
+      },
+      {
+        "word": "likh",
+        "startMs": 16700,
+        "endMs": 16800
+      },
+      {
+        "word": "dena",
+        "startMs": 16800,
+        "endMs": 16940
+      },
+      {
+        "word": "DETAIL,",
+        "startMs": 16940,
+        "endMs": 17350
       }
     ]
   },
   {
-    "text": "tum mere bhai ke channel Code_baithak ko follow kar sakte ho",
-    "startMs": 20200,
-    "endMs": 22190,
+    "text": "taaki agli video mein main iska proper explanation tumhe doon,",
+    "startMs": 17360,
+    "endMs": 20600,
     "words": [
       {
-        "text": "tum",
-        "word": "tum",
-        "startMs": 20200,
-        "endMs": 20320
+        "word": "taaki",
+        "startMs": 17360,
+        "endMs": 17880
       },
       {
-        "text": "mere",
-        "word": "mere",
-        "startMs": 20320,
-        "endMs": 20440
+        "word": "agli",
+        "startMs": 17880,
+        "endMs": 18240
       },
       {
-        "text": "bhai",
+        "word": "video",
+        "startMs": 18240,
+        "endMs": 18560
+      },
+      {
+        "word": "mein",
+        "startMs": 18560,
+        "endMs": 18700
+      },
+      {
+        "word": "main",
+        "startMs": 18700,
+        "endMs": 19000
+      },
+      {
+        "word": "iska",
+        "startMs": 19000,
+        "endMs": 19260
+      },
+      {
+        "word": "proper",
+        "startMs": 19260,
+        "endMs": 19700
+      },
+      {
+        "word": "explanation",
+        "startMs": 19700,
+        "endMs": 20120
+      },
+      {
+        "word": "tumhe",
+        "startMs": 20120,
+        "endMs": 20360
+      },
+      {
+        "word": "doon,",
+        "startMs": 20360,
+        "endMs": 20600
+      }
+    ]
+  },
+  {
+    "text": "ki interviewer ke aage tumhe kya bolna hai.",
+    "startMs": 20600,
+    "endMs": 22400,
+    "words": [
+      {
+        "word": "ki",
+        "startMs": 20600,
+        "endMs": 20660
+      },
+      {
+        "word": "interviewer",
+        "startMs": 20660,
+        "endMs": 21280
+      },
+      {
+        "word": "ke",
+        "startMs": 21280,
+        "endMs": 21360
+      },
+      {
+        "word": "aage",
+        "startMs": 21360,
+        "endMs": 21480
+      },
+      {
+        "word": "tumhe",
+        "startMs": 21480,
+        "endMs": 21660
+      },
+      {
+        "word": "kya",
+        "startMs": 21660,
+        "endMs": 21840
+      },
+      {
+        "word": "bolna",
+        "startMs": 21840,
+        "endMs": 22120
+      },
+      {
+        "word": "hai.",
+        "startMs": 22120,
+        "endMs": 22400
+      }
+    ]
+  },
+  {
+    "text": "To bas aise aur interview questions ke liye,",
+    "startMs": 22400,
+    "endMs": 24200,
+    "words": [
+      {
+        "word": "To",
+        "startMs": 22400,
+        "endMs": 22700
+      },
+      {
+        "word": "bas",
+        "startMs": 22700,
+        "endMs": 22900
+      },
+      {
+        "word": "aise",
+        "startMs": 22900,
+        "endMs": 23240
+      },
+      {
+        "word": "aur",
+        "startMs": 23240,
+        "endMs": 23360
+      },
+      {
+        "word": "interview",
+        "startMs": 23360,
+        "endMs": 23660
+      },
+      {
+        "word": "questions",
+        "startMs": 23660,
+        "endMs": 23960
+      },
+      {
+        "word": "ke",
+        "startMs": 23960,
+        "endMs": 24160
+      },
+      {
+        "word": "liye,",
+        "startMs": 24160,
+        "endMs": 24200
+      }
+    ]
+  },
+  {
+    "text": "apne bhai ke channel Code Baithak ko follow kar lena tab tak!",
+    "startMs": 24200,
+    "endMs": 26470,
+    "words": [
+      {
+        "word": "apne",
+        "startMs": 24200,
+        "endMs": 24300
+      },
+      {
         "word": "bhai",
-        "startMs": 20440,
-        "endMs": 20580
+        "startMs": 24300,
+        "endMs": 24420
       },
       {
-        "text": "ke",
         "word": "ke",
-        "startMs": 20580,
-        "endMs": 20680
+        "startMs": 24420,
+        "endMs": 24540
       },
       {
-        "text": "channel",
         "word": "channel",
-        "startMs": 20680,
-        "endMs": 20780
+        "startMs": 24540,
+        "endMs": 24700
       },
       {
-        "text": "Code_baithak",
-        "word": "Code_baithak",
-        "startMs": 20780,
-        "endMs": 21220
+        "word": "Code",
+        "startMs": 24700,
+        "endMs": 24960
       },
       {
-        "text": "ko",
+        "word": "Baithak",
+        "startMs": 24960,
+        "endMs": 25100
+      },
+      {
         "word": "ko",
-        "startMs": 21220,
-        "endMs": 21320
+        "startMs": 25100,
+        "endMs": 25320
       },
       {
-        "text": "follow",
         "word": "follow",
-        "startMs": 21320,
-        "endMs": 21680
+        "startMs": 25720,
+        "endMs": 25980
       },
       {
-        "text": "kar",
         "word": "kar",
-        "startMs": 21680,
-        "endMs": 21800
+        "startMs": 25980,
+        "endMs": 26180
       },
       {
-        "text": "sakte",
-        "word": "sakte",
-        "startMs": 21800,
-        "endMs": 22000
+        "word": "lena",
+        "startMs": 26180,
+        "endMs": 26300
       },
       {
-        "text": "ho",
-        "word": "ho",
-        "startMs": 22000,
-        "endMs": 22150
+        "word": "tab",
+        "startMs": 26300,
+        "endMs": 26460
+      },
+      {
+        "word": "tak!",
+        "startMs": 26460,
+        "endMs": 26470
       }
     ]
   }
