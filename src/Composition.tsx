@@ -1,5 +1,5 @@
 import React from "react";
-import { Video, staticFile } from "remotion";
+import { OffthreadVideo, staticFile } from "remotion";
 import { BlackFooterFade } from "./components/BlackFooterFade";
 import { MinimalCaptions } from "./components/MinimalCaptions";
 import { IntroHookKinetic } from "./components/IntroHookKinetic";
@@ -18,8 +18,8 @@ export const PolishedReelVideo: React.FC = () => {
         overflow: "hidden",
       }}
     >
-      {/* Layer 1: Source video - Native HTML5 Video playback (1080x1920 full frame) */}
-      <Video
+      {/* Layer 1: Source video - OffthreadVideo for frame-perfect sync (1080x1920 full frame) */}
+      <OffthreadVideo
         src={staticFile("video_input.mp4")}
         style={{
           position: "absolute",
