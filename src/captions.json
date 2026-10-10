@@ -1,506 +1,967 @@
 [
   {
-    "text": "Haan bhai mere developers,",
+    "text": "Koi fayda nahi hoga",
     "startMs": 0,
-    "endMs": 1580,
+    "endMs": 720,
     "words": [
       {
-        "word": "Haan",
+        "word": "Koi",
+        "text": "Koi",
         "startMs": 0,
-        "endMs": 280
+        "endMs": 160
       },
       {
-        "word": "bhai",
-        "startMs": 280,
-        "endMs": 520
+        "word": "fayda",
+        "text": "fayda",
+        "startMs": 160,
+        "endMs": 500
       },
       {
-        "word": "mere",
-        "startMs": 520,
-        "endMs": 820
+        "word": "nahi",
+        "text": "nahi",
+        "startMs": 500,
+        "endMs": 600
       },
       {
-        "word": "developers,",
-        "startMs": 820,
-        "endMs": 1580
+        "word": "hoga",
+        "text": "hoga",
+        "startMs": 600,
+        "endMs": 720
       }
     ]
   },
   {
-    "text": "20-30 Lakh ki company ka sapna dekhte ho,",
-    "startMs": 1580,
-    "endMs": 3540,
+    "text": "teri product website live hone ka",
+    "startMs": 720,
+    "endMs": 2120,
     "words": [
       {
-        "word": "20-30",
-        "startMs": 1580,
-        "endMs": 2160
+        "word": "teri",
+        "text": "teri",
+        "startMs": 720,
+        "endMs": 920
       },
       {
-        "word": "Lakh",
-        "startMs": 2160,
-        "endMs": 2280
+        "word": "product",
+        "text": "product",
+        "startMs": 920,
+        "endMs": 1200
       },
       {
-        "word": "ki",
-        "startMs": 2280,
-        "endMs": 2440
+        "word": "website",
+        "text": "website",
+        "startMs": 1200,
+        "endMs": 1560
       },
       {
-        "word": "company",
-        "startMs": 2440,
-        "endMs": 2720
+        "word": "live",
+        "text": "live",
+        "startMs": 1560,
+        "endMs": 1800
+      },
+      {
+        "word": "hone",
+        "text": "hone",
+        "startMs": 1800,
+        "endMs": 2020
       },
       {
         "word": "ka",
-        "startMs": 2720,
+        "text": "ka",
+        "startMs": 2020,
+        "endMs": 2120
+      }
+    ]
+  },
+  {
+    "text": "agar tune in 10 cheezon ka",
+    "startMs": 2120,
+    "endMs": 3160,
+    "words": [
+      {
+        "word": "agar",
+        "text": "agar",
+        "startMs": 2120,
+        "endMs": 2260
+      },
+      {
+        "word": "tune",
+        "text": "tune",
+        "startMs": 2260,
+        "endMs": 2400
+      },
+      {
+        "word": "in",
+        "text": "in",
+        "startMs": 2400,
+        "endMs": 2700
+      },
+      {
+        "word": "10",
+        "text": "10",
+        "startMs": 2700,
         "endMs": 2860
       },
       {
-        "word": "sapna",
+        "word": "cheezon",
+        "text": "cheezon",
         "startMs": 2860,
-        "endMs": 3140
-      },
-      {
-        "word": "dekhte",
-        "startMs": 3140,
-        "endMs": 3480
-      },
-      {
-        "word": "ho,",
-        "startMs": 3480,
-        "endMs": 3540
-      }
-    ]
-  },
-  {
-    "text": "To usse pehle kam se kam",
-    "startMs": 3540,
-    "endMs": 4400,
-    "words": [
-      {
-        "word": "To",
-        "startMs": 3540,
-        "endMs": 3640
-      },
-      {
-        "word": "usse",
-        "startMs": 3640,
-        "endMs": 3820
-      },
-      {
-        "word": "pehle",
-        "startMs": 3820,
-        "endMs": 4020
-      },
-      {
-        "word": "kam",
-        "startMs": 4020,
-        "endMs": 4160
-      },
-      {
-        "word": "se",
-        "startMs": 4160,
-        "endMs": 4320
-      },
-      {
-        "word": "kam",
-        "startMs": 4320,
-        "endMs": 4400
-      }
-    ]
-  },
-  {
-    "text": "10-12 Lakh ki company ka sawal to laga jao yaar!",
-    "startMs": 4400,
-    "endMs": 6800,
-    "words": [
-      {
-        "word": "10-12",
-        "startMs": 4400,
-        "endMs": 4860
-      },
-      {
-        "word": "Lakh",
-        "startMs": 4860,
-        "endMs": 5040
-      },
-      {
-        "word": "ki",
-        "startMs": 5040,
-        "endMs": 5120
-      },
-      {
-        "word": "company",
-        "startMs": 5120,
-        "endMs": 5420
+        "endMs": 3080
       },
       {
         "word": "ka",
-        "startMs": 5420,
-        "endMs": 5540
-      },
-      {
-        "word": "sawal",
-        "startMs": 5540,
-        "endMs": 5820
-      },
-      {
-        "word": "to",
-        "startMs": 5820,
-        "endMs": 5960
-      },
-      {
-        "word": "laga",
-        "startMs": 5960,
-        "endMs": 6200
-      },
-      {
-        "word": "jao",
-        "startMs": 6200,
-        "endMs": 6320
-      },
-      {
-        "word": "yaar!",
-        "startMs": 6320,
-        "endMs": 6560
+        "text": "ka",
+        "startMs": 3080,
+        "endMs": 3160
       }
     ]
   },
   {
-    "text": "To screen par tumhe ek output based question de raha hoon,",
-    "startMs": 7200,
-    "endMs": 9150,
+    "text": "dhyan nahi rakha!",
+    "startMs": 3160,
+    "endMs": 3860,
     "words": [
       {
-        "word": "To",
-        "startMs": 7200,
-        "endMs": 7320
+        "word": "dhyan",
+        "text": "dhyan",
+        "startMs": 3160,
+        "endMs": 3380
       },
       {
-        "word": "screen",
-        "startMs": 7320,
-        "endMs": 7640
+        "word": "nahi",
+        "text": "nahi",
+        "startMs": 3380,
+        "endMs": 3580
       },
       {
-        "word": "par",
-        "startMs": 7640,
-        "endMs": 7800
+        "word": "rakha!",
+        "text": "rakha!",
+        "startMs": 3580,
+        "endMs": 3860
+      }
+    ]
+  },
+  {
+    "text": "Sabse pehle apni website ko",
+    "startMs": 3880,
+    "endMs": 4920,
+    "words": [
+      {
+        "word": "Sabse",
+        "text": "Sabse",
+        "startMs": 3880,
+        "endMs": 4140
       },
       {
-        "word": "hum",
-        "startMs": 7800,
+        "word": "pehle",
+        "text": "pehle",
+        "startMs": 4140,
+        "endMs": 4320
+      },
+      {
+        "word": "apni",
+        "text": "apni",
+        "startMs": 4320,
+        "endMs": 4440
+      },
+      {
+        "word": "website",
+        "text": "website",
+        "startMs": 4440,
+        "endMs": 4760
+      },
+      {
+        "word": "ko",
+        "text": "ko",
+        "startMs": 4760,
+        "endMs": 4920
+      }
+    ]
+  },
+  {
+    "text": "search kar Google pe,",
+    "startMs": 4920,
+    "endMs": 6080,
+    "words": [
+      {
+        "word": "search",
+        "text": "search",
+        "startMs": 4920,
+        "endMs": 5240
+      },
+      {
+        "word": "kar",
+        "text": "kar",
+        "startMs": 5240,
+        "endMs": 5440
+      },
+      {
+        "word": "Google",
+        "text": "Google",
+        "startMs": 5440,
+        "endMs": 5740
+      },
+      {
+        "word": "pe,",
+        "text": "pe,",
+        "startMs": 5740,
+        "endMs": 6080
+      }
+    ]
+  },
+  {
+    "text": "uske baad uska indexing check kar.",
+    "startMs": 6120,
+    "endMs": 7680,
+    "words": [
+      {
+        "word": "uske",
+        "text": "uske",
+        "startMs": 6120,
+        "endMs": 6400
+      },
+      {
+        "word": "baad",
+        "text": "baad",
+        "startMs": 6400,
+        "endMs": 6540
+      },
+      {
+        "word": "uska",
+        "text": "uska",
+        "startMs": 6540,
+        "endMs": 6740
+      },
+      {
+        "word": "indexing",
+        "text": "indexing",
+        "startMs": 6740,
+        "endMs": 7280
+      },
+      {
+        "word": "check",
+        "text": "check",
+        "startMs": 7280,
+        "endMs": 7480
+      },
+      {
+        "word": "kar.",
+        "text": "kar.",
+        "startMs": 7480,
+        "endMs": 7680
+      }
+    ]
+  },
+  {
+    "text": "Then uski Pages Report,",
+    "startMs": 7720,
+    "endMs": 8900,
+    "words": [
+      {
+        "word": "Then",
+        "text": "Then",
+        "startMs": 7720,
         "endMs": 7900
       },
       {
-        "word": "tumhe",
+        "word": "uski",
+        "text": "uski",
         "startMs": 7900,
-        "endMs": 8000
+        "endMs": 8140
       },
       {
-        "word": "ek",
-        "startMs": 8000,
-        "endMs": 8120
+        "word": "Pages",
+        "text": "Pages",
+        "startMs": 8140,
+        "endMs": 8500
       },
       {
-        "word": "output",
-        "startMs": 8120,
-        "endMs": 8340
-      },
+        "word": "Report,",
+        "text": "Report,",
+        "startMs": 8500,
+        "endMs": 8900
+      }
+    ]
+  },
+  {
+    "text": "that is uski indexing ko check karo.",
+    "startMs": 8900,
+    "endMs": 10320,
+    "words": [
       {
-        "word": "based",
-        "startMs": 8340,
-        "endMs": 8540
-      },
-      {
-        "word": "question",
-        "startMs": 8540,
-        "endMs": 8860
-      },
-      {
-        "word": "de",
-        "startMs": 8860,
+        "word": "that",
+        "text": "that",
+        "startMs": 8900,
         "endMs": 9060
       },
       {
-        "word": "raha",
+        "word": "is",
+        "text": "is",
         "startMs": 9060,
-        "endMs": 9100
+        "endMs": 9160
       },
       {
-        "word": "hoon,",
-        "startMs": 9100,
-        "endMs": 9150
+        "word": "uski",
+        "text": "uski",
+        "startMs": 9160,
+        "endMs": 9360
+      },
+      {
+        "word": "indexing",
+        "text": "indexing",
+        "startMs": 9360,
+        "endMs": 9840
+      },
+      {
+        "word": "ko",
+        "text": "ko",
+        "startMs": 9840,
+        "endMs": 9940
+      },
+      {
+        "word": "check",
+        "text": "check",
+        "startMs": 9940,
+        "endMs": 10100
+      },
+      {
+        "word": "karo.",
+        "text": "karo.",
+        "startMs": 10100,
+        "endMs": 10320
       }
     ]
   },
   {
-    "text": "to video ke comment section mein likh dena DETAIL,",
-    "startMs": 15250,
-    "endMs": 17350,
+    "text": "Fourth one, uska free audit karwa,",
+    "startMs": 10340,
+    "endMs": 11820,
+    "words": [
+      {
+        "word": "Fourth",
+        "text": "Fourth",
+        "startMs": 10340,
+        "endMs": 10560
+      },
+      {
+        "word": "one,",
+        "text": "one,",
+        "startMs": 10560,
+        "endMs": 10780
+      },
+      {
+        "word": "uska",
+        "text": "uska",
+        "startMs": 10780,
+        "endMs": 11000
+      },
+      {
+        "word": "free",
+        "text": "free",
+        "startMs": 11000,
+        "endMs": 11260
+      },
+      {
+        "word": "audit",
+        "text": "audit",
+        "startMs": 11260,
+        "endMs": 11540
+      },
+      {
+        "word": "karwa,",
+        "text": "karwa,",
+        "startMs": 11540,
+        "endMs": 11820
+      }
+    ]
+  },
+  {
+    "text": "Veritas teri help kar dega",
+    "startMs": 11820,
+    "endMs": 13060,
+    "words": [
+      {
+        "word": "Veritas",
+        "text": "Veritas",
+        "startMs": 11820,
+        "endMs": 12260
+      },
+      {
+        "word": "teri",
+        "text": "teri",
+        "startMs": 12260,
+        "endMs": 12420
+      },
+      {
+        "word": "help",
+        "text": "help",
+        "startMs": 12420,
+        "endMs": 12700
+      },
+      {
+        "word": "kar",
+        "text": "kar",
+        "startMs": 12700,
+        "endMs": 12900
+      },
+      {
+        "word": "dega",
+        "text": "dega",
+        "startMs": 12900,
+        "endMs": 13060
+      }
+    ]
+  },
+  {
+    "text": "free mein karne mein.",
+    "startMs": 13060,
+    "endMs": 13940,
+    "words": [
+      {
+        "word": "free",
+        "text": "free",
+        "startMs": 13060,
+        "endMs": 13320
+      },
+      {
+        "word": "mein",
+        "text": "mein",
+        "startMs": 13320,
+        "endMs": 13460
+      },
+      {
+        "word": "karne",
+        "text": "karne",
+        "startMs": 13460,
+        "endMs": 13800
+      },
+      {
+        "word": "mein.",
+        "text": "mein.",
+        "startMs": 13800,
+        "endMs": 13940
+      }
+    ]
+  },
+  {
+    "text": "Zyada se zyada 5-Star Google Reviews",
+    "startMs": 13980,
+    "endMs": 15700,
+    "words": [
+      {
+        "word": "Zyada",
+        "text": "Zyada",
+        "startMs": 13980,
+        "endMs": 14240
+      },
+      {
+        "word": "se",
+        "text": "se",
+        "startMs": 14240,
+        "endMs": 14360
+      },
+      {
+        "word": "zyada",
+        "text": "zyada",
+        "startMs": 14360,
+        "endMs": 14640
+      },
+      {
+        "word": "5-Star",
+        "text": "5-Star",
+        "startMs": 14640,
+        "endMs": 15140
+      },
+      {
+        "word": "Google",
+        "text": "Google",
+        "startMs": 15140,
+        "endMs": 15380
+      },
+      {
+        "word": "Reviews",
+        "text": "Reviews",
+        "startMs": 15380,
+        "endMs": 15700
+      }
+    ]
+  },
+  {
+    "text": "lekar aao apne product ki site par.",
+    "startMs": 15700,
+    "endMs": 17140,
+    "words": [
+      {
+        "word": "lekar",
+        "text": "lekar",
+        "startMs": 15700,
+        "endMs": 16040
+      },
+      {
+        "word": "aao",
+        "text": "aao",
+        "startMs": 16040,
+        "endMs": 16180
+      },
+      {
+        "word": "apne",
+        "text": "apne",
+        "startMs": 16180,
+        "endMs": 16320
+      },
+      {
+        "word": "product",
+        "text": "product",
+        "startMs": 16320,
+        "endMs": 16600
+      },
+      {
+        "word": "ki",
+        "text": "ki",
+        "startMs": 16600,
+        "endMs": 16740
+      },
+      {
+        "word": "site",
+        "text": "site",
+        "startMs": 16740,
+        "endMs": 16960
+      },
+      {
+        "word": "par.",
+        "text": "par.",
+        "startMs": 16960,
+        "endMs": 17140
+      }
+    ]
+  },
+  {
+    "text": "Agar tumhara koi partner hai",
+    "startMs": 17180,
+    "endMs": 18260,
+    "words": [
+      {
+        "word": "Agar",
+        "text": "Agar",
+        "startMs": 17180,
+        "endMs": 17360
+      },
+      {
+        "word": "tumhara",
+        "text": "tumhara",
+        "startMs": 17360,
+        "endMs": 17620
+      },
+      {
+        "word": "koi",
+        "text": "koi",
+        "startMs": 17620,
+        "endMs": 17780
+      },
+      {
+        "word": "partner",
+        "text": "partner",
+        "startMs": 17780,
+        "endMs": 18120
+      },
+      {
+        "word": "hai",
+        "text": "hai",
+        "startMs": 18120,
+        "endMs": 18260
+      }
+    ]
+  },
+  {
+    "text": "to use bolo link kare in products ko.",
+    "startMs": 18260,
+    "endMs": 19700,
     "words": [
       {
         "word": "to",
-        "startMs": 15250,
-        "endMs": 15660
+        "text": "to",
+        "startMs": 18260,
+        "endMs": 18340
       },
       {
-        "word": "video",
-        "startMs": 15660,
-        "endMs": 16020
+        "word": "use",
+        "text": "use",
+        "startMs": 18340,
+        "endMs": 18440
       },
       {
-        "word": "ke",
-        "startMs": 16020,
-        "endMs": 16140
-      },
-      {
-        "word": "comment",
-        "startMs": 16140,
-        "endMs": 16360
-      },
-      {
-        "word": "section",
-        "startMs": 16360,
-        "endMs": 16560
-      },
-      {
-        "word": "mein",
-        "startMs": 16560,
-        "endMs": 16700
-      },
-      {
-        "word": "likh",
-        "startMs": 16700,
-        "endMs": 16800
-      },
-      {
-        "word": "dena",
-        "startMs": 16800,
-        "endMs": 16940
-      },
-      {
-        "word": "DETAIL,",
-        "startMs": 16940,
-        "endMs": 17350
-      }
-    ]
-  },
-  {
-    "text": "taaki agli video mein main iska proper explanation tumhe doon,",
-    "startMs": 17360,
-    "endMs": 20600,
-    "words": [
-      {
-        "word": "taaki",
-        "startMs": 17360,
-        "endMs": 17880
-      },
-      {
-        "word": "agli",
-        "startMs": 17880,
-        "endMs": 18240
-      },
-      {
-        "word": "video",
-        "startMs": 18240,
-        "endMs": 18560
-      },
-      {
-        "word": "mein",
-        "startMs": 18560,
+        "word": "bolo",
+        "text": "bolo",
+        "startMs": 18440,
         "endMs": 18700
       },
       {
-        "word": "main",
+        "word": "link",
+        "text": "link",
         "startMs": 18700,
-        "endMs": 19000
+        "endMs": 18860
       },
       {
-        "word": "iska",
-        "startMs": 19000,
-        "endMs": 19260
+        "word": "kare",
+        "text": "kare",
+        "startMs": 18860,
+        "endMs": 19100
       },
       {
-        "word": "proper",
-        "startMs": 19260,
+        "word": "in",
+        "text": "in",
+        "startMs": 19100,
+        "endMs": 19200
+      },
+      {
+        "word": "products",
+        "text": "products",
+        "startMs": 19200,
+        "endMs": 19500
+      },
+      {
+        "word": "ko.",
+        "text": "ko.",
+        "startMs": 19500,
         "endMs": 19700
-      },
-      {
-        "word": "explanation",
-        "startMs": 19700,
-        "endMs": 20120
-      },
-      {
-        "word": "tumhe",
-        "startMs": 20120,
-        "endMs": 20360
-      },
-      {
-        "word": "doon,",
-        "startMs": 20360,
-        "endMs": 20600
       }
     ]
   },
   {
-    "text": "ki interviewer ke aage tumhe kya bolna hai.",
-    "startMs": 20600,
-    "endMs": 22400,
+    "text": "Second last is, apne brand ka",
+    "startMs": 19740,
+    "endMs": 21120,
     "words": [
       {
-        "word": "ki",
-        "startMs": 20600,
-        "endMs": 20660
+        "word": "Second",
+        "text": "Second",
+        "startMs": 19740,
+        "endMs": 19980
       },
       {
-        "word": "interviewer",
-        "startMs": 20660,
-        "endMs": 21280
+        "word": "last",
+        "text": "last",
+        "startMs": 19980,
+        "endMs": 20220
       },
       {
-        "word": "ke",
-        "startMs": 21280,
-        "endMs": 21360
+        "word": "is,",
+        "text": "is,",
+        "startMs": 20220,
+        "endMs": 20420
       },
       {
-        "word": "aage",
-        "startMs": 21360,
-        "endMs": 21480
+        "word": "apne",
+        "text": "apne",
+        "startMs": 20420,
+        "endMs": 20560
       },
       {
-        "word": "tumhe",
-        "startMs": 21480,
-        "endMs": 21660
+        "word": "brand",
+        "text": "brand",
+        "startMs": 20560,
+        "endMs": 20960
       },
       {
-        "word": "kya",
-        "startMs": 21660,
-        "endMs": 21840
-      },
-      {
-        "word": "bolna",
-        "startMs": 21840,
-        "endMs": 22120
-      },
-      {
-        "word": "hai.",
-        "startMs": 22120,
-        "endMs": 22400
+        "word": "ka",
+        "text": "ka",
+        "startMs": 20960,
+        "endMs": 21120
       }
     ]
   },
   {
-    "text": "To bas aise aur interview questions ke liye,",
-    "startMs": 22400,
-    "endMs": 24200,
+    "text": "Google Alert set kar lo.",
+    "startMs": 21120,
+    "endMs": 22500,
     "words": [
       {
-        "word": "To",
-        "startMs": 22400,
-        "endMs": 22700
+        "word": "Google",
+        "text": "Google",
+        "startMs": 21120,
+        "endMs": 21400
       },
       {
-        "word": "bas",
-        "startMs": 22700,
-        "endMs": 22900
+        "word": "Alert",
+        "text": "Alert",
+        "startMs": 21400,
+        "endMs": 21740
       },
       {
-        "word": "aise",
-        "startMs": 22900,
-        "endMs": 23240
+        "word": "set",
+        "text": "set",
+        "startMs": 21740,
+        "endMs": 22100
       },
       {
-        "word": "aur",
-        "startMs": 23240,
-        "endMs": 23360
+        "word": "kar",
+        "text": "kar",
+        "startMs": 22100,
+        "endMs": 22340
       },
       {
-        "word": "interview",
-        "startMs": 23360,
-        "endMs": 23660
+        "word": "lo.",
+        "text": "lo.",
+        "startMs": 22340,
+        "endMs": 22500
+      }
+    ]
+  },
+  {
+    "text": "And the last thing is, make sure",
+    "startMs": 22540,
+    "endMs": 23620,
+    "words": [
+      {
+        "word": "And",
+        "text": "And",
+        "startMs": 22540,
+        "endMs": 22620
       },
       {
-        "word": "questions",
-        "startMs": 23660,
-        "endMs": 23960
+        "word": "the",
+        "text": "the",
+        "startMs": 22620,
+        "endMs": 22720
       },
       {
-        "word": "ke",
-        "startMs": 23960,
+        "word": "last",
+        "text": "last",
+        "startMs": 22720,
+        "endMs": 22960
+      },
+      {
+        "word": "thing",
+        "text": "thing",
+        "startMs": 22960,
+        "endMs": 23140
+      },
+      {
+        "word": "is,",
+        "text": "is,",
+        "startMs": 23140,
+        "endMs": 23260
+      },
+      {
+        "word": "make",
+        "text": "make",
+        "startMs": 23260,
+        "endMs": 23480
+      },
+      {
+        "word": "sure",
+        "text": "sure",
+        "startMs": 23480,
+        "endMs": 23620
+      }
+    ]
+  },
+  {
+    "text": "aap blogs ke andar batao",
+    "startMs": 23620,
+    "endMs": 24720,
+    "words": [
+      {
+        "word": "aap",
+        "text": "aap",
+        "startMs": 23620,
+        "endMs": 23760
+      },
+      {
+        "word": "blogs",
+        "text": "blogs",
+        "startMs": 23760,
         "endMs": 24160
       },
       {
-        "word": "liye,",
+        "word": "ke",
+        "text": "ke",
         "startMs": 24160,
-        "endMs": 24200
-      }
-    ]
-  },
-  {
-    "text": "apne bhai ke channel Code Baithak ko follow kar lena tab tak!",
-    "startMs": 24200,
-    "endMs": 26470,
-    "words": [
-      {
-        "word": "apne",
-        "startMs": 24200,
         "endMs": 24300
       },
       {
-        "word": "bhai",
+        "word": "andar",
+        "text": "andar",
         "startMs": 24300,
         "endMs": 24420
       },
       {
-        "word": "ke",
+        "word": "batao",
+        "text": "batao",
         "startMs": 24420,
-        "endMs": 24540
+        "endMs": 24720
+      }
+    ]
+  },
+  {
+    "text": "ki kya-kya aapne kiya hai.",
+    "startMs": 24720,
+    "endMs": 25760,
+    "words": [
+      {
+        "word": "ki",
+        "text": "ki",
+        "startMs": 24720,
+        "endMs": 24860
       },
       {
-        "word": "channel",
-        "startMs": 24540,
-        "endMs": 24700
+        "word": "kya-kya",
+        "text": "kya-kya",
+        "startMs": 24860,
+        "endMs": 25200
       },
       {
-        "word": "Code",
-        "startMs": 24700,
-        "endMs": 24960
+        "word": "aapne",
+        "text": "aapne",
+        "startMs": 25200,
+        "endMs": 25440
       },
       {
-        "word": "Baithak",
-        "startMs": 24960,
-        "endMs": 25100
+        "word": "kiya",
+        "text": "kiya",
+        "startMs": 25440,
+        "endMs": 25660
       },
       {
-        "word": "ko",
-        "startMs": 25100,
-        "endMs": 25320
+        "word": "hai.",
+        "text": "hai.",
+        "startMs": 25660,
+        "endMs": 25760
+      }
+    ]
+  },
+  {
+    "text": "And aise hi aur informative videos ke liye",
+    "startMs": 25800,
+    "endMs": 27140,
+    "words": [
+      {
+        "word": "And",
+        "text": "And",
+        "startMs": 25800,
+        "endMs": 25920
       },
       {
-        "word": "follow",
-        "startMs": 25720,
-        "endMs": 25980
+        "word": "aise",
+        "text": "aise",
+        "startMs": 25920,
+        "endMs": 26080
       },
       {
-        "word": "kar",
-        "startMs": 25980,
+        "word": "hi",
+        "text": "hi",
+        "startMs": 26080,
         "endMs": 26180
       },
       {
-        "word": "lena",
+        "word": "aur",
+        "text": "aur",
         "startMs": 26180,
-        "endMs": 26300
+        "endMs": 26280
       },
       {
-        "word": "tab",
-        "startMs": 26300,
-        "endMs": 26460
+        "word": "informative",
+        "text": "informative",
+        "startMs": 26280,
+        "endMs": 26640
       },
       {
-        "word": "tak!",
-        "startMs": 26460,
-        "endMs": 26470
+        "word": "videos",
+        "text": "videos",
+        "startMs": 26640,
+        "endMs": 26940
+      },
+      {
+        "word": "ke",
+        "text": "ke",
+        "startMs": 26940,
+        "endMs": 27060
+      },
+      {
+        "word": "liye",
+        "text": "liye",
+        "startMs": 27060,
+        "endMs": 27140
+      }
+    ]
+  },
+  {
+    "text": "apne bhai ke channel Code Baithak ko",
+    "startMs": 27140,
+    "endMs": 28380,
+    "words": [
+      {
+        "word": "apne",
+        "text": "apne",
+        "startMs": 27140,
+        "endMs": 27360
+      },
+      {
+        "word": "bhai",
+        "text": "bhai",
+        "startMs": 27360,
+        "endMs": 27520
+      },
+      {
+        "word": "ke",
+        "text": "ke",
+        "startMs": 27520,
+        "endMs": 27640
+      },
+      {
+        "word": "channel",
+        "text": "channel",
+        "startMs": 27640,
+        "endMs": 27820
+      },
+      {
+        "word": "Code",
+        "text": "Code",
+        "startMs": 27820,
+        "endMs": 28040
+      },
+      {
+        "word": "Baithak",
+        "text": "Baithak",
+        "startMs": 28040,
+        "endMs": 28280
+      },
+      {
+        "word": "ko",
+        "text": "ko",
+        "startMs": 28280,
+        "endMs": 28380
+      }
+    ]
+  },
+  {
+    "text": "follow kar sakte hain!",
+    "startMs": 28380,
+    "endMs": 29020,
+    "words": [
+      {
+        "word": "follow",
+        "text": "follow",
+        "startMs": 28380,
+        "endMs": 28580
+      },
+      {
+        "word": "kar",
+        "text": "kar",
+        "startMs": 28580,
+        "endMs": 28680
+      },
+      {
+        "word": "sakte",
+        "text": "sakte",
+        "startMs": 28680,
+        "endMs": 28900
+      },
+      {
+        "word": "hain!",
+        "text": "hain!",
+        "startMs": 28900,
+        "endMs": 29020
       }
     ]
   }

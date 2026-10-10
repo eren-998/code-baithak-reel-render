@@ -54,7 +54,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 210,
+        bottom: 175,
         left: 0,
         width: "100%",
         display: "flex",
@@ -69,14 +69,14 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     >
       <div
         style={{
-          backgroundColor: "rgba(8, 12, 22, 0.55)",
+          backgroundColor: "rgba(8, 12, 22, 0.62)",
           backdropFilter: "blur(18px)",
           WebkitBackdropFilter: "blur(18px)",
           padding: "12px 26px",
           borderRadius: 30,
-          border: "1.5px solid rgba(255, 255, 255, 0.15)",
-          boxShadow: "0 10px 35px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
-          maxWidth: 860,
+          border: "1.5px solid rgba(255, 255, 255, 0.16)",
+          boxShadow: "0 10px 35px rgba(0, 0, 0, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
+          maxWidth: 880,
           display: "inline-flex",
           flexWrap: "wrap",
           justifyContent: "center",
@@ -110,11 +110,12 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
               : 0;
 
             const isKeyTechWord = [
-              "code", "coding", "output", "question", "developer", "developers",
-              "interview", "answer", "detail", "lakh", "company", "package", "better"
+              "website", "live", "google", "search", "indexing", "pages",
+              "report", "audit", "veritas", "5-star", "reviews", "partner",
+              "link", "brand", "alert", "blogs", "code", "baithak", "follow", "10"
             ].some((term) => w.word.toLowerCase().includes(term.toLowerCase()));
 
-            const activeColor = isKeyTechWord ? "#00F0FF" : "#FFE600";
+            const activeColor = isKeyTechWord ? "#FFE500" : "#00F0FF";
 
             return (
               <span
