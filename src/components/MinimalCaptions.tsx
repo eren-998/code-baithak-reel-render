@@ -54,7 +54,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 175,
+        bottom: 145,
         left: 0,
         width: "100%",
         display: "flex",
@@ -69,14 +69,14 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     >
       <div
         style={{
-          backgroundColor: "rgba(8, 12, 22, 0.62)",
+          backgroundColor: "rgba(8, 12, 22, 0.68)",
           backdropFilter: "blur(18px)",
           WebkitBackdropFilter: "blur(18px)",
-          padding: "12px 26px",
+          padding: "11px 26px",
           borderRadius: 30,
           border: "1.5px solid rgba(255, 255, 255, 0.16)",
           boxShadow: "0 10px 35px rgba(0, 0, 0, 0.65), inset 0 1px 1px rgba(255, 255, 255, 0.2)",
-          maxWidth: 880,
+          maxWidth: 900,
           display: "inline-flex",
           flexWrap: "wrap",
           justifyContent: "center",
@@ -110,10 +110,12 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
               : 0;
 
             const isKeyTechWord = [
-              "website", "live", "google", "search", "indexing", "pages",
-              "report", "audit", "veritas", "5-star", "reviews", "partner",
-              "link", "brand", "alert", "blogs", "code", "baithak", "follow", "10"
-            ].some((term) => w.word.toLowerCase().includes(term.toLowerCase()));
+              "complete", "ai", "chunk", "chunk-by-chunk", "difference",
+              "tokens", "token", "model", "prediction", "predict", "predicts",
+              "predicted", "sun", "rises", "from", "east", "context",
+              "computation", "caching", "fastest", "single", "llms", "llm",
+              "server-triggered", "events", "event", "code", "baithak", "follow"
+            ].some((term) => w.word.toLowerCase().replace(/[^a-z0-9-]/g, "") === term);
 
             const activeColor = isKeyTechWord ? "#FFE500" : "#00F0FF";
 
@@ -122,7 +124,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
                 key={idx}
                 style={{
                   display: "inline-block",
-                  margin: "0 6px",
+                  margin: "0 8px",
                   color: isWordActive ? activeColor : "#FFFFFF",
                   fontSize: 38,
                   fontWeight: isWordActive ? 900 : 800,

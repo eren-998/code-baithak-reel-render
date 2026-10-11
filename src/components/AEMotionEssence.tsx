@@ -2,13 +2,15 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
 
 /* =========================================================================
-   AFTER EFFECTS AMBIENT MOTION ESSENCE (ZERO WEB UI BOXES)
-   - Cut-Point Vector Shockwaves & Light Pulses at every topic transition
-   - Top-Left AE Viewfinder Reticle & Step Progress Telemetry (pure vector + stroked text)
-   - Floating Vector Crosshairs (+) & Geometric Motion Accents around chest zone
+   AFTER EFFECTS AMBIENT MOTION ESSENCE (EXPLAINER TELEMETRY & HUD)
+   - Cut-Point Vector Shockwaves & Light Pulses at every explainer stage transition
+   - Top-Left AE Viewfinder Reticle & Node Architecture Telemetry
+   - Floating Vector Crosshairs (+) & Viewfinder Brackets around Footer-Up Explainer Zone
    ========================================================================= */
 
-const TOPIC_CUT_FRAMES = [0, 63, 116, 183, 231, 310, 418, 513, 591, 674, 772];
+const TOPIC_CUT_FRAMES = [
+  0, 101, 233, 337, 488, 548, 716, 853, 1040, 1324, 1483, 1771, 2018, 2210, 2564, 2730,
+];
 
 interface TopicTelemetry {
   start: number;
@@ -19,19 +21,23 @@ interface TopicTelemetry {
 }
 
 const TELEMETRY_STEPS: TopicTelemetry[] = [
-  { start: 0, end: 116, code: "HOOK // 00", label: "WEBSITE LAUNCH PROTOCOL", color: "#EF4444" },
-  { start: 116, end: 183, code: "NODE // 01", label: "GOOGLE LIVE SEARCH", color: "#00F0FF" },
-  { start: 183, end: 231, code: "NODE // 02", label: "CRAWLER INDEXING", color: "#22C55E" },
-  { start: 231, end: 310, code: "NODE // 03", label: "CONSOLE PAGES REPORT", color: "#FFE500" },
-  { start: 310, end: 418, code: "NODE // 04", label: "VERITAS FREE AUDIT", color: "#10B981" },
-  { start: 418, end: 513, code: "NODE // 05", label: "5-STAR TRUST SIGNAL", color: "#FFE500" },
-  { start: 513, end: 591, code: "NODE // 06", label: "PARTNER BACKLINKS", color: "#A855F7" },
-  { start: 591, end: 674, code: "NODE // 07", label: "BRAND GOOGLE ALERTS", color: "#FFE500" },
-  { start: 674, end: 772, code: "NODE // 08", label: "PRODUCT BLOG ENGINE", color: "#00F0FF" },
-  { start: 772, end: 875, code: "CTA // 09", label: "@CODE_BAITHAK", color: "#0095F6" },
+  { start: 0, end: 101, code: "HOOK // 01", label: "P2P COMPLETE PAYLOAD", color: "#22C55E" },
+  { start: 101, end: 233, code: "HOOK // 02", label: "AI CHUNK STREAMING", color: "#00F0FF" },
+  { start: 233, end: 337, code: "QUERY // 03", label: "ARCHITECTURE DIFF", color: "#FFE500" },
+  { start: 337, end: 548, code: "NODE // 04", label: "TOKENIZER PIPELINE", color: "#A855F7" },
+  { start: 548, end: 716, code: "NODE // 05", label: "NEXT-WORD PROBABILITY", color: "#00F0FF" },
+  { start: 716, end: 1040, code: "PASS // 06", label: "CONTEXT ➔ PREDICT 'FROM'", color: "#FFE500" },
+  { start: 1040, end: 1324, code: "LOOP // 07", label: "4-TOKEN ➔ PREDICT 'EAST'", color: "#22C55E" },
+  { start: 1324, end: 1483, code: "ITER // 08", label: "AUTOREGRESSIVE LOOP", color: "#00F0FF" },
+  { start: 1483, end: 1771, code: "WARN // 09", label: "HUGE CONTEXT BOTTLENECK", color: "#EF4444" },
+  { start: 1771, end: 2018, code: "FAST // 10", label: "KV CACHE ACCELERATOR", color: "#10B981" },
+  { start: 2018, end: 2210, code: "REST // 11", label: "SINGLE PACKET TRANSFER", color: "#FFE500" },
+  { start: 2210, end: 2564, code: "SSE // 12", label: "SERVER-TRIGGERED EVENTS", color: "#00F0FF" },
+  { start: 2564, end: 2890, code: "CTA // 13", label: "@CODE_BAITHAK", color: "#0095F6" },
 ];
 
-const heavyShadow = "0 3px 14px rgba(0,0,0,0.98), 0 0 22px rgba(0,0,0,0.95), 0 1px 4px rgba(0,0,0,0.95)";
+const heavyShadow =
+  "0 3px 14px rgba(0,0,0,0.98), 0 0 22px rgba(0,0,0,0.95), 0 1px 4px rgba(0,0,0,0.95)";
 
 export const AEMotionEssence: React.FC = () => {
   const frame = useCurrentFrame();
@@ -41,7 +47,7 @@ export const AEMotionEssence: React.FC = () => {
     TELEMETRY_STEPS.find((s) => frame >= s.start && frame < s.end) ||
     TELEMETRY_STEPS[TELEMETRY_STEPS.length - 1];
 
-  // Check if we are within 10 frames after any topic cut for AE shockwave burst
+  // Check if we are within 12 frames after any topic cut for AE shockwave burst
   const activeCutFrame = TOPIC_CUT_FRAMES.find(
     (c) => frame >= c && frame < c + 12 && c > 0
   );
@@ -54,8 +60,8 @@ export const AEMotionEssence: React.FC = () => {
     config: { damping: 13, stiffness: 170 },
   });
 
-  // Overall reel progress (0 -> 1)
-  const reelProgress = interpolate(frame, [0, 869], [0, 1], {
+  // Overall reel progress (0 -> 1) across 2883 frames
+  const reelProgress = interpolate(frame, [0, 2883], [0, 1], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
   });
@@ -73,12 +79,12 @@ export const AEMotionEssence: React.FC = () => {
         overflow: "hidden",
       }}
     >
-      {/* 1. Top-Left After Effects Viewfinder Reticle & Telemetry Callout (Zero Box) */}
+      {/* 1. Top-Left After Effects Viewfinder Reticle & Telemetry Callout */}
       <div
         style={{
           position: "absolute",
-          top: 96,
-          left: 44,
+          top: 90,
+          left: 42,
           display: "flex",
           alignItems: "center",
           gap: 16,
@@ -88,14 +94,26 @@ export const AEMotionEssence: React.FC = () => {
       >
         {/* Rotating Vector Reticle Dial */}
         <svg
-          width="68"
-          height="68"
+          width="66"
+          height="66"
           viewBox="0 0 68 68"
           fill="none"
           style={{ filter: "drop-shadow(0 4px 12px rgba(0,0,0,0.95))" }}
         >
-          <circle cx="34" cy="34" r="28" fill="rgba(8, 12, 22, 0.78)" stroke="#000000" strokeWidth="2" />
-          <g style={{ transform: `rotate(${frame * 2.4}deg)`, transformOrigin: "34px 34px" }}>
+          <circle
+            cx="34"
+            cy="34"
+            r="28"
+            fill="rgba(6, 10, 20, 0.82)"
+            stroke="#000000"
+            strokeWidth="2"
+          />
+          <g
+            style={{
+              transform: `rotate(${frame * 2.2}deg)`,
+              transformOrigin: "34px 34px",
+            }}
+          >
             <circle
               cx="34"
               cy="34"
@@ -125,11 +143,11 @@ export const AEMotionEssence: React.FC = () => {
           <span
             style={{
               fontFamily: "'JetBrains Mono', monospace",
-              fontSize: 18,
+              fontSize: 17,
               fontWeight: 900,
               letterSpacing: "3px",
               color: activeStep.color,
-              WebkitTextStroke: "1.6px rgba(0,0,0,0.96)",
+              WebkitTextStroke: "1.5px rgba(0,0,0,0.96)",
               paintOrder: "stroke fill",
               textShadow: heavyShadow,
             }}
@@ -139,9 +157,9 @@ export const AEMotionEssence: React.FC = () => {
           <span
             style={{
               fontFamily: "'Inter', system-ui, sans-serif",
-              fontSize: 22,
+              fontSize: 21,
               fontWeight: 900,
-              letterSpacing: "1px",
+              letterSpacing: "0.8px",
               color: "#FFFFFF",
               WebkitTextStroke: "1.8px rgba(0,0,0,0.96)",
               paintOrder: "stroke fill",
@@ -151,23 +169,29 @@ export const AEMotionEssence: React.FC = () => {
             {activeStep.label}
           </span>
           {/* Animated Technical Underline Vector */}
-          <svg width="240" height="10" viewBox="0 0 240 10" fill="none" style={{ marginTop: 2 }}>
+          <svg
+            width="250"
+            height="10"
+            viewBox="0 0 250 10"
+            fill="none"
+            style={{ marginTop: 2 }}
+          >
             <path
-              d="M0 4 H190 L202 9 H238"
+              d="M0 4 H198 L210 9 H248"
               stroke={activeStep.color}
               strokeWidth="3"
               strokeLinecap="round"
               style={{
                 filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.95))",
-                strokeDasharray: 250,
-                strokeDashoffset: interpolate(stepSpr, [0, 1], [250, 0]),
+                strokeDasharray: 260,
+                strokeDashoffset: interpolate(stepSpr, [0, 1], [260, 0]),
               }}
             />
           </svg>
         </div>
       </div>
 
-      {/* 2. Floating AE Vector Crosshairs & Geometric Essence around Chest Motion Zone */}
+      {/* 2. Floating AE Vector Crosshairs & Viewfinder Framing around Footer-Up Explainer Zone */}
       <svg
         width="1080"
         height="1920"
@@ -175,45 +199,99 @@ export const AEMotionEssence: React.FC = () => {
         fill="none"
         style={{ position: "absolute", inset: 0 }}
       >
+        {/* Subtle Technical Blueprint Grid Lines in Footer-Up Zone (Y: 1140 to 1590) */}
+        <line
+          x1="44"
+          y1="1145"
+          x2="1036"
+          y2="1145"
+          stroke={activeStep.color}
+          strokeWidth="1"
+          strokeDasharray="6 10"
+          opacity="0.28"
+        />
+        <line
+          x1="44"
+          y1="1595"
+          x2="1036"
+          y2="1595"
+          stroke={activeStep.color}
+          strokeWidth="1"
+          strokeDasharray="6 10"
+          opacity="0.28"
+        />
+
         {/* Left Floating Vector Crosshair */}
         <g
-          transform={`translate(62, ${1300 + drift1}) rotate(${frame * 1.5})`}
+          transform={`translate(46, ${1360 + drift1}) rotate(${frame * 1.5})`}
           style={{ filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.9))" }}
         >
-          <line x1="-14" y1="0" x2="14" y2="0" stroke={activeStep.color} strokeWidth="3.5" strokeLinecap="round" />
-          <line x1="0" y1="-14" x2="0" y2="14" stroke={activeStep.color} strokeWidth="3.5" strokeLinecap="round" />
+          <line
+            x1="-12"
+            y1="0"
+            x2="12"
+            y2="0"
+            stroke={activeStep.color}
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <line
+            x1="0"
+            y1="-12"
+            x2="0"
+            y2="12"
+            stroke={activeStep.color}
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
         </g>
 
         {/* Right Floating Vector Crosshair */}
         <g
-          transform={`translate(1018, ${1350 + drift2}) rotate(${-frame * 1.8})`}
+          transform={`translate(1034, ${1380 + drift2}) rotate(${-frame * 1.8})`}
           style={{ filter: "drop-shadow(0 4px 10px rgba(0,0,0,0.9))" }}
         >
-          <line x1="-14" y1="0" x2="14" y2="0" stroke="#FFE500" strokeWidth="3.5" strokeLinecap="round" />
-          <line x1="0" y1="-14" x2="0" y2="14" stroke="#FFE500" strokeWidth="3.5" strokeLinecap="round" />
+          <line
+            x1="-12"
+            y1="0"
+            x2="12"
+            y2="0"
+            stroke="#FFE500"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
+          <line
+            x1="0"
+            y1="-12"
+            x2="0"
+            y2="12"
+            stroke="#FFE500"
+            strokeWidth="3"
+            strokeLinecap="round"
+          />
         </g>
 
-        {/* Left & Right Corner Viewfinder Brackets in Chest Zone */}
+        {/* Corner Viewfinder Brackets Framing Footer-Up Explainer Zone */}
         <path
-          d="M 44 1240 V 1215 H 72"
+          d="M 36 1175 V 1145 H 68"
           stroke="rgba(255,255,255,0.65)"
           strokeWidth="3"
           strokeLinecap="round"
         />
         <path
-          d="M 1036 1240 V 1215 H 1008"
+          d="M 1044 1175 V 1145 H 1012"
           stroke="rgba(255,255,255,0.65)"
           strokeWidth="3"
           strokeLinecap="round"
         />
         <path
-          d="M 44 1450 V 1475 H 72"
+          d="M 36 1565 V 1595 H 68"
           stroke="rgba(255,255,255,0.65)"
           strokeWidth="3"
           strokeLinecap="round"
         />
         <path
-          d="M 1036 1450 V 1475 H 1008"
+          d="M 1044 1565 V 1595 H 1012"
           stroke="rgba(255,255,255,0.65)"
           strokeWidth="3"
           strokeLinecap="round"
@@ -221,11 +299,11 @@ export const AEMotionEssence: React.FC = () => {
 
         {/* 3. Cut-Point After Effects Radial Vector Shockwave on Topic Transitions */}
         {cutDelta >= 0 && (
-          <g transform="translate(540, 1340)">
+          <g transform="translate(540, 1370)">
             <circle
               cx="0"
               cy="0"
-              r={interpolate(cutDelta, [0, 11], [40, 460])}
+              r={interpolate(cutDelta, [0, 11], [40, 480])}
               stroke={activeStep.color}
               strokeWidth={interpolate(cutDelta, [0, 11], [8, 1])}
               opacity={interpolate(cutDelta, [0, 11], [0.85, 0])}
@@ -233,7 +311,7 @@ export const AEMotionEssence: React.FC = () => {
             <circle
               cx="0"
               cy="0"
-              r={interpolate(cutDelta, [0, 11], [20, 320])}
+              r={interpolate(cutDelta, [0, 11], [20, 340])}
               stroke="#FFFFFF"
               strokeWidth={interpolate(cutDelta, [0, 11], [5, 0.5])}
               strokeDasharray="18 14"

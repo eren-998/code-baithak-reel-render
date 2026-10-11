@@ -1,7 +1,7 @@
 import React from "react";
 
 export const BlackFooterFade: React.FC<{ height?: number }> = ({
-  height = 450,
+  height = 840,
 }) => {
   return (
     <div
@@ -12,7 +12,7 @@ export const BlackFooterFade: React.FC<{ height?: number }> = ({
         width: "100%",
         height: height,
         background:
-          "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.65) 30%, rgba(0,0,0,0.25) 65%, rgba(0,0,0,0) 100%)",
+          "linear-gradient(to top, rgba(2,4,10,0.96) 0%, rgba(4,8,18,0.88) 38%, rgba(6,10,22,0.72) 68%, rgba(6,10,22,0.28) 88%, rgba(0,0,0,0) 100%)",
         pointerEvents: "none",
         zIndex: 20,
       }}

@@ -32,7 +32,7 @@ jobs:
 
       - name: Render Polished Reel
         run: |
-          npx remotion render ReelPolish out/video_polished.mp4 --concurrency=4 --gl=angle
+          npx remotion render ReelPolish out/video_polished.mp4 --concurrency=4 --gl=angle --timeout=90000
 
       - name: Upload Finished MP4
         uses: actions/upload-artifact@v4

@@ -2,38 +2,36 @@ import React from "react";
 import { useCurrentFrame, useVideoConfig, spring, interpolate } from "remotion";
 
 /* =========================================================================
-   AFTER EFFECTS STYLE TOPIC MOTION GRAPHICS (ZERO WEB UI ELEMENTS)
-   - ZERO HTML CARDS / ZERO WEB BUTTONS / ZERO BROWSER BOXES
-   - Pure floating After Effects vector illustrations with animated SVG
-     trim-paths (strokeDasharray / strokeDashoffset), orbital rings,
-     radar sweeps, shockwave ripples, and multi-font kinetic typography.
-   - Positioned in the Chest Safe Zone (top: 1175px) over the dark maroon
-     t-shirt — 100% clear of the speaker's face (Y: 520–1150px) and
-     captions (bottom: 175px).
+   AFTER EFFECTS EXPLAINER MOTION DIAGRAMS & NODE GRAPHS (FOOTER-UP ZONE)
+   - Positioned in the Footer-Up Zone (top: 1140px - 1590px), directly above
+     the footer captions (bottom: 145px) and below the speaker's hands/face.
+   - Pure After Effects vector node graphs, animated SVG bezier conduits,
+     token splitters, autoregressive feedback arcs, KV cache memory locks,
+     and Server-Triggered Event (SSE) streaming pipelines.
    ========================================================================= */
 
 const heavyTextShadow = `
   0 4px 20px rgba(0, 0, 0, 0.99),
-  0 8px 38px rgba(0, 0, 0, 0.96),
-  0 0 32px rgba(0, 0, 0, 0.94),
+  0 8px 36px rgba(0, 0, 0, 0.96),
+  0 0 28px rgba(0, 0, 0, 0.94),
   0 2px 6px rgba(0, 0, 0, 0.95)
 `;
 
 const strokeStyle: React.CSSProperties = {
-  WebkitTextStroke: "2.5px rgba(0, 0, 0, 0.96)",
+  WebkitTextStroke: "2.4px rgba(0, 0, 0, 0.96)",
   paintOrder: "stroke fill",
   textShadow: heavyTextShadow,
 };
 
 const subStrokeStyle: React.CSSProperties = {
-  WebkitTextStroke: "1.8px rgba(0, 0, 0, 0.95)",
+  WebkitTextStroke: "1.6px rgba(0, 0, 0, 0.95)",
   paintOrder: "stroke fill",
   textShadow: heavyTextShadow,
 };
 
-const svgDropShadow = "drop-shadow(0 8px 20px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 14px rgba(0, 0, 0, 0.85))";
+const svgDropShadow =
+  "drop-shadow(0 8px 20px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 14px rgba(0, 0, 0, 0.85))";
 
-// Helper for AE Trim Path stroke animation
 const getTrimPath = (progress: number, length: number) => ({
   strokeDasharray: length,
   strokeDashoffset: interpolate(progress, [0, 1], [length, 0], {
@@ -46,1104 +44,1561 @@ export const AETopicMotionGraphics: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // Continuous After Effects sine-wave micro-physics
-  const wobble = Math.sin(frame / 4.5) * 4.5;
-  const floatY = Math.sin(frame / 7) * 5;
-  const pulse = 1 + Math.sin(frame / 5) * 0.05;
+  const floatY = Math.sin(frame / 7) * 4;
+  const pulse = 1 + Math.sin(frame / 5) * 0.04;
 
-  // Determine active scene and local timing
   const renderScene = () => {
     // =====================================================================
-    // SCENE 0A: HOOK PHASE 1 (Frames 0 - 63 | 0.00s - 2.10s)
-    // Spoken: "Koi fayda nahi hoga teri product website live hone ka"
-    // AE Design: Signal-Lost Wireframe Globe + Red X Slash Trim-Path
+    // SCENE 1: FRIEND TEXTS YOU — COMPLETE FORMAT (Frames 0 - 101 | 0.00s - 3.38s)
+    // Spoken: "So whenever your friend texts you, it comes in a complete format."
+    // AE Node Diagram: [ FRIEND NODE ] ──( SINGLE 100% PAYLOAD )──► [ YOUR PHONE ]
     // =====================================================================
-    if (frame >= 0 && frame < 63) {
+    if (frame >= 0 && frame < 101) {
       const local = frame;
-      const spr1 = spring({ frame: local, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
-      const spr2 = spring({ frame: local - 8, fps, config: { damping: 11, stiffness: 140, mass: 0.8 } });
-      const slashProg = interpolate(local, [10, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const exit = interpolate(local, [54, 63], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-
-      return (
-        <div
-          style={{
-            opacity: spr1 * exit,
-            transform: `translateY(${(1 - spr1) * 35 + floatY}px) scale(${0.82 + spr1 * 0.18})`,
-            display: "flex",
-            alignItems: "center",
-            gap: 26,
-          }}
-        >
-          {/* AE Vector: Wireframe Globe with Animated Red X Slash & Shockwave */}
-          <svg width="138" height="138" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Expanding Shockwave Ring */}
-            <circle
-              cx="60"
-              cy="60"
-              r={36 + (local % 30) * 0.7}
-              stroke="#EF4444"
-              strokeWidth="2"
-              opacity={interpolate(local % 30, [0, 29], [0.8, 0])}
-            />
-            {/* Rotating Outer Dashed Reticle */}
-            <g style={{ transform: `rotate(${local * 2.5}deg)`, transformOrigin: "60px 60px" }}>
-              <circle cx="60" cy="60" r="52" stroke="#FACC15" strokeWidth="2.5" strokeDasharray="10 8" />
-            </g>
-            {/* Wireframe Globe */}
-            <circle cx="60" cy="60" r="38" stroke="#FFFFFF" strokeWidth="3.5" />
-            <ellipse cx="60" cy="60" rx="20" ry="38" stroke="#00F0FF" strokeWidth="2.5" />
-            <line x1="22" y1="60" x2="98" y2="60" stroke="#00F0FF" strokeWidth="2.5" />
-            <path d="M28 42 Q60 50 92 42" stroke="#00F0FF" strokeWidth="2" />
-            <path d="M28 78 Q60 70 92 78" stroke="#00F0FF" strokeWidth="2" />
-            {/* Animated Trim-Path Red X Cross-Out */}
-            <path
-              d="M28 28 L92 92"
-              stroke="#EF4444"
-              strokeWidth="8"
-              strokeLinecap="round"
-              style={getTrimPath(slashProg, 100)}
-            />
-            <path
-              d="M92 28 L28 92"
-              stroke="#EF4444"
-              strokeWidth="8"
-              strokeLinecap="round"
-              style={getTrimPath(slashProg, 100)}
-            />
-          </svg>
-
-          {/* AE Kinetic Typography */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span
-              style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 23,
-                fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#00F0FF",
-                ...subStrokeStyle,
-              }}
-            >
-              // WEBSITE LIVE WARNING
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
-                fontWeight: 900,
-                color: "#FFFFFF",
-                lineHeight: 1.02,
-                letterSpacing: "1.5px",
-                ...strokeStyle,
-              }}
-            >
-              KOI FAYDA <span style={{ color: "#EF4444" }}>NAHI HOGA</span>
-            </span>
-            <span
-              style={{
-                opacity: Math.max(0, spr2),
-                transform: `translateX(${(1 - spr2) * 25}px)`,
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 42,
-                fontWeight: 900,
-                color: "#FFE500",
-                lineHeight: 1.1,
-                ...strokeStyle,
-              }}
-            >
-              Product Website Live Hone Ka!
-            </span>
-          </div>
-        </div>
-      );
-    }
-
-    // =====================================================================
-    // SCENE 0B: HOOK PHASE 2 (Frames 63 - 116 | 2.10s - 3.88s)
-    // Spoken: "agar tune in 10 cheezon ka dhyan nahi rakha!"
-    // AE Design: 10-Point Tactical Target Reticle + Alert Triangle Vector
-    // =====================================================================
-    if (frame >= 63 && frame < 116) {
-      const local = frame - 63;
-      const spr = spring({ frame: local, fps, config: { damping: 11, stiffness: 155, mass: 0.8 } });
-      const ringProg = interpolate(local, [0, 22], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const exit = interpolate(local, [44, 53], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const spr = spring({ frame: local, fps, config: { damping: 13, stiffness: 150 } });
+      const pipeProg = interpolate(local, [8, 38], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const packetX = interpolate(local, [12, 42], [210, 610], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const lockSpr = spring({ frame: local - 40, fps, config: { damping: 11, stiffness: 180 } });
+      const exit = interpolate(local, [91, 101], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
 
       return (
         <div
           style={{
             opacity: spr * exit,
-            transform: `scale(${0.78 + spr * 0.22}) translateY(${floatY}px)`,
-            display: "flex",
-            alignItems: "center",
-            gap: 26,
-          }}
-        >
-          {/* AE Vector: Tactical 10X Target Reticle */}
-          <svg
-            width="136"
-            height="136"
-            viewBox="0 0 120 120"
-            fill="none"
-            style={{ filter: svgDropShadow, transform: `rotate(${wobble}deg)` }}
-          >
-            <circle
-              cx="60"
-              cy="60"
-              r="48"
-              stroke="#FFE500"
-              strokeWidth="5"
-              strokeLinecap="round"
-              style={getTrimPath(ringProg, 310)}
-            />
-            <circle cx="60" cy="60" r="36" stroke="#00F0FF" strokeWidth="2.5" strokeDasharray="6 6" />
-            {/* Target Crosshairs */}
-            <line x1="60" y1="4" x2="60" y2="20" stroke="#FFE500" strokeWidth="4" strokeLinecap="round" />
-            <line x1="60" y1="100" x2="60" y2="116" stroke="#FFE500" strokeWidth="4" strokeLinecap="round" />
-            <line x1="4" y1="60" x2="20" y2="60" stroke="#FFE500" strokeWidth="4" strokeLinecap="round" />
-            <line x1="100" y1="60" x2="116" y2="60" stroke="#FFE500" strokeWidth="4" strokeLinecap="round" />
-            {/* Center "10" Vector Stamp */}
-            <text
-              x="60"
-              y="74"
-              textAnchor="middle"
-              fill="#FFFFFF"
-              stroke="#000000"
-              strokeWidth="3"
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: "44px",
-                fontWeight: 900,
-                paintOrder: "stroke fill",
-              }}
-            >
-              10
-            </text>
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span
-              style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 23,
-                fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#FFE500",
-                ...subStrokeStyle,
-              }}
-            >
-              ✦ MANDATORY CHECKLIST ✦
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 68,
-                fontWeight: 900,
-                color: "#FFE500",
-                lineHeight: 1.02,
-                letterSpacing: "1.5px",
-                ...strokeStyle,
-              }}
-            >
-              IN 10 CHEEZON KA
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 56,
-                fontWeight: 900,
-                color: "#FFFFFF",
-                lineHeight: 1.05,
-                letterSpacing: "2px",
-                ...strokeStyle,
-              }}
-            >
-              DHYAN NAHI RAKHA!
-            </span>
-          </div>
-        </div>
-      );
-    }
-
-    // =====================================================================
-    // SCENE 1: GOOGLE SEARCH (Frames 116 - 183 | 3.88s - 6.10s)
-    // Spoken: "Sabse pehle apni website ko search kar Google pe,"
-    // AE Design: 4-Color Google Emblem + Orbital Magnifying Vector Lens
-    // =====================================================================
-    if (frame >= 116 && frame < 183) {
-      const local = frame - 116;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
-      const drawProg = interpolate(local, [0, 24], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const exit = interpolate(local, [58, 67], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-
-      return (
-        <div
-          style={{
-            opacity: spr * exit,
-            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.84 + spr * 0.16})`,
-            display: "flex",
-            alignItems: "center",
-            gap: 26,
-          }}
-        >
-          {/* AE Vector: Orbital Google Search Scanner */}
-          <svg width="138" height="138" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Rotating Orbital Scan Ring */}
-            <g style={{ transform: `rotate(${local * 3.2}deg)`, transformOrigin: "54px 54px" }}>
-              <circle cx="54" cy="54" r="44" stroke="#00F0FF" strokeWidth="2.5" strokeDasharray="14 8" />
-            </g>
-            {/* Magnifying Lens Rim (Trim Path) */}
-            <circle
-              cx="54"
-              cy="54"
-              r="34"
-              stroke="#FFFFFF"
-              strokeWidth="5"
-              style={getTrimPath(drawProg, 220)}
-            />
-            {/* Magnifying Handle */}
-            <line
-              x1="79"
-              y1="79"
-              x2="108"
-              y2="108"
-              stroke="#FFE500"
-              strokeWidth="9"
-              strokeLinecap="round"
-              style={getTrimPath(drawProg, 50)}
-            />
-            {/* Official 4-Color Google "G" Vector */}
-            <g transform="translate(32, 32) scale(0.92)">
-              <path
-                fill="#EA4335"
-                d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"
-              />
-              <path
-                fill="#4285F4"
-                d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"
-              />
-              <path
-                fill="#FBBC05"
-                d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"
-              />
-              <path
-                fill="#34A853"
-                d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"
-              />
-            </g>
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span
-              style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
-                fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#FFE500",
-                ...subStrokeStyle,
-              }}
-            >
-              STEP 01 // DISCOVERY
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
-                fontWeight: 900,
-                color: "#FFFFFF",
-                lineHeight: 1.02,
-                letterSpacing: "1.5px",
-                ...strokeStyle,
-              }}
-            >
-              SEARCH ON <span style={{ color: "#00F0FF" }}>GOOGLE</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 40,
-                fontWeight: 900,
-                color: "#FFE500",
-                ...strokeStyle,
-              }}
-            >
-              Verify Your Live Domain
-            </span>
-          </div>
-        </div>
-      );
-    }
-
-    // =====================================================================
-    // SCENE 2: INDEXING CHECK (Frames 183 - 231 | 6.10s - 7.70s)
-    // Spoken: "uske baad uska indexing check kar."
-    // AE Design: Crawler Neural Node Graph with Sequential Node Lock-On
-    // =====================================================================
-    if (frame >= 183 && frame < 231) {
-      const local = frame - 183;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 160, mass: 0.8 } });
-      const lineProg = interpolate(local, [0, 18], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const exit = interpolate(local, [40, 48], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-
-      return (
-        <div
-          style={{
-            opacity: spr * exit,
-            transform: `scale(${0.82 + spr * 0.18}) translateY(${floatY}px)`,
-            display: "flex",
-            alignItems: "center",
-            gap: 26,
-          }}
-        >
-          {/* AE Vector: Crawler Indexing Node Constellation */}
-          <svg width="138" height="138" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Trim-path laser connectors from center hub to 4 nodes */}
-            <line x1="60" y1="60" x2="24" y2="24" stroke="#00F0FF" strokeWidth="4" style={getTrimPath(lineProg, 60)} />
-            <line x1="60" y1="60" x2="96" y2="24" stroke="#00F0FF" strokeWidth="4" style={getTrimPath(lineProg, 60)} />
-            <line x1="60" y1="60" x2="24" y2="96" stroke="#22C55E" strokeWidth="4" style={getTrimPath(lineProg, 60)} />
-            <line x1="60" y1="60" x2="96" y2="96" stroke="#22C55E" strokeWidth="4" style={getTrimPath(lineProg, 60)} />
-
-            {/* Outer Satellite Nodes lighting up */}
-            {[
-              { cx: 24, cy: 24, delay: 4 },
-              { cx: 96, cy: 24, delay: 8 },
-              { cx: 24, cy: 96, delay: 12 },
-              { cx: 96, cy: 96, delay: 16 },
-            ].map((n, i) => {
-              const active = local >= n.delay;
-              return (
-                <g key={i}>
-                  <circle
-                    cx={n.cx}
-                    cy={n.cy}
-                    r="14"
-                    fill={active ? "#22C55E" : "#1E293B"}
-                    stroke="#FFFFFF"
-                    strokeWidth="3"
-                  />
-                  {active && (
-                    <path
-                      d={`M${n.cx - 5} ${n.cy} L${n.cx - 1} ${n.cy + 4} L${n.cx + 6} ${n.cy - 4}`}
-                      stroke="#000000"
-                      strokeWidth="3.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  )}
-                </g>
-              );
-            })}
-
-            {/* Center Crawler Core */}
-            <circle cx="60" cy="60" r="20" fill="#00F0FF" stroke="#000000" strokeWidth="3.5" />
-            <circle cx="60" cy="60" r="8" fill="#000000" />
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span
-              style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
-                fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#22C55E",
-                ...subStrokeStyle,
-              }}
-            >
-              STEP 02 // GOOGLEBOT CRAWL
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 68,
-                fontWeight: 900,
-                color: "#22C55E",
-                lineHeight: 1.02,
-                letterSpacing: "1.5px",
-                ...strokeStyle,
-              }}
-            >
-              INDEXING <span style={{ color: "#FFFFFF" }}>CHECK KAR</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 38,
-                fontWeight: 900,
-                color: "#00F0FF",
-                ...strokeStyle,
-              }}
-            >
-              URL Inspection & Crawl Status
-            </span>
-          </div>
-        </div>
-      );
-    }
-
-    // =====================================================================
-    // SCENE 3: PAGES REPORT (Frames 231 - 310 | 7.70s - 10.33s)
-    // Spoken: "Then uski Pages Report, that is uski indexing ko check karo."
-    // AE Design: Isometric Vector Page Stack + Sweeping Laser Beam & Telemetry Bars
-    // =====================================================================
-    if (frame >= 231 && frame < 310) {
-      const local = frame - 231;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
-      const scanY = interpolate(local % 36, [0, 18, 36], [22, 98, 22]);
-      const exit = interpolate(local, [70, 79], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-
-      return (
-        <div
-          style={{
-            opacity: spr * exit,
-            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.84 + spr * 0.16})`,
-            display: "flex",
-            alignItems: "center",
-            gap: 26,
-          }}
-        >
-          {/* AE Vector: Isometric Pages Telemetry Scanner */}
-          <svg width="138" height="138" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Stacked Vector Page Outlines (Pure linework, no web card) */}
-            <path
-              d="M60 16 L104 38 L60 60 L16 38 Z"
-              stroke="#00F0FF"
-              strokeWidth="4"
-              fill="rgba(0, 240, 255, 0.18)"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M16 58 L60 80 L104 58"
-              stroke="#FFE500"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M16 78 L60 100 L104 78"
-              stroke="#22C55E"
-              strokeWidth="4"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            {/* Sweeping Laser Scan Line */}
-            <line x1="10" y1={scanY} x2="110" y2={scanY} stroke="#FFE500" strokeWidth="4" strokeLinecap="round" />
-            <circle cx="16" cy={scanY} r="5" fill="#FFE500" />
-            <circle cx="104" cy={scanY} r="5" fill="#FFE500" />
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span
-              style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
-                fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#00F0FF",
-                ...subStrokeStyle,
-              }}
-            >
-              STEP 03 // SEARCH CONSOLE
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
-                fontWeight: 900,
-                color: "#FFE500",
-                lineHeight: 1.02,
-                letterSpacing: "1.5px",
-                ...strokeStyle,
-              }}
-            >
-              PAGES REPORT <span style={{ color: "#FFFFFF" }}>CHECK</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 38,
-                fontWeight: 900,
-                color: "#22C55E",
-                ...strokeStyle,
-              }}
-            >
-              Verify Indexed vs Not-Indexed Pages
-            </span>
-          </div>
-        </div>
-      );
-    }
-
-    // =====================================================================
-    // SCENE 4: FREE AUDIT - VERITAS (Frames 310 - 418 | 10.33s - 13.95s)
-    // Spoken: "Fourth one, uska free audit karwa, Veritas teri help kar dega free mein karne mein."
-    // AE Design: Diagnostic Radar Shield + Animated 100% Arc Gauge
-    // =====================================================================
-    if (frame >= 310 && frame < 418) {
-      const local = frame - 310;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
-      const gaugeProg = interpolate(local, [5, 55], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const score = Math.round(gaugeProg * 100);
-      const exit = interpolate(local, [98, 108], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-
-      return (
-        <div
-          style={{
-            opacity: spr * exit,
-            transform: `scale(${0.82 + spr * 0.18}) translateY(${floatY}px)`,
-            display: "flex",
-            alignItems: "center",
-            gap: 26,
-          }}
-        >
-          {/* AE Vector: Cyber Shield & 100% Diagnostic Arc Gauge */}
-          <svg width="142" height="142" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Outer Track Ring */}
-            <circle cx="60" cy="60" r="50" stroke="rgba(255,255,255,0.22)" strokeWidth="7" />
-            {/* Animated Trim-Path Gauge Arc */}
-            <circle
-              cx="60"
-              cy="60"
-              r="50"
-              stroke="#10B981"
-              strokeWidth="7"
-              strokeLinecap="round"
-              transform="rotate(-90 60 60)"
-              style={getTrimPath(gaugeProg, 315)}
-            />
-            {/* Inner Shield Vector */}
-            <path
-              d="M60 22 L90 34 V58 C90 79 60 95 60 95 C60 95 30 79 30 58 V34 Z"
-              fill="rgba(16, 185, 129, 0.25)"
-              stroke="#FFE500"
-              strokeWidth="3.5"
-              strokeLinejoin="round"
-            />
-            {/* Live Animated Score Readout */}
-            <text
-              x="60"
-              y="69"
-              textAnchor="middle"
-              fill="#FFFFFF"
-              stroke="#000000"
-              strokeWidth="2.5"
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: "30px",
-                fontWeight: 900,
-                paintOrder: "stroke fill",
-              }}
-            >
-              {score}%
-            </text>
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span
-              style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
-                fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#10B981",
-                ...subStrokeStyle,
-              }}
-            >
-              STEP 04 // VERITAS AI TOOL
-            </span>
-            <span
-              style={{
-                fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
-                fontWeight: 900,
-                color: "#FFFFFF",
-                lineHeight: 1.02,
-                letterSpacing: "1.5px",
-                ...strokeStyle,
-              }}
-            >
-              FREE <span style={{ color: "#10B981" }}>SITE AUDIT</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 40,
-                fontWeight: 900,
-                color: "#FFE500",
-                ...strokeStyle,
-              }}
-            >
-              Veritas Diagnostic — 100% Free
-            </span>
-          </div>
-        </div>
-      );
-    }
-
-    // =====================================================================
-    // SCENE 5: 5-STAR GOOGLE REVIEWS (Frames 418 - 513 | 13.95s - 17.11s)
-    // Spoken: "Zyada se zyada 5-Star Google Reviews lekar aao apne product ki site par."
-    // AE Design: 5-Star Golden Vector Constellation with Sequential Spring Burst
-    // =====================================================================
-    if (frame >= 418 && frame < 513) {
-      const local = frame - 418;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
-      const exit = interpolate(local, [85, 95], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-
-      return (
-        <div
-          style={{
-            opacity: spr * exit,
-            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.84 + spr * 0.16})`,
+            transform: `translateY(${(1 - spr) * 32 + floatY}px) scale(${0.9 + spr * 0.1})`,
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: 10,
+            width: 980,
           }}
         >
-          {/* AE Vector: 5-Star Sequential Spring Burst Constellation */}
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            {[0, 1, 2, 3, 4].map((idx) => {
-              const starSpr = spring({
-                frame: local - idx * 4,
-                fps,
-                config: { damping: 9, stiffness: 190, mass: 0.7 },
-              });
-              const archY = Math.abs(idx - 2) * 8;
-              return (
-                <svg
-                  key={idx}
-                  width="64"
-                  height="64"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                  style={{
-                    transform: `translateY(${archY}px) scale(${starSpr}) rotate(${(1 - starSpr) * -35 + wobble * 0.6}deg)`,
-                    filter: svgDropShadow,
-                  }}
-                >
-                  <path
-                    d="M24 3L30.5 16.2L45 18.3L34.5 28.5L37 43L24 36.2L11 43L13.5 28.5L3 18.3L17.5 16.2L24 3Z"
-                    fill="#FFE500"
-                    stroke="#000000"
-                    strokeWidth="3"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              );
-            })}
-          </div>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          {/* Kinetic Header */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 20,
                 fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#00F0FF",
+                letterSpacing: "3px",
+                color: "#22C55E",
                 ...subStrokeStyle,
               }}
             >
-              STEP 05 // SOCIAL PROOF ENGINE
+              [ P2P MESSAGE ARCHITECTURE ]
             </span>
             <span
               style={{
                 fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
+                fontSize: 48,
                 fontWeight: 900,
-                color: "#FFE500",
-                lineHeight: 1.02,
                 letterSpacing: "1.5px",
+                color: "#FFFFFF",
                 ...strokeStyle,
               }}
             >
-              5-STAR <span style={{ color: "#FFFFFF" }}>GOOGLE REVIEWS</span>
+              100% <span style={{ color: "#22C55E" }}>COMPLETE FORMAT</span>
             </span>
           </div>
+
+          {/* AE Explainer Node Graph SVG */}
+          <svg width="960" height="260" viewBox="0 0 960 260" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Connecting Conduit Pipe */}
+            <path
+              d="M 210 130 L 750 130"
+              stroke="rgba(34, 197, 94, 0.28)"
+              strokeWidth="8"
+              strokeDasharray="14 10"
+            />
+            <path
+              d="M 210 130 L 750 130"
+              stroke="#22C55E"
+              strokeWidth="5"
+              strokeLinecap="round"
+              style={getTrimPath(pipeProg, 540)}
+            />
+
+            {/* Left Node: FRIEND SENDER NODE */}
+            <g transform="translate(125, 130)">
+              <circle r="72" fill="rgba(6, 14, 24, 0.9)" stroke="#22C55E" strokeWidth="3.5" />
+              <circle
+                r="82"
+                stroke="#22C55E"
+                strokeWidth="2"
+                strokeDasharray="12 8"
+                transform={`rotate(${local * 2})`}
+              />
+              {/* Vector User Icon */}
+              <circle cx="0" cy="-16" r="16" stroke="#FFFFFF" strokeWidth="3.5" fill="rgba(34,197,94,0.25)" />
+              <path d="M -28 24 C -28 4, 28 4, 28 24" stroke="#FFFFFF" strokeWidth="3.5" strokeLinecap="round" />
+              <text x="0" y="52" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                FRIEND NODE
+              </text>
+            </g>
+
+            {/* Traveling / Locked Complete Payload Capsule */}
+            <g transform={`translate(${packetX}, 130) scale(${0.85 + Math.min(1, pipeProg) * 0.15})`}>
+              <rect
+                x="-135"
+                y="-44"
+                width="270"
+                height="88"
+                rx="16"
+                fill="rgba(8, 24, 18, 0.95)"
+                stroke="#FFE500"
+                strokeWidth="3.5"
+              />
+              <text x="0" y="-8" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                SINGLE PAYLOAD // 1 PACKET
+              </text>
+              <text x="0" y="22" textAnchor="middle" fill="#FFFFFF" fontFamily="Inter" fontSize="22" fontWeight="900">
+                &quot;Hey! Let&apos;s meet at 5&quot;
+              </text>
+            </g>
+
+            {/* Right Node: RECEIVER NODE */}
+            <g transform={`translate(835, 130) scale(${0.92 + lockSpr * 0.08})`}>
+              {lockSpr > 0.1 && (
+                <circle
+                  r={72 + lockSpr * 26}
+                  stroke="#FFE500"
+                  strokeWidth={4 * (1 - lockSpr)}
+                  opacity={1 - lockSpr}
+                />
+              )}
+              <circle
+                r="72"
+                fill="rgba(6, 14, 24, 0.9)"
+                stroke={lockSpr > 0.2 ? "#FFE500" : "#00F0FF"}
+                strokeWidth="3.5"
+              />
+              {/* Checkmark / Complete Delivery */}
+              <path
+                d="M -22 -4 L -6 14 L 26 -18"
+                stroke="#22C55E"
+                strokeWidth="6"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <text x="0" y="46" textAnchor="middle" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                DELIVERED 100%
+              </text>
+            </g>
+          </svg>
         </div>
       );
     }
 
     // =====================================================================
-    // SCENE 6: PARTNER BACKLINKS (Frames 513 - 591 | 17.11s - 19.69s)
-    // Spoken: "Agar tumhara koi partner hai to use bolo link kare in products ko."
-    // AE Design: Interlocking Vector Chain + Energy Bridge
+    // SCENE 2: AI RESPONSE — CHUNK BY CHUNK (Frames 101 - 233 | 3.38s - 7.78s)
+    // Spoken: "But whenever an AI sends you a response, it comes chunk by chunk."
+    // AE Node Diagram: [ AI ENGINE ] ──► [CHUNK 01] ➔ [CHUNK 02] ➔ [CHUNK 03] ➔ [CHUNK 04]
     // =====================================================================
-    if (frame >= 513 && frame < 591) {
-      const local = frame - 513;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 155, mass: 0.8 } });
-      const lockOffset = interpolate(spr, [0, 1], [28, 0]);
-      const exit = interpolate(local, [68, 78], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    if (frame >= 101 && frame < 233) {
+      const local = frame - 101;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 155 } });
+      const exit = interpolate(local, [120, 132], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      const chunks = [
+        { id: "CHUNK_01", word: '"Here"', color: "#00F0FF", delay: 12, x: 310 },
+        { id: "CHUNK_02", word: '"is"', color: "#38BDF8", delay: 30, x: 485 },
+        { id: "CHUNK_03", word: '"your"', color: "#A855F7", delay: 48, x: 660 },
+        { id: "CHUNK_04", word: '"answer..."', color: "#FFE500", delay: 66, x: 835 },
+      ];
 
       return (
         <div
           style={{
             opacity: spr * exit,
-            transform: `scale(${0.82 + spr * 0.18}) translateY(${floatY}px)`,
+            transform: `translateY(${(1 - spr) * 32 + floatY}px) scale(${0.9 + spr * 0.1})`,
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 26,
+            width: 980,
           }}
         >
-          {/* AE Vector: Interlocking Neon Hyperlink Chain */}
-          <svg width="142" height="136" viewBox="0 0 130 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Glowing Orbit Ring */}
-            <circle cx="65" cy="60" r="50" stroke="#A855F7" strokeWidth="2.5" strokeDasharray="10 8" />
-            {/* Left Chain Link sliding in */}
-            <g transform={`translate(${-lockOffset}, 0) rotate(-32 52 60)`}>
-              <rect
-                x="22"
-                y="42"
-                width="54"
-                height="32"
-                rx="16"
-                stroke="#00F0FF"
-                strokeWidth="7"
-              />
-            </g>
-            {/* Right Chain Link sliding in */}
-            <g transform={`translate(${lockOffset}, 0) rotate(-32 78 60)`}>
-              <rect
-                x="54"
-                y="46"
-                width="54"
-                height="32"
-                rx="16"
-                stroke="#FFE500"
-                strokeWidth="7"
-              />
-            </g>
-            {/* Spark Node at Intersection */}
-            <circle cx="65" cy="60" r={6 * pulse} fill="#FFFFFF" />
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+          {/* Kinetic Header */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 20,
                 fontWeight: 900,
-                letterSpacing: "4px",
+                letterSpacing: "3px",
+                color: "#00F0FF",
+                ...subStrokeStyle,
+              }}
+            >
+              [ AI STREAMING PIPELINE ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 50,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              STREAMED <span style={{ color: "#FFE500" }}>CHUNK BY CHUNK</span>
+            </span>
+          </div>
+
+          <svg width="960" height="260" viewBox="0 0 960 260" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Main Stream Bus */}
+            <path d="M 190 130 L 900 130" stroke="rgba(0, 240, 255, 0.22)" strokeWidth="6" strokeDasharray="10 8" />
+            <path
+              d="M 190 130 L 900 130"
+              stroke="#00F0FF"
+              strokeWidth="4"
+              style={getTrimPath(interpolate(local, [5, 75], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }), 710)}
+            />
+
+            {/* Left Node: AI NEURAL CORE */}
+            <g transform="translate(115, 130)">
+              <polygon
+                points="0,-74 64,-37 64,37 0,74 -64,37 -64,-37"
+                fill="rgba(8, 14, 28, 0.94)"
+                stroke="#00F0FF"
+                strokeWidth="3.5"
+              />
+              <circle
+                r="52"
+                stroke="#A855F7"
+                strokeWidth="2.5"
+                strokeDasharray="10 6"
+                transform={`rotate(${-local * 3})`}
+              />
+              <text x="0" y="-4" textAnchor="middle" fill="#00F0FF" fontFamily="Impact" fontSize="28" letterSpacing="1">
+                AI LLM
+              </text>
+              <text x="0" y="22" textAnchor="middle" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                STREAM CORE
+              </text>
+            </g>
+
+            {/* Sequential Chunk Nodes */}
+            {chunks.map((c, i) => {
+              const cSpr = spring({
+                frame: local - c.delay,
+                fps,
+                config: { damping: 11, stiffness: 180 },
+              });
+              const op = Math.min(1, Math.max(0, cSpr));
+              return (
+                <g
+                  key={i}
+                  transform={`translate(${c.x}, 130) scale(${0.5 + cSpr * 0.5})`}
+                  opacity={op}
+                >
+                  {/* Node Pulse Ring */}
+                  <rect
+                    x="-74"
+                    y="-54"
+                    width="148"
+                    height="108"
+                    rx="16"
+                    fill="rgba(8, 14, 26, 0.94)"
+                    stroke={c.color}
+                    strokeWidth="3.5"
+                  />
+                  <circle cx="-52" cy="-32" r="5" fill={c.color} />
+                  <text x="6" y="-27" textAnchor="middle" fill={c.color} fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                    {c.id}
+                  </text>
+                  <text x="0" y="14" textAnchor="middle" fill="#FFFFFF" fontFamily="Inter" fontSize="24" fontWeight="900">
+                    {c.word}
+                  </text>
+                  <text x="0" y="38" textAnchor="middle" fill="rgba(255,255,255,0.65)" fontFamily="JetBrains Mono" fontSize="11" fontWeight="700">
+                    TOKEN #{i + 1}
+                  </text>
+                </g>
+              );
+            })}
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 3: WHAT'S THE DIFFERENCE? (Frames 233 - 337 | 7.78s - 11.24s)
+    // Spoken: "Now the question is, what's the difference? So let me tell you."
+    // AE Node Diagram: Split Comparison Node Graph converging on Question Core
+    // =====================================================================
+    if (frame >= 233 && frame < 337) {
+      const local = frame - 233;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 160 } });
+      const exit = interpolate(local, [92, 104], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 20,
+                fontWeight: 900,
+                letterSpacing: "3px",
+                color: "#FFE500",
+                ...subStrokeStyle,
+              }}
+            >
+              [ ARCHITECTURE MYSTERY ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 52,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              WHAT&apos;S THE <span style={{ color: "#00F0FF" }}>DIFFERENCE?</span>
+            </span>
+          </div>
+
+          <svg width="960" height="255" viewBox="0 0 960 255" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Left & Right Bezier Arms into Central Query Core */}
+            <path d="M 310 128 C 380 128, 400 128, 430 128" stroke="#22C55E" strokeWidth="4" strokeDasharray="8 6" />
+            <path d="M 650 128 C 580 128, 560 128, 530 128" stroke="#00F0FF" strokeWidth="4" strokeDasharray="8 6" />
+
+            {/* Left Comparison Node: FRIEND TEXT */}
+            <g transform="translate(180, 128)">
+              <rect x="-135" y="-58" width="270" height="116" rx="18" fill="rgba(8, 18, 16, 0.94)" stroke="#22C55E" strokeWidth="3.5" />
+              <text x="0" y="-20" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                FRIEND TEXT MESSAGE
+              </text>
+              <text x="0" y="14" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="30" letterSpacing="1">
+                ALL AT ONCE
+              </text>
+              <text x="0" y="40" textAnchor="middle" fill="rgba(255,255,255,0.75)" fontFamily="JetBrains Mono" fontSize="13" fontWeight="700">
+                [ 1 COMPLETE PAYLOAD ]
+              </text>
+            </g>
+
+            {/* Center Node: Rotating AE Query Core */}
+            <g transform={`translate(480, 128) scale(${pulse})`}>
+              <circle r="64" fill="rgba(12, 14, 26, 0.96)" stroke="#FFE500" strokeWidth="4" />
+              <circle
+                r="76"
+                stroke="#00F0FF"
+                strokeWidth="2.5"
+                strokeDasharray="14 8"
+                transform={`rotate(${local * 3.2})`}
+              />
+              <text x="0" y="18" textAnchor="middle" fill="#FFE500" fontFamily="Impact" fontSize="56">
+                VS
+              </text>
+            </g>
+
+            {/* Right Comparison Node: AI LLM STREAM */}
+            <g transform="translate(780, 128)">
+              <rect x="-135" y="-58" width="270" height="116" rx="18" fill="rgba(8, 14, 28, 0.94)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-20" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                AI MODEL RESPONSE
+              </text>
+              <text x="0" y="14" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="30" letterSpacing="1">
+                CHUNK BY CHUNK
+              </text>
+              <text x="0" y="40" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="13" fontWeight="700">
+                [ TOKEN STREAMING ]
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 4: INPUT WORD ➔ TOKENIZATION PIPELINE (Frames 337 - 548 | 11.24s - 18.26s)
+    // Spoken: "So let's assume that you are giving this word to your AI model.
+    //          So this word is actually converted into different tokens so that the model can process it."
+    // AE Node Diagram: [ INPUT WORD ] ──► [ TOKENIZER PRISM ] ──► [TOK_01] [TOK_02] [TOK_03] ──► [ AI MODEL ]
+    // =====================================================================
+    if (frame >= 337 && frame < 548) {
+      const local = frame - 337;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
+      const splitSpr = spring({ frame: local - 55, fps, config: { damping: 12, stiffness: 140 } });
+      const processSpr = spring({ frame: local - 135, fps, config: { damping: 12, stiffness: 150 } });
+      const exit = interpolate(local, [198, 211], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      const tokenNodes = [
+        { label: "TOK_01", sub: "ID: 1842", y: 55, color: "#00F0FF" },
+        { label: "TOK_02", sub: "ID: 9041", y: 135, color: "#FFE500" },
+        { label: "TOK_03", sub: "ID: 3319", y: 215, color: "#A855F7" },
+      ];
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 19,
+                fontWeight: 900,
+                letterSpacing: "3px",
                 color: "#A855F7",
                 ...subStrokeStyle,
               }}
             >
-              STEP 06 // DOMAIN AUTHORITY
+              [ STEP 01 // TOKENIZATION ENGINE ]
             </span>
             <span
               style={{
                 fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 64,
+                fontSize: 46,
                 fontWeight: 900,
-                color: "#FFFFFF",
-                lineHeight: 1.02,
                 letterSpacing: "1.5px",
+                color: "#FFFFFF",
                 ...strokeStyle,
               }}
             >
-              PARTNER <span style={{ color: "#00F0FF" }}>BACKLINKS</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 38,
-                fontWeight: 900,
-                color: "#FFE500",
-                ...strokeStyle,
-              }}
-            >
-              Cross-Link Your Product Pages
+              INPUT WORD <span style={{ color: "#00F0FF" }}>➔</span> <span style={{ color: "#FFE500" }}>TOKENS</span> <span style={{ color: "#00F0FF" }}>➔</span> AI MODEL
             </span>
           </div>
+
+          <svg width="960" height="270" viewBox="0 0 960 270" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Input Pipe: Word -> Tokenizer */}
+            <path d="M 210 135 L 330 135" stroke="#00F0FF" strokeWidth="4.5" />
+
+            {/* Branching Bezier Pipes: Tokenizer -> 3 Token Nodes -> AI Model */}
+            {tokenNodes.map((t, i) => (
+              <g key={i}>
+                <path
+                  d={`M 415 135 C 460 135, 470 ${t.y}, 515 ${t.y}`}
+                  stroke={t.color}
+                  strokeWidth="3.5"
+                  style={getTrimPath(splitSpr, 160)}
+                />
+                <path
+                  d={`M 685 ${t.y} C 730 ${t.y}, 745 135, 790 135`}
+                  stroke={t.color}
+                  strokeWidth="3.5"
+                  strokeDasharray="8 6"
+                  opacity={processSpr}
+                />
+              </g>
+            ))}
+
+            {/* Node 1: RAW INPUT WORD */}
+            <g transform="translate(115, 135)">
+              <rect x="-95" y="-52" width="190" height="104" rx="16" fill="rgba(8, 14, 26, 0.94)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-16" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                USER INPUT
+              </text>
+              <text x="0" y="18" textAnchor="middle" fill="#FFFFFF" fontFamily="Inter" fontSize="24" fontWeight="900">
+                &quot;PROMPT&quot;
+              </text>
+              <text x="0" y="38" textAnchor="middle" fill="rgba(255,255,255,0.65)" fontFamily="JetBrains Mono" fontSize="11">
+                RAW STRING
+              </text>
+            </g>
+
+            {/* Node 2: TOKENIZER PRISM */}
+            <g transform="translate(372, 135)">
+              <polygon
+                points="0,-56 48,0 0,56 -48,0"
+                fill="rgba(24, 12, 40, 0.95)"
+                stroke="#A855F7"
+                strokeWidth="3.5"
+              />
+              <circle r="64" stroke="#A855F7" strokeWidth="2" strokeDasharray="8 8" transform={`rotate(${local * 2.5})`} />
+              <text x="0" y="5" textAnchor="middle" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                SPLIT
+              </text>
+            </g>
+
+            {/* Node 3A/3B/3C: SPLIT TOKEN NODES */}
+            {tokenNodes.map((t, i) => {
+              const tSpr = spring({ frame: local - 60 - i * 10, fps, config: { damping: 11, stiffness: 170 } });
+              return (
+                <g
+                  key={i}
+                  transform={`translate(600, ${t.y}) scale(${0.6 + tSpr * 0.4})`}
+                  opacity={Math.min(1, Math.max(0, tSpr))}
+                >
+                  <rect x="-85" y="-30" width="170" height="60" rx="12" fill="rgba(8, 14, 26, 0.95)" stroke={t.color} strokeWidth="3" />
+                  <text x="0" y="-4" textAnchor="middle" fill={t.color} fontFamily="JetBrains Mono" fontSize="16" fontWeight="900">
+                    {t.label}
+                  </text>
+                  <text x="0" y="18" textAnchor="middle" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="700">
+                    {t.sub}
+                  </text>
+                </g>
+              );
+            })}
+
+            {/* Node 4: AI MODEL PROCESSOR */}
+            <g transform={`translate(870, 135) scale(${0.85 + processSpr * 0.15})`} opacity={0.35 + processSpr * 0.65}>
+              <polygon
+                points="0,-68 60,-34 60,34 0,68 -60,34 -60,-34"
+                fill="rgba(8, 20, 28, 0.95)"
+                stroke="#22C55E"
+                strokeWidth="3.5"
+              />
+              <text x="0" y="-4" textAnchor="middle" fill="#22C55E" fontFamily="Impact" fontSize="25">
+                AI MODEL
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="12" fontWeight="900">
+                PROCESS
+              </text>
+            </g>
+          </svg>
         </div>
       );
     }
 
     // =====================================================================
-    // SCENE 7: BRAND GOOGLE ALERTS (Frames 591 - 674 | 19.69s - 22.46s)
-    // Spoken: "Second last is, apne brand ka Google Alert set kar lo."
-    // AE Design: Harmonic Swinging Sonic Bell + Concentric Radar Shockwaves
+    // SCENE 5: ROLE OF THE MODEL — NEXT WORD PREDICTION (Frames 548 - 716 | 18.26s - 23.86s)
+    // Spoken: "The role of the model is simple. It will give you the best next word prediction on the basis of the tokens."
+    // AE Node Diagram: [ TOKENS ] ──► [ TRANSFORMER CORE ] ──► Probability Branches (96.8% Winner!)
     // =====================================================================
-    if (frame >= 591 && frame < 674) {
-      const local = frame - 591;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 155, mass: 0.8 } });
-      const bellSwing = Math.sin(local * 0.5) * 14 * Math.exp(-local * 0.015);
-      const exit = interpolate(local, [73, 83], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    if (frame >= 548 && frame < 716) {
+      const local = frame - 548;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
+      const barProg = interpolate(local, [25, 75], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const exit = interpolate(local, [155, 168], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      const candidates = [
+        { label: "BEST NEXT WORD", pct: 96, width: 220, y: 58, color: "#FFE500", active: true },
+        { label: "ALT CANDIDATE B", pct: 3, width: 45, y: 138, color: "#00F0FF", active: false },
+        { label: "ALT CANDIDATE C", pct: 1, width: 20, y: 214, color: "#64748B", active: false },
+      ];
 
       return (
         <div
           style={{
             opacity: spr * exit,
-            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.84 + spr * 0.16})`,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 26,
+            width: 980,
           }}
         >
-          {/* AE Vector: Sonic Alert Bell with Radar Ripples */}
-          <svg width="138" height="138" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Left & Right Sonic Radar Waves */}
-            <path
-              d="M22 36 C10 50, 10 70, 22 84"
-              stroke="#00F0FF"
-              strokeWidth="4"
-              strokeLinecap="round"
-              opacity={0.4 + Math.sin(local * 0.4) * 0.5}
-            />
-            <path
-              d="M98 36 C110 50, 110 70, 98 84"
-              stroke="#00F0FF"
-              strokeWidth="4"
-              strokeLinecap="round"
-              opacity={0.4 + Math.sin(local * 0.4) * 0.5}
-            />
-            <path
-              d="M12 24 C-4 46, -4 74, 12 96"
-              stroke="#FFE500"
-              strokeWidth="3.5"
-              strokeLinecap="round"
-              opacity={0.4 + Math.cos(local * 0.4) * 0.5}
-            />
-            <path
-              d="M108 24 C124 46, 124 74, 108 96"
-              stroke="#FFE500"
-              strokeWidth="3.5"
-              strokeLinecap="round"
-              opacity={0.4 + Math.cos(local * 0.4) * 0.5}
-            />
-
-            {/* Swinging Bell Vector */}
-            <g style={{ transform: `rotate(${bellSwing}deg)`, transformOrigin: "60px 24px" }}>
-              <path
-                d="M60 18 C42 18, 34 34, 34 56 L26 76 H94 L86 56 C86 34, 78 18, 60 18 Z"
-                fill="#FFE500"
-                stroke="#000000"
-                strokeWidth="4"
-                strokeLinejoin="round"
-              />
-              <circle cx="60" cy="86" r="9" fill="#EF4444" stroke="#000000" strokeWidth="3.5" />
-            </g>
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 19,
                 fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#FFE500",
+                letterSpacing: "3px",
+                color: "#00F0FF",
                 ...subStrokeStyle,
               }}
             >
-              STEP 07 // BRAND RADAR
+              [ CORE LLM OBJECTIVE ]
             </span>
             <span
               style={{
                 fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
+                fontSize: 48,
                 fontWeight: 900,
-                color: "#FFE500",
-                lineHeight: 1.02,
                 letterSpacing: "1.5px",
+                color: "#FFFFFF",
                 ...strokeStyle,
               }}
             >
-              GOOGLE <span style={{ color: "#FFFFFF" }}>ALERTS</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 38,
-                fontWeight: 900,
-                color: "#00F0FF",
-                ...strokeStyle,
-              }}
-            >
-              Track Every Brand Mention Live
+              BEST <span style={{ color: "#FFE500" }}>NEXT-WORD PREDICTION</span>
             </span>
           </div>
+
+          <svg width="960" height="265" viewBox="0 0 960 265" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Input Tokens Node */}
+            <g transform="translate(135, 136)">
+              <rect x="-105" y="-58" width="210" height="116" rx="16" fill="rgba(8, 14, 26, 0.95)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-22" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                INPUT BASIS
+              </text>
+              <text x="0" y="12" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="28" letterSpacing="1">
+                [T1] [T2] [T3]
+              </text>
+              <text x="0" y="38" textAnchor="middle" fill="rgba(255,255,255,0.75)" fontFamily="JetBrains Mono" fontSize="13" fontWeight="700">
+                TOKEN SEQUENCE
+              </text>
+            </g>
+
+            <path d="M 240 136 L 345 136" stroke="#00F0FF" strokeWidth="4.5" />
+
+            {/* Central AI Model Node */}
+            <g transform="translate(425, 136)">
+              <circle r="68" fill="rgba(12, 16, 32, 0.96)" stroke="#A855F7" strokeWidth="4" />
+              <circle r="78" stroke="#00F0FF" strokeWidth="2.5" strokeDasharray="12 8" transform={`rotate(${local * 2.5})`} />
+              <text x="0" y="-6" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="26">
+                AI MODEL
+              </text>
+              <text x="0" y="18" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                PREDICTOR
+              </text>
+            </g>
+
+            {/* Output Probability Branches */}
+            {candidates.map((c, i) => (
+              <g key={i}>
+                <path
+                  d={`M 495 136 C 540 136, 550 ${c.y}, 595 ${c.y}`}
+                  stroke={c.color}
+                  strokeWidth={c.active ? "4" : "2.5"}
+                />
+                <g transform={`translate(600, ${c.y - 28})`}>
+                  <rect
+                    x="0"
+                    y="0"
+                    width="335"
+                    height="56"
+                    rx="12"
+                    fill="rgba(8, 14, 26, 0.95)"
+                    stroke={c.color}
+                    strokeWidth={c.active ? "3.5" : "2"}
+                  />
+                  {/* Animated Probability Fill Bar */}
+                  <rect
+                    x="10"
+                    y="34"
+                    width={c.width * barProg}
+                    height="10"
+                    rx="5"
+                    fill={c.color}
+                  />
+                  <text x="14" y="24" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                    {c.label}
+                  </text>
+                  <text x="320" y="26" textAnchor="end" fill={c.color} fontFamily="Impact" fontSize="24">
+                    {Math.round(c.pct * barProg)}%
+                  </text>
+                </g>
+              </g>
+            ))}
+          </svg>
         </div>
       );
     }
 
     // =====================================================================
-    // SCENE 8: PUBLISH PRODUCT BLOGS (Frames 674 - 772 | 22.46s - 25.74s)
-    // Spoken: "And the last thing is, make sure aap blogs ke andar batao ki kya-kya aapne kiya hai."
-    // AE Design: Vector Fountain Pen Nib Drawing a Glowing Bezier Curve
+    // SCENE 6: CONTEXT "THE SUN RISES" ➔ PREDICT "FROM" (Frames 716 - 1040 | 23.86s - 34.68s)
+    // Spoken: "For example, 'the sun rises.' This is your context.
+    //          So your AI model will accept these three words as an input and will predict 'from' as the next best word prediction."
+    // AE Node Diagram: ["The"] ➔ ["sun"] ➔ ["rises"] (3-Token Context) ──► [ AI MODEL ] ──► ["from"]
     // =====================================================================
-    if (frame >= 674 && frame < 772) {
-      const local = frame - 674;
-      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150, mass: 0.8 } });
-      const pathProg = interpolate(local, [4, 42], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-      const exit = interpolate(local, [88, 98], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    if (frame >= 716 && frame < 1040) {
+      const local = frame - 716;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
+      // At frame 853 (local = 137), he says "So your AI model will accept these three words as an input and will predict 'from'"
+      const modelSpr = spring({ frame: local - 125, fps, config: { damping: 12, stiffness: 150 } });
+      const fromSpr = spring({ frame: local - 210, fps, config: { damping: 10, stiffness: 180 } });
+      const exit = interpolate(local, [310, 324], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      const contextWords = ["The", "sun", "rises"];
 
       return (
         <div
           style={{
             opacity: spr * exit,
-            transform: `scale(${0.82 + spr * 0.18}) translateY(${floatY}px)`,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 26,
+            width: 980,
           }}
         >
-          {/* AE Vector: Fountain Pen Nib + Bezier Ink Trail */}
-          <svg width="138" height="138" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            {/* Animated Bezier Curve Trail */}
-            <path
-              d="M16 94 C 38 94, 42 46, 68 62 C 88 74, 92 32, 106 24"
-              stroke="#00F0FF"
-              strokeWidth="6"
-              strokeLinecap="round"
-              style={getTrimPath(pathProg, 160)}
-            />
-            {/* Vector Pen Nib */}
-            <g style={{ transform: `rotate(${wobble}deg)`, transformOrigin: "60px 55px" }}>
-              <path
-                d="M78 16 L104 42 L58 88 L26 94 L32 62 Z"
-                fill="#FFE500"
-                stroke="#000000"
-                strokeWidth="4"
-                strokeLinejoin="round"
-              />
-              <line x1="26" y1="94" x2="52" y2="68" stroke="#000000" strokeWidth="3.5" />
-              <circle cx="54" cy="66" r="5" fill="#000000" />
-            </g>
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 19,
                 fontWeight: 900,
-                letterSpacing: "4px",
-                color: "#00F0FF",
+                letterSpacing: "3px",
+                color: "#FFE500",
                 ...subStrokeStyle,
               }}
             >
-              STEP 08 // CONTENT ENGINE
+              {local < 130 ? "[ INPUT CONTEXT // 3 TOKENS ]" : "[ PASS #1 // NEXT-WORD PREDICTION ]"}
             </span>
             <span
               style={{
                 fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 66,
+                fontSize: 46,
                 fontWeight: 900,
-                color: "#FFFFFF",
-                lineHeight: 1.02,
                 letterSpacing: "1.5px",
+                color: "#FFFFFF",
                 ...strokeStyle,
               }}
             >
-              PUBLISH <span style={{ color: "#FFE500" }}>BLOGS</span>
+              &quot;THE SUN RISES&quot; <span style={{ color: "#00F0FF" }}>➔</span>{" "}
+              <span style={{ color: "#FFE500" }}>PREDICTS &quot;FROM&quot;</span>
             </span>
+          </div>
+
+          <svg width="960" height="265" viewBox="0 0 960 265" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Context Grouping Bracket Box */}
+            <rect
+              x="24"
+              y="42"
+              width="465"
+              height="165"
+              rx="20"
+              fill="rgba(6, 14, 26, 0.75)"
+              stroke="#00F0FF"
+              strokeWidth="2.5"
+              strokeDasharray="10 6"
+            />
+            <text x="256" y="72" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+              CONTEXT INPUT (3 WORDS)
+            </text>
+
+            {/* 3 Context Word Nodes */}
+            {contextWords.map((w, i) => {
+              const wSpr = spring({ frame: local - i * 12, fps, config: { damping: 12, stiffness: 170 } });
+              const xPos = 104 + i * 150;
+              return (
+                <g key={i} transform={`translate(${xPos}, 138) scale(${0.6 + wSpr * 0.4})`} opacity={Math.min(1, wSpr)}>
+                  <rect x="-62" y="-42" width="124" height="84" rx="14" fill="rgba(10, 18, 34, 0.96)" stroke="#00F0FF" strokeWidth="3.5" />
+                  <text x="0" y="-12" textAnchor="middle" fill="rgba(255,255,255,0.6)" fontFamily="JetBrains Mono" fontSize="12" fontWeight="800">
+                    TOKEN #{i + 1}
+                  </text>
+                  <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="Inter" fontSize="26" fontWeight="900">
+                    &quot;{w}&quot;
+                  </text>
+                </g>
+              );
+            })}
+
+            {/* Conduit into AI Model */}
+            <path
+              d="M 490 138 L 575 138"
+              stroke="#00F0FF"
+              strokeWidth="5"
+              style={getTrimPath(modelSpr, 90)}
+            />
+
+            {/* AI Model Node */}
+            <g transform={`translate(645, 138) scale(${0.7 + modelSpr * 0.3})`} opacity={0.25 + modelSpr * 0.75}>
+              <polygon
+                points="0,-64 56,-32 56,32 0,64 -56,32 -56,-32"
+                fill="rgba(14, 12, 32, 0.96)"
+                stroke="#A855F7"
+                strokeWidth="3.5"
+              />
+              <circle r="72" stroke="#A855F7" strokeWidth="2" strokeDasharray="10 6" transform={`rotate(${local * 2.5})`} />
+              <text x="0" y="-4" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="23">
+                AI MODEL
+              </text>
+              <text x="0" y="18" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="12" fontWeight="900">
+                PASS #1
+              </text>
+            </g>
+
+            {/* Conduit to Predicted Word "from" */}
+            <path
+              d="M 710 138 L 775 138"
+              stroke="#FFE500"
+              strokeWidth="5"
+              style={getTrimPath(fromSpr, 70)}
+            />
+
+            {/* Predicted Output Token Node: "from" */}
+            <g transform={`translate(862, 138) scale(${0.5 + fromSpr * 0.5})`} opacity={Math.min(1, Math.max(0.15, fromSpr))}>
+              {fromSpr > 0.1 && (
+                <circle
+                  r={65 + fromSpr * 25}
+                  stroke="#FFE500"
+                  strokeWidth={4 * (1 - fromSpr)}
+                  opacity={1 - fromSpr}
+                />
+              )}
+              <rect x="-80" y="-54" width="160" height="108" rx="18" fill="rgba(28, 22, 6, 0.96)" stroke="#FFE500" strokeWidth="4" />
+              <text x="0" y="-18" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                NEXT BEST WORD
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="36" letterSpacing="1">
+                &quot;from&quot;
+              </text>
+              <text x="0" y="42" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="12" fontWeight="900">
+                PROB: 98.4%
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 7: 4-WORD LOOP ➔ PREDICT "EAST" (Frames 1040 - 1324 | 34.68s - 44.14s)
+    // Spoken: "Now this entire four-word context will again go to the AI model and then the next word is predicted,
+    //          that is 'East', and the sentence turns out to be 'The sun rises from East.'"
+    // AE Node Diagram: 4-Token Context ["The"]["sun"]["rises"]["from"] ──► [ AI MODEL ] ──► ["East"]
+    // =====================================================================
+    if (frame >= 1040 && frame < 1324) {
+      const local = frame - 1040;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
+      const eastSpr = spring({ frame: local - 135, fps, config: { damping: 10, stiffness: 180 } });
+      const bannerSpr = spring({ frame: local - 205, fps, config: { damping: 12, stiffness: 160 } });
+      const exit = interpolate(local, [270, 284], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      const fourWords = [
+        { w: "The", c: "#00F0FF" },
+        { w: "sun", c: "#00F0FF" },
+        { w: "rises", c: "#00F0FF" },
+        { w: "from", c: "#FFE500" },
+      ];
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
             <span
               style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 38,
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 19,
                 fontWeight: 900,
+                letterSpacing: "3px",
                 color: "#22C55E",
+                ...subStrokeStyle,
+              }}
+            >
+              [ PASS #2 // 4-WORD CONTEXT LOOP ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 46,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
                 ...strokeStyle,
               }}
             >
-              Share Product Updates & Case Studies
+              4-WORD CONTEXT <span style={{ color: "#00F0FF" }}>➔</span>{" "}
+              <span style={{ color: "#22C55E" }}>PREDICTS &quot;EAST&quot;</span>
             </span>
           </div>
+
+          <svg width="960" height="275" viewBox="0 0 960 275" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Autoregressive Overhead Loop Arc */}
+            <path
+              d="M 480 42 C 480 10, 650 10, 655 58"
+              stroke="#FFE500"
+              strokeWidth="3"
+              strokeDasharray="8 6"
+            />
+            <text x="565" y="22" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+              ↻ APPENDED TO CONTEXT
+            </text>
+
+            {/* 4-Word Context Container */}
+            <rect
+              x="18"
+              y="44"
+              width="520"
+              height="130"
+              rx="18"
+              fill="rgba(6, 14, 26, 0.8)"
+              stroke="#00F0FF"
+              strokeWidth="2.5"
+              strokeDasharray="10 6"
+            />
+
+            {fourWords.map((item, i) => {
+              const xPos = 88 + i * 125;
+              return (
+                <g key={i} transform={`translate(${xPos}, 110)`}>
+                  <rect x="-54" y="-38" width="108" height="76" rx="12" fill="rgba(10, 18, 34, 0.96)" stroke={item.c} strokeWidth="3" />
+                  <text x="0" y="-10" textAnchor="middle" fill={item.c} fontFamily="JetBrains Mono" fontSize="11" fontWeight="900">
+                    TOK #{i + 1}
+                  </text>
+                  <text x="0" y="18" textAnchor="middle" fill="#FFFFFF" fontFamily="Inter" fontSize="22" fontWeight="900">
+                    &quot;{item.w}&quot;
+                  </text>
+                </g>
+              );
+            })}
+
+            <path d="M 538 110 L 598 110" stroke="#00F0FF" strokeWidth="4.5" />
+
+            {/* AI Model Node */}
+            <g transform="translate(658, 110)">
+              <polygon
+                points="0,-58 52,-29 52,29 0,58 -52,29 -52,-29"
+                fill="rgba(14, 12, 32, 0.96)"
+                stroke="#A855F7"
+                strokeWidth="3.5"
+              />
+              <text x="0" y="-2" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="22">
+                AI MODEL
+              </text>
+              <text x="0" y="18" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="12" fontWeight="900">
+                PASS #2
+              </text>
+            </g>
+
+            <path
+              d="M 712 110 L 775 110"
+              stroke="#22C55E"
+              strokeWidth="5"
+              style={getTrimPath(eastSpr, 65)}
+            />
+
+            {/* Predicted Token #5: "East" */}
+            <g transform={`translate(862, 110) scale(${0.5 + eastSpr * 0.5})`} opacity={Math.min(1, Math.max(0.15, eastSpr))}>
+              <rect x="-80" y="-48" width="160" height="96" rx="16" fill="rgba(6, 26, 18, 0.96)" stroke="#22C55E" strokeWidth="4" />
+              <text x="0" y="-14" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                TOKEN #5
+              </text>
+              <text x="0" y="22" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="36" letterSpacing="1">
+                &quot;East&quot;
+              </text>
+            </g>
+
+            {/* Bottom Completed Sentence Output Strip */}
+            <g transform={`translate(480, 228) scale(${0.85 + bannerSpr * 0.15})`} opacity={Math.min(1, Math.max(0, bannerSpr))}>
+              <rect x="-420" y="-32" width="840" height="64" rx="14" fill="rgba(8, 22, 18, 0.96)" stroke="#FFE500" strokeWidth="3" />
+              <text x="0" y="10" textAnchor="middle" fill="#FFFFFF" fontFamily="Inter" fontSize="28" fontWeight="900">
+                OUTPUT: <tspan fill="#00F0FF">&quot;The sun rises</tspan> <tspan fill="#FFE500">from</tspan> <tspan fill="#22C55E">East.&quot;</tspan>
+              </text>
+            </g>
+          </svg>
         </div>
       );
     }
 
     // =====================================================================
-    // SCENE 9: OUTRO CTA (Frames 772 - 869 | 25.74s - 29.02s)
-    // Spoken: "And aise hi aur informative videos ke liye apne bhai ke channel Code Baithak ko follow kar sakte hain!"
-    // AE Design: Sweeping Vector Arrow Callout + @CODE_BAITHAK Kinetic Stamp
+    // SCENE 8: ITERATIVE COMPUTATION REPEATS (Frames 1324 - 1483 | 44.14s - 49.42s)
+    // Spoken: "Now this entire computation repeats itself with the previous data and the AI model just predicts the next word."
+    // AE Node Diagram: Autoregressive Infinity/Cycle Engine
     // =====================================================================
-    if (frame >= 772) {
-      const local = frame - 772;
-      const spr = spring({ frame: local, fps, config: { damping: 11, stiffness: 150, mass: 0.8 } });
-      const arrowProg = interpolate(local, [4, 28], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+    if (frame >= 1324 && frame < 1483) {
+      const local = frame - 1324;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 155 } });
+      const exit = interpolate(local, [145, 159], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+      const cycleNum = Math.min(8, 1 + Math.floor(local / 22));
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 19,
+                fontWeight: 900,
+                letterSpacing: "3px",
+                color: "#00F0FF",
+                ...subStrokeStyle,
+              }}
+            >
+              [ AUTOREGRESSIVE CYCLE ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 48,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              COMPUTATION <span style={{ color: "#FFE500" }}>REPEATS</span> PER TOKEN
+            </span>
+          </div>
+
+          <svg width="960" height="260" viewBox="0 0 960 260" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Feedback Loop Top & Bottom Bezier Arcs */}
+            <path d="M 280 95 C 400 20, 560 20, 680 95" stroke="#00F0FF" strokeWidth="4" strokeDasharray="12 8" />
+            <path d="M 680 165 C 560 240, 400 240, 280 165" stroke="#FFE500" strokeWidth="4" strokeDasharray="12 8" />
+
+            {/* Left Node: PREVIOUS DATA (N TOKENS) */}
+            <g transform="translate(185, 130)">
+              <rect x="-140" y="-56" width="280" height="112" rx="18" fill="rgba(8, 16, 30, 0.95)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-18" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                PREVIOUS CONTEXT DATA
+              </text>
+              <text x="0" y="16" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="30">
+                [ N TOKENS ]
+              </text>
+              <text x="0" y="40" textAnchor="middle" fill="rgba(255,255,255,0.7)" fontFamily="JetBrains Mono" fontSize="12" fontWeight="700">
+                FEEDS BACK INTO MODEL
+              </text>
+            </g>
+
+            {/* Center Rotating Cycle Core */}
+            <g transform="translate(480, 130)">
+              <circle r="66" fill="rgba(14, 12, 32, 0.96)" stroke="#A855F7" strokeWidth="4" />
+              <circle
+                r="78"
+                stroke="#FFE500"
+                strokeWidth="3"
+                strokeDasharray="16 10"
+                transform={`rotate(${local * 4})`}
+              />
+              <text x="0" y="-8" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                LOOP PASS
+              </text>
+              <text x="0" y="24" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="34">
+                #{cycleNum}
+              </text>
+            </g>
+
+            {/* Right Node: PREDICT NEXT WORD (N + 1) */}
+            <g transform="translate(775, 130)">
+              <rect x="-140" y="-56" width="280" height="112" rx="18" fill="rgba(24, 18, 8, 0.95)" stroke="#FFE500" strokeWidth="3.5" />
+              <text x="0" y="-18" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                MODEL OUTPUT
+              </text>
+              <text x="0" y="16" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="30">
+                NEXT WORD (N+1)
+              </text>
+              <text x="0" y="40" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="12" fontWeight="900">
+                APPEND &amp; REPEAT ↻
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 9: HUGE CONTEXT BOTTLENECK (Frames 1483 - 1771 | 49.42s - 59.04s)
+    // Spoken: "Now imagine there is a huge context of a sentence. Now every time, giving this entire context
+    //          to the AI model will become difficult for the AI to understand and to work with it."
+    // AE Node Diagram: Massive Grid of Context Tokens Jamming the AI Compute Funnel (OVERLOAD WARNING)
+    // =====================================================================
+    if (frame >= 1483 && frame < 1771) {
+      const local = frame - 1483;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
+      const loadPct = Math.round(interpolate(local, [10, 140], [45, 99], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }));
+      const warnPulse = 0.65 + Math.sin(local / 3.5) * 0.35;
+      const exit = interpolate(local, [274, 288], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 19,
+                fontWeight: 900,
+                letterSpacing: "3px",
+                color: "#EF4444",
+                ...subStrokeStyle,
+              }}
+            >
+              [ ⚠ COMPUTE BOTTLENECK ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 48,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              HUGE CONTEXT <span style={{ color: "#EF4444" }}>OVERLOADS MODEL</span>
+            </span>
+          </div>
+
+          <svg width="960" height="265" viewBox="0 0 960 265" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Left Node: Massive 12-Token Matrix Block */}
+            <rect x="28" y="32" width="430" height="200" rx="18" fill="rgba(26, 8, 12, 0.94)" stroke="#EF4444" strokeWidth="3.5" />
+            <text x="243" y="60" textAnchor="middle" fill="#EF4444" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+              HUGE SENTENCE CONTEXT (1,000+ TOKENS)
+            </text>
+
+            {Array.from({ length: 12 }).map((_, idx) => {
+              const row = Math.floor(idx / 4);
+              const col = idx % 4;
+              const bx = 52 + col * 98;
+              const by = 76 + row * 46;
+              return (
+                <g key={idx} transform={`translate(${bx}, ${by})`}>
+                  <rect width="86" height="36" rx="8" fill="rgba(239, 68, 68, 0.18)" stroke="#F87171" strokeWidth="2" />
+                  <text x="43" y="23" textAnchor="middle" fill="#FFFFFF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="800">
+                    TOK_{idx + 1}
+                  </text>
+                </g>
+              );
+            })}
+
+            {/* Jammed Funnel Lines into AI Model */}
+            <path d="M 458 65 L 615 125" stroke="#EF4444" strokeWidth="3.5" strokeDasharray="8 6" />
+            <path d="M 458 132 L 615 132" stroke="#EF4444" strokeWidth="4.5" />
+            <path d="M 458 200 L 615 140" stroke="#EF4444" strokeWidth="3.5" strokeDasharray="8 6" />
+
+            {/* Overloaded AI Model Node */}
+            <g transform="translate(745, 132)">
+              <circle r="92" stroke="#EF4444" strokeWidth="3" opacity={warnPulse} strokeDasharray="14 8" />
+              <rect x="-135" y="-68" width="270" height="136" rx="20" fill="rgba(28, 8, 12, 0.96)" stroke="#EF4444" strokeWidth="4" />
+              <text x="0" y="-28" textAnchor="middle" fill="#EF4444" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                ⚠ RE-PROCESSING ALL
+              </text>
+              <text x="0" y="10" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="34">
+                LOAD: {loadPct}%
+              </text>
+              <text x="0" y="42" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                HIGH LATENCY // SLOW
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 10: KV CACHING SOLUTION — FASTEST RESPONSE (Frames 1771 - 2018 | 59.04s - 67.28s)
+    // Spoken: "So what we do is we perform caching. Yes. So because of caching, the prediction of the next word
+    //          becomes easier for the AI model and you get the fastest response."
+    // AE Node Diagram: [ KV CACHE LOCKED MEMORY ] ──( INSTANT LOOKUP )──► [ AI MODEL ] ──► [ FASTEST RESPONSE ]
+    // =====================================================================
+    if (frame >= 1771 && frame < 2018) {
+      const local = frame - 1771;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 155 } });
+      const fastSpr = spring({ frame: local - 95, fps, config: { damping: 11, stiffness: 175 } });
+      const exit = interpolate(local, [234, 247], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 19,
+                fontWeight: 900,
+                letterSpacing: "3px",
+                color: "#22C55E",
+                ...subStrokeStyle,
+              }}
+            >
+              [ ⚡ KV CACHE OPTIMIZATION ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 48,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              KV CACHING <span style={{ color: "#00F0FF" }}>➔</span>{" "}
+              <span style={{ color: "#22C55E" }}>FASTEST RESPONSE</span>
+            </span>
+          </div>
+
+          <svg width="960" height="265" viewBox="0 0 960 265" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Node 1: KV CACHE MEMORY BANK */}
+            <g transform="translate(185, 132)">
+              <rect x="-150" y="-68" width="300" height="136" rx="18" fill="rgba(6, 24, 18, 0.96)" stroke="#22C55E" strokeWidth="4" />
+              <text x="0" y="-32" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                ⚡ KV CACHE MEMORY
+              </text>
+              <text x="0" y="6" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="30" letterSpacing="1">
+                PAST TOKENS SAVED
+              </text>
+              <text x="0" y="38" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                [ NO RE-COMPUTATION ]
+              </text>
+            </g>
+
+            {/* High-Speed Conduit */}
+            <path d="M 335 132 L 425 132" stroke="#22C55E" strokeWidth="5" />
+
+            {/* Node 2: AI MODEL (LIGHTWEIGHT COMPUTE) */}
+            <g transform="translate(505, 132)">
+              <polygon
+                points="0,-66 58,-33 58,33 0,66 -58,33 -58,-33"
+                fill="rgba(8, 18, 30, 0.96)"
+                stroke="#00F0FF"
+                strokeWidth="3.5"
+              />
+              <circle r="76" stroke="#22C55E" strokeWidth="2.5" strokeDasharray="12 8" transform={`rotate(${local * 4})`} />
+              <text x="0" y="-4" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="24">
+                AI MODEL
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                EASY PREDICT
+              </text>
+            </g>
+
+            <path
+              d="M 575 132 L 650 132"
+              stroke="#FFE500"
+              strokeWidth="5"
+              style={getTrimPath(fastSpr, 80)}
+            />
+
+            {/* Node 3: FASTEST RESPONSE OUTPUT */}
+            <g transform={`translate(795, 132) scale(${0.65 + fastSpr * 0.35})`} opacity={0.3 + fastSpr * 0.7}>
+              <rect x="-140" y="-68" width="280" height="136" rx="18" fill="rgba(26, 22, 6, 0.96)" stroke="#FFE500" strokeWidth="4" />
+              <text x="0" y="-28" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="15" fontWeight="900">
+                ⚡ TURBO OUTPUT
+              </text>
+              <text x="0" y="10" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="32" letterSpacing="1">
+                FASTEST RESPONSE
+              </text>
+              <text x="0" y="42" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                10X SPEED BOOST
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 11: THE ANSWER PART 1 — FRIEND TEXT SENT AT ONCE (Frames 2018 - 2210 | 67.28s - 73.66s)
+    // Spoken: "Now the answer to the question: that whenever your friend sends you a text,
+    //          it is actually sent as a single message and it appears to you at once."
+    // AE Node Diagram: [ FRIEND DEVICE ] ══► [ SINGLE HTTP PAYLOAD ] ══► [ APPEARS AT ONCE ]
+    // =====================================================================
+    if (frame >= 2018 && frame < 2210) {
+      const local = frame - 2018;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 155 } });
+      const packetSpr = spring({ frame: local - 30, fps, config: { damping: 12, stiffness: 165 } });
+      const exit = interpolate(local, [178, 192], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 19,
+                fontWeight: 900,
+                letterSpacing: "3px",
+                color: "#FFE500",
+                ...subStrokeStyle,
+              }}
+            >
+              [ FINAL ANSWER // PART 01 ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 48,
+                fontWeight: 900,
+                letterSpacing: "1.5px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              FRIEND TEXT = <span style={{ color: "#FFE500" }}>SINGLE MESSAGE AT ONCE</span>
+            </span>
+          </div>
+
+          <svg width="960" height="260" viewBox="0 0 960 260" fill="none" style={{ filter: svgDropShadow }}>
+            <path d="M 235 130 L 725 130" stroke="#FFE500" strokeWidth="5" />
+
+            {/* Left Node: Friend */}
+            <g transform="translate(130, 130)">
+              <rect x="-100" y="-56" width="200" height="112" rx="16" fill="rgba(8, 14, 26, 0.95)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-14" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                FRIEND SENDS
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="28">
+                FULL TEXT
+              </text>
+            </g>
+
+            {/* Center Node: Single Complete Packet */}
+            <g transform={`translate(480, 130) scale(${0.75 + packetSpr * 0.25})`}>
+              <rect x="-155" y="-62" width="310" height="124" rx="18" fill="rgba(26, 20, 6, 0.96)" stroke="#FFE500" strokeWidth="4" />
+              <text x="0" y="-22" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                PROTOCOL // SINGLE PAYLOAD
+              </text>
+              <text x="0" y="14" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="30" letterSpacing="1">
+                1 COMPLETE PACKET
+              </text>
+              <text x="0" y="40" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                NO STREAMING NEEDED
+              </text>
+            </g>
+
+            {/* Right Node: Appears At Once */}
+            <g transform="translate(830, 130)">
+              <rect x="-100" y="-56" width="200" height="112" rx="16" fill="rgba(6, 24, 18, 0.95)" stroke="#22C55E" strokeWidth="3.5" />
+              <text x="0" y="-14" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                YOUR SCREEN
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="26">
+                ALL AT ONCE
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 12: THE ANSWER PART 2 — LLM SERVER-TRIGGERED EVENTS (SSE) (Frames 2210 - 2564 | 73.66s - 85.48s)
+    // Spoken: "But if we talk about the LLMs, the LLM will give us the response on the basis of the server-triggered events,
+    //          and every time a token is predicted, that event is triggered, and then you see the data coming up in a chunk by chunk format."
+    // AE Node Diagram: [ LLM TOKEN PREDICTED ] ──► [ ⚡ SERVER-TRIGGERED EVENT (SSE) ] ──► [ CHUNK-BY-CHUNK UI ]
+    // =====================================================================
+    if (frame >= 2210 && frame < 2564) {
+      const local = frame - 2210;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
+      const exit = interpolate(local, [340, 354], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+
+      // Periodic SSE Event Trigger pulse every 35 frames
+      const eventCycle = local % 35;
+      const eventNum = Math.min(5, 1 + Math.floor(local / 45));
+      const streamWords = ["The", "sun", "rises", "from", "East"].slice(0, eventNum);
+
+      return (
+        <div
+          style={{
+            opacity: spr * exit,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: 980,
+          }}
+        >
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
+            <span
+              style={{
+                fontFamily: "'JetBrains Mono', monospace",
+                fontSize: 18,
+                fontWeight: 900,
+                letterSpacing: "3px",
+                color: "#00F0FF",
+                ...subStrokeStyle,
+              }}
+            >
+              [ SSE ARCHITECTURE ]
+            </span>
+            <span
+              style={{
+                fontFamily: "'Impact', 'Arial Black', sans-serif",
+                fontSize: 46,
+                fontWeight: 900,
+                letterSpacing: "1.2px",
+                color: "#FFFFFF",
+                ...strokeStyle,
+              }}
+            >
+              <span style={{ color: "#00F0FF" }}>SERVER-TRIGGERED EVENTS</span> ➔ CHUNK STREAM
+            </span>
+          </div>
+
+          <svg width="960" height="270" viewBox="0 0 960 270" fill="none" style={{ filter: svgDropShadow }}>
+            {/* Conduit 1: LLM -> SSE Trigger */}
+            <path d="M 255 125 L 345 125" stroke="#00F0FF" strokeWidth="5" />
+            {/* Conduit 2: SSE Trigger -> Live Chunk Stream */}
+            <path d="M 605 125 L 685 125" stroke="#FFE500" strokeWidth="5" />
+
+            {/* Node 1: LLM TOKEN PREDICTOR */}
+            <g transform="translate(140, 125)">
+              <rect x="-115" y="-64" width="230" height="128" rx="18" fill="rgba(8, 16, 30, 0.96)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-26" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                STAGE 01 // LLM CORE
+              </text>
+              <text x="0" y="8" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="28">
+                TOKEN #{eventNum}
+              </text>
+              <text x="0" y="38" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                PREDICTED ✓
+              </text>
+            </g>
+
+            {/* Node 2: SERVER-TRIGGERED EVENT (SSE) HUB */}
+            <g transform="translate(475, 125)">
+              {/* Expanding SSE Event Shockwave */}
+              <circle
+                r={65 + eventCycle * 1.4}
+                stroke="#FFE500"
+                strokeWidth="3"
+                opacity={interpolate(eventCycle, [0, 34], [0.9, 0])}
+              />
+              <rect x="-130" y="-68" width="260" height="136" rx="20" fill="rgba(24, 18, 6, 0.96)" stroke="#FFE500" strokeWidth="4" />
+              <text x="0" y="-28" textAnchor="middle" fill="#FFE500" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                STAGE 02 // SSE PUSH
+              </text>
+              <text x="0" y="8" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="27" letterSpacing="1">
+                SERVER EVENT
+              </text>
+              <text x="0" y="38" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                ⚡ EVENT TRIGGERED #{eventNum}
+              </text>
+            </g>
+
+            {/* Node 3: CHUNK-BY-CHUNK CLIENT STREAM */}
+            <g transform="translate(815, 125)">
+              <rect x="-125" y="-68" width="250" height="136" rx="18" fill="rgba(6, 22, 20, 0.96)" stroke="#22C55E" strokeWidth="3.5" />
+              <text x="0" y="-28" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="13" fontWeight="900">
+                STAGE 03 // LIVE UI
+              </text>
+              <text x="0" y="6" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="26">
+                CHUNK BY CHUNK
+              </text>
+              <text x="0" y="38" textAnchor="middle" fill="#FFE500" fontFamily="Inter" fontSize="18" fontWeight="900">
+                &quot;{streamWords.join(" ")}...&quot;
+              </text>
+            </g>
+          </svg>
+        </div>
+      );
+    }
+
+    // =====================================================================
+    // SCENE 13: OUTRO — SHARE & FOLLOW CODE BAITHAK (Frames 2564 - 2883 | 85.48s - 96.10s)
+    // Spoken: "So this is the answer to your question, and make sure you share it with your friends
+    //          so that they also know what is actually happening in the AI model.
+    //          And to get more such amazing videos, make sure you follow our channel Code Baithak."
+    // =====================================================================
+    if (frame >= 2564) {
+      const local = frame - 2564;
+      const spr = spring({ frame: local, fps, config: { damping: 12, stiffness: 150 } });
 
       return (
         <div
           style={{
             opacity: spr,
-            transform: `scale(${0.8 + spr * 0.2}) translateY(${floatY}px)`,
+            transform: `translateY(${(1 - spr) * 30 + floatY}px) scale(${0.9 + spr * 0.1})`,
             display: "flex",
+            flexDirection: "column",
             alignItems: "center",
-            gap: 24,
+            width: 980,
           }}
         >
-          {/* AE Vector: Verified Rocket / Upward Sweep Arrow */}
-          <svg width="130" height="130" viewBox="0 0 120 120" fill="none" style={{ filter: svgDropShadow }}>
-            <circle cx="60" cy="60" r="48" stroke="#0095F6" strokeWidth="4" strokeDasharray="12 8" />
-            <path
-              d="M32 84 C 48 84, 56 64, 78 32"
-              stroke="#FFE500"
-              strokeWidth="8"
-              strokeLinecap="round"
-              style={getTrimPath(arrowProg, 90)}
-            />
-            <path
-              d="M56 30 L82 28 L84 54"
-              stroke="#FFE500"
-              strokeWidth="8"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              style={getTrimPath(arrowProg, 70)}
-            />
-          </svg>
-
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 2, marginBottom: 6, textAlign: "center" }}>
             <span
               style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: 22,
+                fontSize: 19,
                 fontWeight: 900,
-                letterSpacing: "4px",
+                letterSpacing: "3px",
                 color: "#00F0FF",
                 ...subStrokeStyle,
               }}
             >
-              ✦ DAILY TECH BREAKDOWNS ✦
+              [ ✦ AI ARCHITECTURE EXPLAINED ✦ ]
             </span>
             <span
               style={{
                 fontFamily: "'Impact', 'Arial Black', sans-serif",
-                fontSize: 60,
+                fontSize: 48,
                 fontWeight: 900,
-                color: "#FFE500",
-                lineHeight: 1.02,
                 letterSpacing: "1.5px",
+                color: "#FFE500",
                 ...strokeStyle,
               }}
             >
-              FOLLOW <span style={{ color: "#FFFFFF" }}>CODE BAITHAK</span>
-            </span>
-            <span
-              style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
-                fontStyle: "italic",
-                fontSize: 38,
-                fontWeight: 900,
-                color: "#0095F6",
-                ...strokeStyle,
-              }}
-            >
-              @code_baithak for More!
+              SHARE &amp; FOLLOW <span style={{ color: "#FFFFFF" }}>CODE BAITHAK</span>
             </span>
           </div>
+
+          <svg width="960" height="250" viewBox="0 0 960 250" fill="none" style={{ filter: svgDropShadow }}>
+            <path d="M 290 125 L 385 125" stroke="#00F0FF" strokeWidth="4.5" strokeDasharray="10 6" />
+            <path d="M 575 125 L 670 125" stroke="#22C55E" strokeWidth="4.5" strokeDasharray="10 6" />
+
+            {/* Left Node: SHARE WITH FRIENDS */}
+            <g transform="translate(165, 125)">
+              <rect x="-125" y="-56" width="250" height="112" rx="18" fill="rgba(8, 16, 30, 0.95)" stroke="#00F0FF" strokeWidth="3.5" />
+              <text x="0" y="-14" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                SPREAD THE KNOWLEDGE
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="28" letterSpacing="1">
+                SHARE THIS REEL
+              </text>
+            </g>
+
+            {/* Center Node: CODE BAITHAK HUB */}
+            <g transform={`translate(480, 125) scale(${pulse})`}>
+              <circle r="74" fill="rgba(8, 18, 36, 0.96)" stroke="#0095F6" strokeWidth="4.5" />
+              <circle
+                r="86"
+                stroke="#FFE500"
+                strokeWidth="3"
+                strokeDasharray="16 10"
+                transform={`rotate(${local * 2.5})`}
+              />
+              <text x="0" y="-6" textAnchor="middle" fill="#FFE500" fontFamily="Impact" fontSize="25" letterSpacing="1">
+                CODE BAITHAK
+              </text>
+              <text x="0" y="22" textAnchor="middle" fill="#00F0FF" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                @code_baithak
+              </text>
+            </g>
+
+            {/* Right Node: FOLLOW FOR MORE */}
+            <g transform="translate(795, 125)">
+              <rect x="-125" y="-56" width="250" height="112" rx="18" fill="rgba(6, 24, 18, 0.95)" stroke="#22C55E" strokeWidth="3.5" />
+              <text x="0" y="-14" textAnchor="middle" fill="#22C55E" fontFamily="JetBrains Mono" fontSize="14" fontWeight="900">
+                DAILY AI BREAKDOWNS
+              </text>
+              <text x="0" y="20" textAnchor="middle" fill="#FFFFFF" fontFamily="Impact" fontSize="28" letterSpacing="1">
+                FOLLOW CHANNEL +
+              </text>
+            </g>
+          </svg>
         </div>
       );
     }
@@ -1155,9 +1610,10 @@ export const AETopicMotionGraphics: React.FC = () => {
     <div
       style={{
         position: "absolute",
-        top: 1270, // Centered on chest below collar mic (Y: 1185) and above captions (Y: 1620)
+        top: 1150, // Footer-Up Explainer Zone: above captions (bottom: 145px) and below hands/face
         left: 0,
         width: 1080,
+        height: 440,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
