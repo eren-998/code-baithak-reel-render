@@ -54,7 +54,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 145,
+        bottom: 44,
         left: 0,
         width: "100%",
         display: "flex",
@@ -110,11 +110,9 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
               : 0;
 
             const isKeyTechWord = [
-              "complete", "ai", "chunk", "chunk-by-chunk", "difference",
-              "tokens", "token", "model", "prediction", "predict", "predicts",
-              "predicted", "sun", "rises", "from", "east", "context",
-              "computation", "caching", "fastest", "single", "llms", "llm",
-              "server-triggered", "events", "event", "code", "baithak", "follow"
+              "rea", "github", "repository", "reverse", "engineering", "anything",
+              "dm", "dms", "fayda", "adobe", "paid", "softwares", "free", "launch",
+              "tool", "seekhna", "helpful", "comment", "link", "code", "baithak", "follow"
             ].some((term) => w.word.toLowerCase().replace(/[^a-z0-9-]/g, "") === term);
 
             const activeColor = isKeyTechWord ? "#FFE500" : "#00F0FF";

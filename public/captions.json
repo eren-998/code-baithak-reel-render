@@ -1,3306 +1,904 @@
 [
   {
-    "start": 0.0,
-    "end": 1.46,
-    "text": "So whenever your friend texts",
+    "text": "Bhai REA naam ki ladki",
+    "startMs": 0,
+    "endMs": 1090,
     "words": [
       {
-        "word": "So",
-        "start": 0.0,
-        "end": 0.2,
+        "word": "Bhai",
         "startMs": 0,
-        "endMs": 200
+        "endMs": 80
       },
       {
-        "word": "whenever",
-        "start": 0.2,
-        "end": 0.7,
-        "startMs": 200,
+        "word": "REA",
+        "startMs": 80,
+        "endMs": 520
+      },
+      {
+        "word": "naam",
+        "startMs": 520,
         "endMs": 700
       },
       {
-        "word": "your",
-        "start": 0.7,
-        "end": 0.92,
+        "word": "ki",
         "startMs": 700,
-        "endMs": 920
+        "endMs": 820
       },
       {
-        "word": "friend",
-        "start": 0.92,
-        "end": 1.24,
-        "startMs": 920,
-        "endMs": 1240
-      },
-      {
-        "word": "texts",
-        "start": 1.24,
-        "end": 1.48,
-        "startMs": 1240,
-        "endMs": 1480
+        "word": "ladki",
+        "startMs": 820,
+        "endMs": 1100
       }
-    ],
-    "startMs": 0,
-    "endMs": 1460
+    ]
   },
   {
-    "start": 1.48,
-    "end": 2.68,
-    "text": "you, it comes in a",
+    "text": "tumhare jeevan mein aaye na aaye,",
+    "startMs": 1100,
+    "endMs": 2570,
     "words": [
       {
-        "word": "you,",
-        "start": 1.48,
-        "end": 1.8,
-        "startMs": 1480,
-        "endMs": 1800
+        "word": "tumhare",
+        "startMs": 1100,
+        "endMs": 1440
       },
       {
-        "word": "it",
-        "start": 1.8,
-        "end": 2.16,
-        "startMs": 1800,
-        "endMs": 2160
+        "word": "jeevan",
+        "startMs": 1440,
+        "endMs": 1740
       },
       {
-        "word": "comes",
-        "start": 2.16,
-        "end": 2.48,
-        "startMs": 2160,
-        "endMs": 2480
+        "word": "mein",
+        "startMs": 1740,
+        "endMs": 1860
       },
       {
-        "word": "in",
-        "start": 2.48,
-        "end": 2.64,
-        "startMs": 2480,
-        "endMs": 2640
+        "word": "aaye",
+        "startMs": 1860,
+        "endMs": 2200
       },
       {
-        "word": "a",
-        "start": 2.64,
-        "end": 2.72,
-        "startMs": 2640,
-        "endMs": 2720
+        "word": "na",
+        "startMs": 2200,
+        "endMs": 2440
+      },
+      {
+        "word": "aaye,",
+        "startMs": 2440,
+        "endMs": 2580
       }
-    ],
-    "startMs": 1480,
-    "endMs": 2680
+    ]
   },
   {
-    "start": 2.7,
-    "end": 3.36,
-    "text": "complete format.",
+    "text": "lekin ye GitHub repository",
+    "startMs": 2580,
+    "endMs": 3650,
     "words": [
       {
-        "word": "complete",
-        "start": 2.7,
-        "end": 2.96,
-        "startMs": 2700,
-        "endMs": 2960
+        "word": "lekin",
+        "startMs": 2580,
+        "endMs": 2840
       },
       {
-        "word": "format.",
-        "start": 2.96,
-        "end": 3.38,
-        "startMs": 2960,
-        "endMs": 3380
+        "word": "ye",
+        "startMs": 2840,
+        "endMs": 3040
+      },
+      {
+        "word": "GitHub",
+        "startMs": 3040,
+        "endMs": 3300
+      },
+      {
+        "word": "repository",
+        "startMs": 3300,
+        "endMs": 3660
       }
-    ],
-    "startMs": 2700,
-    "endMs": 3360
+    ]
   },
   {
-    "start": 3.38,
-    "end": 5.06,
-    "text": "But whenever an AI sends",
+    "text": "jiska naam REA hai,",
+    "startMs": 3660,
+    "endMs": 5010,
     "words": [
       {
-        "word": "But",
-        "start": 3.38,
-        "end": 3.92,
-        "startMs": 3380,
-        "endMs": 3920
+        "word": "jiska",
+        "startMs": 3660,
+        "endMs": 4300
       },
       {
-        "word": "whenever",
-        "start": 3.92,
-        "end": 4.24,
-        "startMs": 3920,
-        "endMs": 4240
+        "word": "naam",
+        "startMs": 4300,
+        "endMs": 4560
       },
       {
-        "word": "an",
-        "start": 4.24,
-        "end": 4.44,
-        "startMs": 4240,
-        "endMs": 4440
+        "word": "REA",
+        "startMs": 4560,
+        "endMs": 4880
       },
       {
-        "word": "AI",
-        "start": 4.44,
-        "end": 4.74,
-        "startMs": 4440,
-        "endMs": 4740
-      },
-      {
-        "word": "sends",
-        "start": 4.74,
-        "end": 5.08,
-        "startMs": 4740,
-        "endMs": 5080
+        "word": "hai,",
+        "startMs": 4880,
+        "endMs": 5020
       }
-    ],
-    "startMs": 3380,
-    "endMs": 5060
+    ]
   },
   {
-    "start": 5.08,
-    "end": 5.94,
-    "text": "you a response,",
+    "text": "that is Reverse Engineering Anything,",
+    "startMs": 5020,
+    "endMs": 6670,
     "words": [
       {
-        "word": "you",
-        "start": 5.08,
-        "end": 5.22,
-        "startMs": 5080,
-        "endMs": 5220
+        "word": "that",
+        "startMs": 5020,
+        "endMs": 5240
       },
       {
-        "word": "a",
-        "start": 5.22,
-        "end": 5.32,
-        "startMs": 5220,
-        "endMs": 5320
+        "word": "is",
+        "startMs": 5240,
+        "endMs": 5400
       },
       {
-        "word": "response,",
-        "start": 5.32,
-        "end": 5.96,
-        "startMs": 5320,
-        "endMs": 5960
-      }
-    ],
-    "startMs": 5080,
-    "endMs": 5940
-  },
-  {
-    "start": 5.96,
-    "end": 7.76,
-    "text": "it comes chunk by chunk.",
-    "words": [
+        "word": "Reverse",
+        "startMs": 5400,
+        "endMs": 5780
+      },
       {
-        "word": "it",
-        "start": 5.96,
-        "end": 6.18,
-        "startMs": 5960,
+        "word": "Engineering",
+        "startMs": 5780,
         "endMs": 6180
       },
       {
-        "word": "comes",
-        "start": 6.18,
-        "end": 6.52,
+        "word": "Anything,",
         "startMs": 6180,
-        "endMs": 6520
-      },
-      {
-        "word": "chunk",
-        "start": 6.52,
-        "end": 7.04,
-        "startMs": 6520,
-        "endMs": 7040
-      },
-      {
-        "word": "by",
-        "start": 7.04,
-        "end": 7.28,
-        "startMs": 7040,
-        "endMs": 7280
-      },
-      {
-        "word": "chunk.",
-        "start": 7.28,
-        "end": 7.78,
-        "startMs": 7280,
-        "endMs": 7780
+        "endMs": 6680
       }
-    ],
-    "startMs": 5960,
-    "endMs": 7760
+    ]
   },
   {
-    "start": 7.78,
-    "end": 8.96,
-    "text": "Now the question is,",
+    "text": "wo tumhare DM mein zaroor aa jayegi.",
+    "startMs": 6680,
+    "endMs": 8250,
     "words": [
       {
-        "word": "Now",
-        "start": 7.78,
-        "end": 8.2,
-        "startMs": 7780,
-        "endMs": 8200
+        "word": "wo",
+        "startMs": 6680,
+        "endMs": 6980
       },
       {
-        "word": "the",
-        "start": 8.2,
-        "end": 8.32,
-        "startMs": 8200,
-        "endMs": 8320
+        "word": "tumhare",
+        "startMs": 6980,
+        "endMs": 7300
       },
       {
-        "word": "question",
-        "start": 8.32,
-        "end": 8.56,
-        "startMs": 8320,
-        "endMs": 8560
+        "word": "DM",
+        "startMs": 7300,
+        "endMs": 7580
       },
       {
-        "word": "is,",
-        "start": 8.56,
-        "end": 8.98,
-        "startMs": 8560,
-        "endMs": 8980
+        "word": "mein",
+        "startMs": 7580,
+        "endMs": 7680
+      },
+      {
+        "word": "zaroor",
+        "startMs": 7680,
+        "endMs": 7900
+      },
+      {
+        "word": "aa",
+        "startMs": 7900,
+        "endMs": 8060
+      },
+      {
+        "word": "jayegi.",
+        "startMs": 8060,
+        "endMs": 8260
       }
-    ],
-    "startMs": 7780,
-    "endMs": 8960
+    ]
   },
   {
-    "start": 8.98,
-    "end": 10.22,
-    "text": "what's the difference?",
+    "text": "Ab iska fayda kya hai dhyan se sunna.",
+    "startMs": 8260,
+    "endMs": 9690,
     "words": [
       {
-        "word": "what's",
-        "start": 8.98,
-        "end": 9.5,
-        "startMs": 8980,
-        "endMs": 9500
+        "word": "Ab",
+        "startMs": 8260,
+        "endMs": 8460
       },
       {
-        "word": "the",
-        "start": 9.5,
-        "end": 9.6,
-        "startMs": 9500,
-        "endMs": 9600
+        "word": "iska",
+        "startMs": 8460,
+        "endMs": 8660
       },
       {
-        "word": "difference?",
-        "start": 9.6,
-        "end": 10.24,
-        "startMs": 9600,
-        "endMs": 10240
+        "word": "fayda",
+        "startMs": 8660,
+        "endMs": 9000
+      },
+      {
+        "word": "kya",
+        "startMs": 9000,
+        "endMs": 9140
+      },
+      {
+        "word": "hai",
+        "startMs": 9140,
+        "endMs": 9180
+      },
+      {
+        "word": "dhyan",
+        "startMs": 9180,
+        "endMs": 9380
+      },
+      {
+        "word": "se",
+        "startMs": 9380,
+        "endMs": 9520
+      },
+      {
+        "word": "sunna.",
+        "startMs": 9520,
+        "endMs": 9700
       }
-    ],
-    "startMs": 8980,
-    "endMs": 10220
+    ]
   },
   {
-    "start": 10.24,
-    "end": 11.22,
-    "text": "So let me tell you.",
+    "text": "Recently tumne suna hoga Adobe",
+    "startMs": 9700,
+    "endMs": 10990,
     "words": [
       {
-        "word": "So",
-        "start": 10.24,
-        "end": 10.64,
-        "startMs": 10240,
-        "endMs": 10640
+        "word": "Recently",
+        "startMs": 9700,
+        "endMs": 10160
       },
       {
-        "word": "let",
-        "start": 10.64,
-        "end": 10.74,
-        "startMs": 10640,
-        "endMs": 10740
+        "word": "tumne",
+        "startMs": 10160,
+        "endMs": 10320
       },
       {
-        "word": "me",
-        "start": 10.74,
-        "end": 10.84,
-        "startMs": 10740,
-        "endMs": 10840
+        "word": "suna",
+        "startMs": 10320,
+        "endMs": 10600
       },
       {
-        "word": "tell",
-        "start": 10.84,
-        "end": 11.0,
-        "startMs": 10840,
+        "word": "hoga",
+        "startMs": 10600,
+        "endMs": 10760
+      },
+      {
+        "word": "Adobe",
+        "startMs": 10760,
         "endMs": 11000
-      },
+      }
+    ]
+  },
+  {
+    "text": "ke jitne bhi paid softwares hain,",
+    "startMs": 11000,
+    "endMs": 12270,
+    "words": [
       {
-        "word": "you.",
-        "start": 11.0,
-        "end": 11.24,
+        "word": "ke",
         "startMs": 11000,
-        "endMs": 11240
+        "endMs": 11200
+      },
+      {
+        "word": "jitne",
+        "startMs": 11200,
+        "endMs": 11420
+      },
+      {
+        "word": "bhi",
+        "startMs": 11420,
+        "endMs": 11540
+      },
+      {
+        "word": "paid",
+        "startMs": 11540,
+        "endMs": 11740
+      },
+      {
+        "word": "softwares",
+        "startMs": 11740,
+        "endMs": 12100
+      },
+      {
+        "word": "hain,",
+        "startMs": 12100,
+        "endMs": 12240
       }
-    ],
-    "startMs": 10240,
-    "endMs": 11220
+    ]
   },
   {
-    "start": 11.24,
-    "end": 12.14,
-    "text": "So let's assume that you",
+    "text": "wo saare ke saare kisi ne",
+    "startMs": 12280,
+    "endMs": 13330,
     "words": [
       {
-        "word": "So",
-        "start": 11.24,
-        "end": 11.38,
-        "startMs": 11240,
-        "endMs": 11380
-      },
-      {
-        "word": "let's",
-        "start": 11.38,
-        "end": 11.6,
-        "startMs": 11380,
-        "endMs": 11600
-      },
-      {
-        "word": "assume",
-        "start": 11.6,
-        "end": 11.8,
-        "startMs": 11600,
-        "endMs": 11800
-      },
-      {
-        "word": "that",
-        "start": 11.8,
-        "end": 12.04,
-        "startMs": 11800,
-        "endMs": 12040
-      },
-      {
-        "word": "you",
-        "start": 12.04,
-        "end": 12.16,
-        "startMs": 12040,
-        "endMs": 12160
-      }
-    ],
-    "startMs": 11240,
-    "endMs": 12140
-  },
-  {
-    "start": 12.16,
-    "end": 13.06,
-    "text": "are giving this word to",
-    "words": [
-      {
-        "word": "are",
-        "start": 12.16,
-        "end": 12.28,
-        "startMs": 12160,
-        "endMs": 12280
-      },
-      {
-        "word": "giving",
-        "start": 12.28,
-        "end": 12.48,
+        "word": "wo",
         "startMs": 12280,
-        "endMs": 12480
+        "endMs": 12340
       },
       {
-        "word": "this",
-        "start": 12.48,
-        "end": 12.72,
-        "startMs": 12480,
+        "word": "saare",
+        "startMs": 12340,
         "endMs": 12720
       },
       {
-        "word": "word",
-        "start": 12.72,
-        "end": 12.92,
+        "word": "ke",
         "startMs": 12720,
-        "endMs": 12920
+        "endMs": 12820
       },
       {
-        "word": "to",
-        "start": 12.92,
-        "end": 13.08,
-        "startMs": 12920,
-        "endMs": 13080
-      }
-    ],
-    "startMs": 12160,
-    "endMs": 13060
-  },
-  {
-    "start": 13.08,
-    "end": 13.66,
-    "text": "your AI model.",
-    "words": [
+        "word": "saare",
+        "startMs": 12820,
+        "endMs": 13000
+      },
       {
-        "word": "your",
-        "start": 13.08,
-        "end": 13.22,
-        "startMs": 13080,
+        "word": "kisi",
+        "startMs": 13000,
         "endMs": 13220
       },
       {
-        "word": "AI",
-        "start": 13.22,
-        "end": 13.36,
+        "word": "ne",
         "startMs": 13220,
-        "endMs": 13360
-      },
-      {
-        "word": "model.",
-        "start": 13.36,
-        "end": 13.68,
-        "startMs": 13360,
-        "endMs": 13680
+        "endMs": 13340
       }
-    ],
-    "startMs": 13080,
-    "endMs": 13660
+    ]
   },
   {
-    "start": 13.68,
-    "end": 15.12,
-    "text": "So this word is actually",
+    "text": "free mein launch kar diya hai,",
+    "startMs": 13340,
+    "endMs": 14330,
     "words": [
       {
-        "word": "So",
-        "start": 13.68,
-        "end": 14.26,
+        "word": "free",
+        "startMs": 13340,
+        "endMs": 13580
+      },
+      {
+        "word": "mein",
+        "startMs": 13580,
+        "endMs": 13680
+      },
+      {
+        "word": "launch",
         "startMs": 13680,
+        "endMs": 13900
+      },
+      {
+        "word": "kar",
+        "startMs": 13900,
+        "endMs": 14140
+      },
+      {
+        "word": "diya",
+        "startMs": 14140,
         "endMs": 14260
       },
       {
-        "word": "this",
-        "start": 14.26,
-        "end": 14.44,
+        "word": "hai,",
         "startMs": 14260,
-        "endMs": 14440
-      },
-      {
-        "word": "word",
-        "start": 14.44,
-        "end": 14.7,
-        "startMs": 14440,
-        "endMs": 14700
-      },
-      {
-        "word": "is",
-        "start": 14.7,
-        "end": 14.9,
-        "startMs": 14700,
-        "endMs": 14900
-      },
-      {
-        "word": "actually",
-        "start": 14.9,
-        "end": 15.14,
-        "startMs": 14900,
-        "endMs": 15140
+        "endMs": 14340
       }
-    ],
-    "startMs": 13680,
-    "endMs": 15120
+    ]
   },
   {
-    "start": 15.14,
-    "end": 16.54,
-    "text": "converted into different tokens",
+    "text": "and that was done with the",
+    "startMs": 14340,
+    "endMs": 15370,
     "words": [
       {
-        "word": "converted",
-        "start": 15.14,
-        "end": 15.56,
+        "word": "and",
+        "startMs": 14340,
+        "endMs": 14640
+      },
+      {
+        "word": "that",
+        "startMs": 14640,
+        "endMs": 14860
+      },
+      {
+        "word": "was",
+        "startMs": 14860,
+        "endMs": 15000
+      },
+      {
+        "word": "done",
+        "startMs": 15000,
+        "endMs": 15140
+      },
+      {
+        "word": "with",
         "startMs": 15140,
+        "endMs": 15280
+      },
+      {
+        "word": "the",
+        "startMs": 15280,
+        "endMs": 15380
+      }
+    ]
+  },
+  {
+    "text": "help of the same tool",
+    "startMs": 15380,
+    "endMs": 16010,
+    "words": [
+      {
+        "word": "help",
+        "startMs": 15380,
+        "endMs": 15480
+      },
+      {
+        "word": "of",
+        "startMs": 15480,
         "endMs": 15560
       },
       {
-        "word": "into",
-        "start": 15.56,
-        "end": 15.84,
+        "word": "the",
         "startMs": 15560,
-        "endMs": 15840
+        "endMs": 15720
       },
       {
-        "word": "different",
-        "start": 15.84,
-        "end": 16.2,
-        "startMs": 15840,
-        "endMs": 16200
+        "word": "same",
+        "startMs": 15720,
+        "endMs": 15960
       },
       {
-        "word": "tokens",
-        "start": 16.2,
-        "end": 16.56,
-        "startMs": 16200,
-        "endMs": 16560
+        "word": "tool",
+        "startMs": 15960,
+        "endMs": 16020
       }
-    ],
-    "startMs": 15140,
-    "endMs": 16540
+    ]
   },
   {
-    "start": 16.56,
-    "end": 17.66,
-    "text": "so that the model can",
+    "text": "jiski main abhi yahan pe baat",
+    "startMs": 16020,
+    "endMs": 17150,
     "words": [
       {
-        "word": "so",
-        "start": 16.56,
-        "end": 16.98,
-        "startMs": 16560,
-        "endMs": 16980
+        "word": "jiski",
+        "startMs": 16020,
+        "endMs": 16500
       },
       {
-        "word": "that",
-        "start": 16.98,
-        "end": 17.12,
-        "startMs": 16980,
-        "endMs": 17120
+        "word": "main",
+        "startMs": 16500,
+        "endMs": 16600
       },
       {
-        "word": "the",
-        "start": 17.12,
-        "end": 17.24,
-        "startMs": 17120,
-        "endMs": 17240
+        "word": "abhi",
+        "startMs": 16600,
+        "endMs": 16700
       },
       {
-        "word": "model",
-        "start": 17.24,
-        "end": 17.5,
-        "startMs": 17240,
-        "endMs": 17500
+        "word": "yahan",
+        "startMs": 16700,
+        "endMs": 16840
       },
       {
-        "word": "can",
-        "start": 17.5,
-        "end": 17.68,
-        "startMs": 17500,
-        "endMs": 17680
+        "word": "pe",
+        "startMs": 16840,
+        "endMs": 16960
+      },
+      {
+        "word": "baat",
+        "startMs": 16960,
+        "endMs": 17160
       }
-    ],
-    "startMs": 16560,
-    "endMs": 17660
+    ]
   },
   {
-    "start": 17.68,
-    "end": 18.24,
-    "text": "process it.",
+    "text": "kar raha hoon GitHub ki.",
+    "startMs": 17160,
+    "endMs": 17830,
     "words": [
       {
-        "word": "process",
-        "start": 17.68,
-        "end": 17.96,
-        "startMs": 17680,
-        "endMs": 17960
+        "word": "kar",
+        "startMs": 17160,
+        "endMs": 17320
       },
       {
-        "word": "it.",
-        "start": 17.96,
-        "end": 18.26,
-        "startMs": 17960,
-        "endMs": 18260
+        "word": "raha",
+        "startMs": 17320,
+        "endMs": 17380
+      },
+      {
+        "word": "hoon",
+        "startMs": 17380,
+        "endMs": 17420
+      },
+      {
+        "word": "GitHub",
+        "startMs": 17420,
+        "endMs": 17600
+      },
+      {
+        "word": "ki.",
+        "startMs": 17600,
+        "endMs": 17800
       }
-    ],
-    "startMs": 17680,
-    "endMs": 18240
+    ]
   },
   {
-    "start": 18.26,
-    "end": 18.96,
-    "text": "The role of the model",
+    "text": "Toh agar aapko bhi aisa kuch",
+    "startMs": 17840,
+    "endMs": 18930,
     "words": [
       {
-        "word": "The",
-        "start": 18.26,
-        "end": 18.38,
-        "startMs": 18260,
-        "endMs": 18380
+        "word": "Toh",
+        "startMs": 17840,
+        "endMs": 17920
       },
       {
-        "word": "role",
-        "start": 18.38,
-        "end": 18.56,
-        "startMs": 18380,
-        "endMs": 18560
+        "word": "agar",
+        "startMs": 17920,
+        "endMs": 18080
       },
       {
-        "word": "of",
-        "start": 18.56,
-        "end": 18.72,
-        "startMs": 18560,
-        "endMs": 18720
+        "word": "aapko",
+        "startMs": 18080,
+        "endMs": 18520
       },
       {
-        "word": "the",
-        "start": 18.72,
-        "end": 18.82,
-        "startMs": 18720,
+        "word": "bhi",
+        "startMs": 18520,
+        "endMs": 18640
+      },
+      {
+        "word": "aisa",
+        "startMs": 18640,
         "endMs": 18820
       },
       {
-        "word": "model",
-        "start": 18.82,
-        "end": 18.98,
+        "word": "kuch",
         "startMs": 18820,
-        "endMs": 18980
+        "endMs": 18940
       }
-    ],
-    "startMs": 18260,
-    "endMs": 18960
+    ]
   },
   {
-    "start": 18.98,
-    "end": 19.4,
-    "text": "is simple.",
+    "text": "reverse engineering jaisa seekhna hai,",
+    "startMs": 18940,
+    "endMs": 20450,
     "words": [
+      {
+        "word": "reverse",
+        "startMs": 18940,
+        "endMs": 19200
+      },
+      {
+        "word": "engineering",
+        "startMs": 19200,
+        "endMs": 19600
+      },
+      {
+        "word": "jaisa",
+        "startMs": 19600,
+        "endMs": 19860
+      },
+      {
+        "word": "seekhna",
+        "startMs": 19860,
+        "endMs": 20320
+      },
+      {
+        "word": "hai,",
+        "startMs": 20320,
+        "endMs": 20460
+      }
+    ]
+  },
+  {
+    "text": "jo actually aapko seekhna chahiye",
+    "startMs": 20460,
+    "endMs": 21610,
+    "words": [
+      {
+        "word": "jo",
+        "startMs": 20460,
+        "endMs": 20620
+      },
+      {
+        "word": "actually",
+        "startMs": 20620,
+        "endMs": 20940
+      },
+      {
+        "word": "aapko",
+        "startMs": 20940,
+        "endMs": 21180
+      },
+      {
+        "word": "seekhna",
+        "startMs": 21180,
+        "endMs": 21520
+      },
+      {
+        "word": "chahiye",
+        "startMs": 21520,
+        "endMs": 21620
+      }
+    ]
+  },
+  {
+    "text": "kaafi helpful hai,",
+    "startMs": 21620,
+    "endMs": 22290,
+    "words": [
+      {
+        "word": "kaafi",
+        "startMs": 21620,
+        "endMs": 21920
+      },
+      {
+        "word": "helpful",
+        "startMs": 21920,
+        "endMs": 22180
+      },
+      {
+        "word": "hai,",
+        "startMs": 22180,
+        "endMs": 22300
+      }
+    ]
+  },
+  {
+    "text": "toh is video mein comment",
+    "startMs": 22300,
+    "endMs": 23050,
+    "words": [
+      {
+        "word": "toh",
+        "startMs": 22300,
+        "endMs": 22440
+      },
       {
         "word": "is",
-        "start": 18.98,
-        "end": 19.14,
-        "startMs": 18980,
-        "endMs": 19140
+        "startMs": 22440,
+        "endMs": 22520
       },
       {
-        "word": "simple.",
-        "start": 19.14,
-        "end": 19.42,
-        "startMs": 19140,
-        "endMs": 19420
+        "word": "video",
+        "startMs": 22520,
+        "endMs": 22720
+      },
+      {
+        "word": "mein",
+        "startMs": 22720,
+        "endMs": 22820
+      },
+      {
+        "word": "comment",
+        "startMs": 22820,
+        "endMs": 23060
       }
-    ],
-    "startMs": 18980,
-    "endMs": 19400
+    ]
   },
   {
-    "start": 19.42,
-    "end": 20.82,
-    "text": "It will give you the",
+    "text": "kar dena hai REA",
+    "startMs": 23060,
+    "endMs": 23730,
     "words": [
       {
-        "word": "It",
-        "start": 19.42,
-        "end": 20.06,
-        "startMs": 19420,
-        "endMs": 20060
+        "word": "kar",
+        "startMs": 23060,
+        "endMs": 23280
       },
       {
-        "word": "will",
-        "start": 20.06,
-        "end": 20.26,
-        "startMs": 20060,
-        "endMs": 20260
-      },
-      {
-        "word": "give",
-        "start": 20.26,
-        "end": 20.42,
-        "startMs": 20260,
-        "endMs": 20420
-      },
-      {
-        "word": "you",
-        "start": 20.42,
-        "end": 20.52,
-        "startMs": 20420,
-        "endMs": 20520
-      },
-      {
-        "word": "the",
-        "start": 20.52,
-        "end": 20.84,
-        "startMs": 20520,
-        "endMs": 20840
-      }
-    ],
-    "startMs": 19420,
-    "endMs": 20820
-  },
-  {
-    "start": 20.84,
-    "end": 23.12,
-    "text": "best next word prediction on",
-    "words": [
-      {
-        "word": "best",
-        "start": 20.84,
-        "end": 21.26,
-        "startMs": 20840,
-        "endMs": 21260
-      },
-      {
-        "word": "next",
-        "start": 21.26,
-        "end": 21.86,
-        "startMs": 21260,
-        "endMs": 21860
-      },
-      {
-        "word": "word",
-        "start": 21.86,
-        "end": 22.3,
-        "startMs": 21860,
-        "endMs": 22300
-      },
-      {
-        "word": "prediction",
-        "start": 22.3,
-        "end": 22.8,
-        "startMs": 22300,
-        "endMs": 22800
-      },
-      {
-        "word": "on",
-        "start": 22.8,
-        "end": 23.14,
-        "startMs": 22800,
-        "endMs": 23140
-      }
-    ],
-    "startMs": 20840,
-    "endMs": 23120
-  },
-  {
-    "start": 23.14,
-    "end": 23.84,
-    "text": "the basis of the tokens.",
-    "words": [
-      {
-        "word": "the",
-        "start": 23.14,
-        "end": 23.26,
-        "startMs": 23140,
-        "endMs": 23260
-      },
-      {
-        "word": "basis",
-        "start": 23.26,
-        "end": 23.38,
-        "startMs": 23260,
+        "word": "dena",
+        "startMs": 23280,
         "endMs": 23380
       },
       {
-        "word": "of",
-        "start": 23.38,
-        "end": 23.5,
+        "word": "hai",
         "startMs": 23380,
-        "endMs": 23500
+        "endMs": 23460
       },
       {
-        "word": "the",
-        "start": 23.5,
-        "end": 23.58,
-        "startMs": 23500,
-        "endMs": 23580
-      },
-      {
-        "word": "tokens.",
-        "start": 23.58,
-        "end": 23.86,
-        "startMs": 23580,
-        "endMs": 23860
+        "word": "REA",
+        "startMs": 23460,
+        "endMs": 23640
       }
-    ],
-    "startMs": 23140,
-    "endMs": 23840
+    ]
   },
   {
-    "start": 23.86,
-    "end": 25.6,
-    "text": "For example,",
+    "text": "aur main tum sabhi ke DMs ke andar",
+    "startMs": 23740,
+    "endMs": 25000,
     "words": [
       {
-        "word": "For",
-        "start": 23.86,
-        "end": 24.62,
-        "startMs": 23860,
-        "endMs": 24620
+        "word": "aur",
+        "startMs": 23740,
+        "endMs": 23840
       },
       {
-        "word": "example,",
-        "start": 24.62,
-        "end": 25.62,
-        "startMs": 24620,
-        "endMs": 25620
+        "word": "main",
+        "startMs": 23840,
+        "endMs": 23900
+      },
+      {
+        "word": "tum",
+        "startMs": 23900,
+        "endMs": 24060
+      },
+      {
+        "word": "sabhi",
+        "startMs": 24060,
+        "endMs": 24280
+      },
+      {
+        "word": "ke",
+        "startMs": 24280,
+        "endMs": 24400
+      },
+      {
+        "word": "DMs",
+        "startMs": 24400,
+        "endMs": 24720
+      },
+      {
+        "word": "ke",
+        "startMs": 24720,
+        "endMs": 24840
+      },
+      {
+        "word": "andar",
+        "startMs": 24840,
+        "endMs": 24980
       }
-    ],
-    "startMs": 23860,
-    "endMs": 25600
+    ]
   },
   {
-    "start": 25.62,
-    "end": 26.8,
-    "text": "the sun rises.",
-    "words": [
-      {
-        "word": "the",
-        "start": 25.62,
-        "end": 25.72,
-        "startMs": 25620,
-        "endMs": 25720
-      },
-      {
-        "word": "sun",
-        "start": 25.72,
-        "end": 25.94,
-        "startMs": 25720,
-        "endMs": 25940
-      },
-      {
-        "word": "rises.",
-        "start": 25.94,
-        "end": 26.82,
-        "startMs": 25940,
-        "endMs": 26820
-      }
-    ],
-    "startMs": 25620,
-    "endMs": 26800
-  },
-  {
-    "start": 26.82,
-    "end": 28.42,
-    "text": "This is your context.",
-    "words": [
-      {
-        "word": "This",
-        "start": 26.82,
-        "end": 27.26,
-        "startMs": 26820,
-        "endMs": 27260
-      },
-      {
-        "word": "is",
-        "start": 27.26,
-        "end": 27.54,
-        "startMs": 27260,
-        "endMs": 27540
-      },
-      {
-        "word": "your",
-        "start": 27.54,
-        "end": 27.74,
-        "startMs": 27540,
-        "endMs": 27740
-      },
-      {
-        "word": "context.",
-        "start": 27.74,
-        "end": 28.36,
-        "startMs": 27740,
-        "endMs": 28360
-      }
-    ],
-    "startMs": 26820,
-    "endMs": 28420
-  },
-  {
-    "start": 28.44,
-    "end": 29.6,
-    "text": "So your AI model will",
-    "words": [
-      {
-        "word": "So",
-        "start": 28.44,
-        "end": 28.7,
-        "startMs": 28440,
-        "endMs": 28700
-      },
-      {
-        "word": "your",
-        "start": 28.7,
-        "end": 28.9,
-        "startMs": 28700,
-        "endMs": 28900
-      },
-      {
-        "word": "AI",
-        "start": 28.9,
-        "end": 29.06,
-        "startMs": 28900,
-        "endMs": 29060
-      },
-      {
-        "word": "model",
-        "start": 29.06,
-        "end": 29.4,
-        "startMs": 29060,
-        "endMs": 29400
-      },
-      {
-        "word": "will",
-        "start": 29.4,
-        "end": 29.62,
-        "startMs": 29400,
-        "endMs": 29620
-      }
-    ],
-    "startMs": 28440,
-    "endMs": 29600
-  },
-  {
-    "start": 29.62,
-    "end": 30.9,
-    "text": "accept these three words as",
-    "words": [
-      {
-        "word": "accept",
-        "start": 29.62,
-        "end": 29.92,
-        "startMs": 29620,
-        "endMs": 29920
-      },
-      {
-        "word": "these",
-        "start": 29.92,
-        "end": 30.2,
-        "startMs": 29920,
-        "endMs": 30200
-      },
-      {
-        "word": "three",
-        "start": 30.2,
-        "end": 30.38,
-        "startMs": 30200,
-        "endMs": 30380
-      },
-      {
-        "word": "words",
-        "start": 30.38,
-        "end": 30.72,
-        "startMs": 30380,
-        "endMs": 30720
-      },
-      {
-        "word": "as",
-        "start": 30.72,
-        "end": 30.92,
-        "startMs": 30720,
-        "endMs": 30920
-      }
-    ],
-    "startMs": 29620,
-    "endMs": 30900
-  },
-  {
-    "start": 30.92,
-    "end": 32.12,
-    "text": "an input and will predict",
-    "words": [
-      {
-        "word": "an",
-        "start": 30.92,
-        "end": 31.04,
-        "startMs": 30920,
-        "endMs": 31040
-      },
-      {
-        "word": "input",
-        "start": 31.04,
-        "end": 31.32,
-        "startMs": 31040,
-        "endMs": 31320
-      },
-      {
-        "word": "and",
-        "start": 31.32,
-        "end": 31.66,
-        "startMs": 31320,
-        "endMs": 31660
-      },
-      {
-        "word": "will",
-        "start": 31.66,
-        "end": 31.8,
-        "startMs": 31660,
-        "endMs": 31800
-      },
-      {
-        "word": "predict",
-        "start": 31.8,
-        "end": 32.14,
-        "startMs": 31800,
-        "endMs": 32140
-      }
-    ],
-    "startMs": 30920,
-    "endMs": 32120
-  },
-  {
-    "start": 32.14,
-    "end": 33.66,
-    "text": "from as the next best",
-    "words": [
-      {
-        "word": "from",
-        "start": 32.14,
-        "end": 32.68,
-        "startMs": 32140,
-        "endMs": 32680
-      },
-      {
-        "word": "as",
-        "start": 32.68,
-        "end": 33.04,
-        "startMs": 32680,
-        "endMs": 33040
-      },
-      {
-        "word": "the",
-        "start": 33.04,
-        "end": 33.2,
-        "startMs": 33040,
-        "endMs": 33200
-      },
-      {
-        "word": "next",
-        "start": 33.2,
-        "end": 33.4,
-        "startMs": 33200,
-        "endMs": 33400
-      },
-      {
-        "word": "best",
-        "start": 33.4,
-        "end": 33.68,
-        "startMs": 33400,
-        "endMs": 33680
-      }
-    ],
-    "startMs": 32140,
-    "endMs": 33660
-  },
-  {
-    "start": 33.68,
-    "end": 34.4,
-    "text": "word prediction.",
-    "words": [
-      {
-        "word": "word",
-        "start": 33.68,
-        "end": 33.84,
-        "startMs": 33680,
-        "endMs": 33840
-      },
-      {
-        "word": "prediction.",
-        "start": 33.84,
-        "end": 34.28,
-        "startMs": 33840,
-        "endMs": 34280
-      }
-    ],
-    "startMs": 33680,
-    "endMs": 34400
-  },
-  {
-    "start": 34.68,
-    "end": 36.08,
-    "text": "Now this entire four word",
-    "words": [
-      {
-        "word": "Now",
-        "start": 34.68,
-        "end": 34.8,
-        "startMs": 34680,
-        "endMs": 34800
-      },
-      {
-        "word": "this",
-        "start": 34.8,
-        "end": 35.02,
-        "startMs": 34800,
-        "endMs": 35020
-      },
-      {
-        "word": "entire",
-        "start": 35.02,
-        "end": 35.52,
-        "startMs": 35020,
-        "endMs": 35520
-      },
-      {
-        "word": "four",
-        "start": 35.52,
-        "end": 35.92,
-        "startMs": 35520,
-        "endMs": 35920
-      },
-      {
-        "word": "word",
-        "start": 35.92,
-        "end": 36.1,
-        "startMs": 35920,
-        "endMs": 36100
-      }
-    ],
-    "startMs": 34680,
-    "endMs": 36080
-  },
-  {
-    "start": 36.1,
-    "end": 37.64,
-    "text": "context will again go to",
-    "words": [
-      {
-        "word": "context",
-        "start": 36.1,
-        "end": 36.52,
-        "startMs": 36100,
-        "endMs": 36520
-      },
-      {
-        "word": "will",
-        "start": 36.52,
-        "end": 36.92,
-        "startMs": 36520,
-        "endMs": 36920
-      },
-      {
-        "word": "again",
-        "start": 36.92,
-        "end": 37.28,
-        "startMs": 36920,
-        "endMs": 37280
-      },
-      {
-        "word": "go",
-        "start": 37.28,
-        "end": 37.54,
-        "startMs": 37280,
-        "endMs": 37540
-      },
-      {
-        "word": "to",
-        "start": 37.54,
-        "end": 37.66,
-        "startMs": 37540,
-        "endMs": 37660
-      }
-    ],
-    "startMs": 36100,
-    "endMs": 37640
-  },
-  {
-    "start": 37.66,
-    "end": 38.88,
-    "text": "the AI model and then",
-    "words": [
-      {
-        "word": "the",
-        "start": 37.66,
-        "end": 37.76,
-        "startMs": 37660,
-        "endMs": 37760
-      },
-      {
-        "word": "AI",
-        "start": 37.76,
-        "end": 37.94,
-        "startMs": 37760,
-        "endMs": 37940
-      },
-      {
-        "word": "model",
-        "start": 37.94,
-        "end": 38.24,
-        "startMs": 37940,
-        "endMs": 38240
-      },
-      {
-        "word": "and",
-        "start": 38.24,
-        "end": 38.7,
-        "startMs": 38240,
-        "endMs": 38700
-      },
-      {
-        "word": "then",
-        "start": 38.7,
-        "end": 38.9,
-        "startMs": 38700,
-        "endMs": 38900
-      }
-    ],
-    "startMs": 37660,
-    "endMs": 38880
-  },
-  {
-    "start": 38.9,
-    "end": 39.82,
-    "text": "the next word is predicted",
-    "words": [
-      {
-        "word": "the",
-        "start": 38.9,
-        "end": 39.06,
-        "startMs": 38900,
-        "endMs": 39060
-      },
-      {
-        "word": "next",
-        "start": 39.06,
-        "end": 39.22,
-        "startMs": 39060,
-        "endMs": 39220
-      },
-      {
-        "word": "word",
-        "start": 39.22,
-        "end": 39.4,
-        "startMs": 39220,
-        "endMs": 39400
-      },
-      {
-        "word": "is",
-        "start": 39.4,
-        "end": 39.52,
-        "startMs": 39400,
-        "endMs": 39520
-      },
-      {
-        "word": "predicted",
-        "start": 39.52,
-        "end": 39.84,
-        "startMs": 39520,
-        "endMs": 39840
-      }
-    ],
-    "startMs": 38900,
-    "endMs": 39820
-  },
-  {
-    "start": 39.84,
-    "end": 41.3,
-    "text": "that is East and the",
-    "words": [
-      {
-        "word": "that",
-        "start": 39.84,
-        "end": 40.34,
-        "startMs": 39840,
-        "endMs": 40340
-      },
-      {
-        "word": "is",
-        "start": 40.34,
-        "end": 40.5,
-        "startMs": 40340,
-        "endMs": 40500
-      },
-      {
-        "word": "East",
-        "start": 40.5,
-        "end": 40.72,
-        "startMs": 40500,
-        "endMs": 40720
-      },
-      {
-        "word": "and",
-        "start": 40.72,
-        "end": 41.22,
-        "startMs": 40720,
-        "endMs": 41220
-      },
-      {
-        "word": "the",
-        "start": 41.22,
-        "end": 41.32,
-        "startMs": 41220,
-        "endMs": 41320
-      }
-    ],
-    "startMs": 39840,
-    "endMs": 41300
-  },
-  {
-    "start": 41.32,
-    "end": 42.38,
-    "text": "sentence turns out to be",
-    "words": [
-      {
-        "word": "sentence",
-        "start": 41.32,
-        "end": 41.58,
-        "startMs": 41320,
-        "endMs": 41580
-      },
-      {
-        "word": "turns",
-        "start": 41.58,
-        "end": 41.96,
-        "startMs": 41580,
-        "endMs": 41960
-      },
-      {
-        "word": "out",
-        "start": 41.96,
-        "end": 42.12,
-        "startMs": 41960,
-        "endMs": 42120
-      },
-      {
-        "word": "to",
-        "start": 42.12,
-        "end": 42.26,
-        "startMs": 42120,
-        "endMs": 42260
-      },
-      {
-        "word": "be",
-        "start": 42.26,
-        "end": 42.4,
-        "startMs": 42260,
-        "endMs": 42400
-      }
-    ],
-    "startMs": 41320,
-    "endMs": 42380
-  },
-  {
-    "start": 42.4,
-    "end": 43.84,
-    "text": "the sun rises from East.",
-    "words": [
-      {
-        "word": "the",
-        "start": 42.4,
-        "end": 42.6,
-        "startMs": 42400,
-        "endMs": 42600
-      },
-      {
-        "word": "sun",
-        "start": 42.6,
-        "end": 42.76,
-        "startMs": 42600,
-        "endMs": 42760
-      },
-      {
-        "word": "rises",
-        "start": 42.76,
-        "end": 43.02,
-        "startMs": 42760,
-        "endMs": 43020
-      },
-      {
-        "word": "from",
-        "start": 43.02,
-        "end": 43.28,
-        "startMs": 43020,
-        "endMs": 43280
-      },
-      {
-        "word": "East.",
-        "start": 43.28,
-        "end": 43.72,
-        "startMs": 43280,
-        "endMs": 43720
-      }
-    ],
-    "startMs": 42400,
-    "endMs": 43840
-  },
-  {
-    "start": 44.14,
-    "end": 45.42,
-    "text": "Now this entire computation",
-    "words": [
-      {
-        "word": "Now",
-        "start": 44.14,
-        "end": 44.28,
-        "startMs": 44140,
-        "endMs": 44280
-      },
-      {
-        "word": "this",
-        "start": 44.28,
-        "end": 44.42,
-        "startMs": 44280,
-        "endMs": 44420
-      },
-      {
-        "word": "entire",
-        "start": 44.42,
-        "end": 44.9,
-        "startMs": 44420,
-        "endMs": 44900
-      },
-      {
-        "word": "computation",
-        "start": 44.9,
-        "end": 45.44,
-        "startMs": 44900,
-        "endMs": 45440
-      }
-    ],
-    "startMs": 44140,
-    "endMs": 45420
-  },
-  {
-    "start": 45.44,
-    "end": 47.08,
-    "text": "repeats itself with the previous",
-    "words": [
-      {
-        "word": "repeats",
-        "start": 45.44,
-        "end": 45.98,
-        "startMs": 45440,
-        "endMs": 45980
-      },
-      {
-        "word": "itself",
-        "start": 45.98,
-        "end": 46.36,
-        "startMs": 45980,
-        "endMs": 46360
-      },
-      {
-        "word": "with",
-        "start": 46.36,
-        "end": 46.6,
-        "startMs": 46360,
-        "endMs": 46600
-      },
-      {
-        "word": "the",
-        "start": 46.6,
-        "end": 46.7,
-        "startMs": 46600,
-        "endMs": 46700
-      },
-      {
-        "word": "previous",
-        "start": 46.7,
-        "end": 47.1,
-        "startMs": 46700,
-        "endMs": 47100
-      }
-    ],
-    "startMs": 45440,
-    "endMs": 47080
-  },
-  {
-    "start": 47.1,
-    "end": 48.32,
-    "text": "data and the AI model",
-    "words": [
-      {
-        "word": "data",
-        "start": 47.1,
-        "end": 47.52,
-        "startMs": 47100,
-        "endMs": 47520
-      },
-      {
-        "word": "and",
-        "start": 47.52,
-        "end": 47.8,
-        "startMs": 47520,
-        "endMs": 47800
-      },
-      {
-        "word": "the",
-        "start": 47.8,
-        "end": 47.92,
-        "startMs": 47800,
-        "endMs": 47920
-      },
-      {
-        "word": "AI",
-        "start": 47.92,
-        "end": 48.1,
-        "startMs": 47920,
-        "endMs": 48100
-      },
-      {
-        "word": "model",
-        "start": 48.1,
-        "end": 48.34,
-        "startMs": 48100,
-        "endMs": 48340
-      }
-    ],
-    "startMs": 47100,
-    "endMs": 48320
-  },
-  {
-    "start": 48.34,
-    "end": 49.4,
-    "text": "just predicts the next word.",
-    "words": [
-      {
-        "word": "just",
-        "start": 48.34,
-        "end": 48.6,
-        "startMs": 48340,
-        "endMs": 48600
-      },
-      {
-        "word": "predicts",
-        "start": 48.6,
-        "end": 48.82,
-        "startMs": 48600,
-        "endMs": 48820
-      },
-      {
-        "word": "the",
-        "start": 48.82,
-        "end": 48.98,
-        "startMs": 48820,
-        "endMs": 48980
-      },
-      {
-        "word": "next",
-        "start": 48.98,
-        "end": 49.12,
-        "startMs": 48980,
-        "endMs": 49120
-      },
-      {
-        "word": "word.",
-        "start": 49.12,
-        "end": 49.44,
-        "startMs": 49120,
-        "endMs": 49440
-      }
-    ],
-    "startMs": 48340,
-    "endMs": 49400
-  },
-  {
-    "start": 49.42,
-    "end": 50.66,
-    "text": "Now imagine there is a",
-    "words": [
-      {
-        "word": "Now",
-        "start": 49.42,
-        "end": 49.6,
-        "startMs": 49420,
-        "endMs": 49600
-      },
-      {
-        "word": "imagine",
-        "start": 49.6,
-        "end": 50.0,
-        "startMs": 49600,
-        "endMs": 50000
-      },
-      {
-        "word": "there",
-        "start": 50.0,
-        "end": 50.44,
-        "startMs": 50000,
-        "endMs": 50440
-      },
-      {
-        "word": "is",
-        "start": 50.44,
-        "end": 50.58,
-        "startMs": 50440,
-        "endMs": 50580
-      },
-      {
-        "word": "a",
-        "start": 50.58,
-        "end": 50.68,
-        "startMs": 50580,
-        "endMs": 50680
-      }
-    ],
-    "startMs": 49420,
-    "endMs": 50660
-  },
-  {
-    "start": 50.68,
-    "end": 52.08,
-    "text": "huge context of a sentence.",
-    "words": [
-      {
-        "word": "huge",
-        "start": 50.68,
-        "end": 50.96,
-        "startMs": 50680,
-        "endMs": 50960
-      },
-      {
-        "word": "context",
-        "start": 50.96,
-        "end": 51.38,
-        "startMs": 50960,
-        "endMs": 51380
-      },
-      {
-        "word": "of",
-        "start": 51.38,
-        "end": 51.6,
-        "startMs": 51380,
-        "endMs": 51600
-      },
-      {
-        "word": "a",
-        "start": 51.6,
-        "end": 51.68,
-        "startMs": 51600,
-        "endMs": 51680
-      },
-      {
-        "word": "sentence.",
-        "start": 51.68,
-        "end": 51.98,
-        "startMs": 51680,
-        "endMs": 51980
-      }
-    ],
-    "startMs": 50680,
-    "endMs": 52080
-  },
-  {
-    "start": 52.1,
-    "end": 53.74,
-    "text": "Now every time,",
-    "words": [
-      {
-        "word": "Now",
-        "start": 52.1,
-        "end": 52.52,
-        "startMs": 52100,
-        "endMs": 52520
-      },
-      {
-        "word": "every",
-        "start": 52.52,
-        "end": 52.88,
-        "startMs": 52520,
-        "endMs": 52880
-      },
-      {
-        "word": "time,",
-        "start": 52.88,
-        "end": 53.76,
-        "startMs": 52880,
-        "endMs": 53760
-      }
-    ],
-    "startMs": 52100,
-    "endMs": 53740
-  },
-  {
-    "start": 53.76,
-    "end": 54.8,
-    "text": "giving this entire context",
-    "words": [
-      {
-        "word": "giving",
-        "start": 53.76,
-        "end": 53.88,
-        "startMs": 53760,
-        "endMs": 53880
-      },
-      {
-        "word": "this",
-        "start": 53.88,
-        "end": 54.1,
-        "startMs": 53880,
-        "endMs": 54100
-      },
-      {
-        "word": "entire",
-        "start": 54.1,
-        "end": 54.46,
-        "startMs": 54100,
-        "endMs": 54460
-      },
-      {
-        "word": "context",
-        "start": 54.46,
-        "end": 54.82,
-        "startMs": 54460,
-        "endMs": 54820
-      }
-    ],
-    "startMs": 53760,
-    "endMs": 54800
-  },
-  {
-    "start": 54.82,
-    "end": 55.94,
-    "text": "to the AI model will",
-    "words": [
-      {
-        "word": "to",
-        "start": 54.82,
-        "end": 55.08,
-        "startMs": 54820,
-        "endMs": 55080
-      },
-      {
-        "word": "the",
-        "start": 55.08,
-        "end": 55.22,
-        "startMs": 55080,
-        "endMs": 55220
-      },
-      {
-        "word": "AI",
-        "start": 55.22,
-        "end": 55.38,
-        "startMs": 55220,
-        "endMs": 55380
-      },
-      {
-        "word": "model",
-        "start": 55.38,
-        "end": 55.72,
-        "startMs": 55380,
-        "endMs": 55720
-      },
-      {
-        "word": "will",
-        "start": 55.72,
-        "end": 55.96,
-        "startMs": 55720,
-        "endMs": 55960
-      }
-    ],
-    "startMs": 54820,
-    "endMs": 55940
-  },
-  {
-    "start": 55.96,
-    "end": 57.0,
-    "text": "become difficult for the AI",
-    "words": [
-      {
-        "word": "become",
-        "start": 55.96,
-        "end": 56.2,
-        "startMs": 55960,
-        "endMs": 56200
-      },
-      {
-        "word": "difficult",
-        "start": 56.2,
-        "end": 56.5,
-        "startMs": 56200,
-        "endMs": 56500
-      },
-      {
-        "word": "for",
-        "start": 56.5,
-        "end": 56.74,
-        "startMs": 56500,
-        "endMs": 56740
-      },
-      {
-        "word": "the",
-        "start": 56.74,
-        "end": 56.82,
-        "startMs": 56740,
-        "endMs": 56820
-      },
-      {
-        "word": "AI",
-        "start": 56.82,
-        "end": 57.02,
-        "startMs": 56820,
-        "endMs": 57020
-      }
-    ],
-    "startMs": 55960,
-    "endMs": 57000
-  },
-  {
-    "start": 57.02,
-    "end": 58.32,
-    "text": "to understand and to work",
-    "words": [
-      {
-        "word": "to",
-        "start": 57.02,
-        "end": 57.18,
-        "startMs": 57020,
-        "endMs": 57180
-      },
-      {
-        "word": "understand",
-        "start": 57.18,
-        "end": 57.6,
-        "startMs": 57180,
-        "endMs": 57600
-      },
-      {
-        "word": "and",
-        "start": 57.6,
-        "end": 58.06,
-        "startMs": 57600,
-        "endMs": 58060
-      },
-      {
-        "word": "to",
-        "start": 58.06,
-        "end": 58.22,
-        "startMs": 58060,
-        "endMs": 58220
-      },
-      {
-        "word": "work",
-        "start": 58.22,
-        "end": 58.34,
-        "startMs": 58220,
-        "endMs": 58340
-      }
-    ],
-    "startMs": 57020,
-    "endMs": 58320
-  },
-  {
-    "start": 58.34,
-    "end": 58.84,
-    "text": "with it.",
-    "words": [
-      {
-        "word": "with",
-        "start": 58.34,
-        "end": 58.56,
-        "startMs": 58340,
-        "endMs": 58560
-      },
-      {
-        "word": "it.",
-        "start": 58.56,
-        "end": 58.72,
-        "startMs": 58560,
-        "endMs": 58720
-      }
-    ],
-    "startMs": 58340,
-    "endMs": 58840
-  },
-  {
-    "start": 59.04,
-    "end": 59.74,
-    "text": "So what we do is",
-    "words": [
-      {
-        "word": "So",
-        "start": 59.04,
-        "end": 59.16,
-        "startMs": 59040,
-        "endMs": 59160
-      },
-      {
-        "word": "what",
-        "start": 59.16,
-        "end": 59.26,
-        "startMs": 59160,
-        "endMs": 59260
-      },
-      {
-        "word": "we",
-        "start": 59.26,
-        "end": 59.42,
-        "startMs": 59260,
-        "endMs": 59420
-      },
-      {
-        "word": "do",
-        "start": 59.42,
-        "end": 59.54,
-        "startMs": 59420,
-        "endMs": 59540
-      },
-      {
-        "word": "is",
-        "start": 59.54,
-        "end": 59.76,
-        "startMs": 59540,
-        "endMs": 59760
-      }
-    ],
-    "startMs": 59040,
-    "endMs": 59740
-  },
-  {
-    "start": 59.76,
-    "end": 60.98,
-    "text": "we perform caching.",
-    "words": [
-      {
-        "word": "we",
-        "start": 59.76,
-        "end": 59.96,
-        "startMs": 59760,
-        "endMs": 59960
-      },
-      {
-        "word": "perform",
-        "start": 59.96,
-        "end": 60.36,
-        "startMs": 59960,
-        "endMs": 60360
-      },
-      {
-        "word": "caching.",
-        "start": 60.36,
-        "end": 61.0,
-        "startMs": 60360,
-        "endMs": 61000
-      }
-    ],
-    "startMs": 59760,
-    "endMs": 60980
-  },
-  {
-    "start": 61.0,
-    "end": 62.96,
-    "text": "Yes. So because of caching,",
-    "words": [
-      {
-        "word": "Yes.",
-        "start": 61.0,
-        "end": 61.6,
-        "startMs": 61000,
-        "endMs": 61600
-      },
-      {
-        "word": "So",
-        "start": 61.6,
-        "end": 62.1,
-        "startMs": 61600,
-        "endMs": 62100
-      },
-      {
-        "word": "because",
-        "start": 62.1,
-        "end": 62.32,
-        "startMs": 62100,
-        "endMs": 62320
-      },
-      {
-        "word": "of",
-        "start": 62.32,
-        "end": 62.56,
-        "startMs": 62320,
-        "endMs": 62560
-      },
-      {
-        "word": "caching,",
-        "start": 62.56,
-        "end": 62.98,
-        "startMs": 62560,
-        "endMs": 62980
-      }
-    ],
-    "startMs": 61000,
-    "endMs": 62960
-  },
-  {
-    "start": 62.98,
-    "end": 63.72,
-    "text": "the prediction of the next",
-    "words": [
-      {
-        "word": "the",
-        "start": 62.98,
-        "end": 63.06,
-        "startMs": 62980,
-        "endMs": 63060
-      },
-      {
-        "word": "prediction",
-        "start": 63.04,
-        "end": 63.28,
-        "startMs": 63040,
-        "endMs": 63280
-      },
-      {
-        "word": "of",
-        "start": 63.28,
-        "end": 63.5,
-        "startMs": 63280,
-        "endMs": 63500
-      },
-      {
-        "word": "the",
-        "start": 63.5,
-        "end": 63.6,
-        "startMs": 63500,
-        "endMs": 63600
-      },
-      {
-        "word": "next",
-        "start": 63.6,
-        "end": 63.74,
-        "startMs": 63600,
-        "endMs": 63740
-      }
-    ],
-    "startMs": 62980,
-    "endMs": 63720
-  },
-  {
-    "start": 63.74,
-    "end": 65.02,
-    "text": "word becomes easier for the",
-    "words": [
-      {
-        "word": "word",
-        "start": 63.74,
-        "end": 63.9,
-        "startMs": 63740,
-        "endMs": 63900
-      },
-      {
-        "word": "becomes",
-        "start": 63.9,
-        "end": 64.18,
-        "startMs": 63900,
-        "endMs": 64180
-      },
-      {
-        "word": "easier",
-        "start": 64.18,
-        "end": 64.68,
-        "startMs": 64180,
-        "endMs": 64680
-      },
-      {
-        "word": "for",
-        "start": 64.68,
-        "end": 64.92,
-        "startMs": 64680,
-        "endMs": 64920
-      },
-      {
-        "word": "the",
-        "start": 64.92,
-        "end": 65.04,
-        "startMs": 64920,
-        "endMs": 65040
-      }
-    ],
-    "startMs": 63740,
-    "endMs": 65020
-  },
-  {
-    "start": 65.04,
-    "end": 66.1,
-    "text": "AI model and you get",
-    "words": [
-      {
-        "word": "AI",
-        "start": 65.04,
-        "end": 65.22,
-        "startMs": 65040,
-        "endMs": 65220
-      },
-      {
-        "word": "model",
-        "start": 65.22,
-        "end": 65.44,
-        "startMs": 65220,
-        "endMs": 65440
-      },
-      {
-        "word": "and",
-        "start": 65.44,
-        "end": 65.62,
-        "startMs": 65440,
-        "endMs": 65620
-      },
-      {
-        "word": "you",
-        "start": 65.62,
-        "end": 65.88,
-        "startMs": 65620,
-        "endMs": 65880
-      },
-      {
-        "word": "get",
-        "start": 65.88,
-        "end": 66.12,
-        "startMs": 65880,
-        "endMs": 66120
-      }
-    ],
-    "startMs": 65040,
-    "endMs": 66100
-  },
-  {
-    "start": 66.12,
-    "end": 67.18,
-    "text": "the fastest response.",
-    "words": [
-      {
-        "word": "the",
-        "start": 66.12,
-        "end": 66.34,
-        "startMs": 66120,
-        "endMs": 66340
-      },
-      {
-        "word": "fastest",
-        "start": 66.34,
-        "end": 66.64,
-        "startMs": 66340,
-        "endMs": 66640
-      },
-      {
-        "word": "response.",
-        "start": 66.64,
-        "end": 67.06,
-        "startMs": 66640,
-        "endMs": 67060
-      }
-    ],
-    "startMs": 66120,
-    "endMs": 67180
-  },
-  {
-    "start": 67.28,
-    "end": 67.98,
-    "text": "Now the answer to the",
-    "words": [
-      {
-        "word": "Now",
-        "start": 67.28,
-        "end": 67.48,
-        "startMs": 67280,
-        "endMs": 67480
-      },
-      {
-        "word": "the",
-        "start": 67.48,
-        "end": 67.62,
-        "startMs": 67480,
-        "endMs": 67620
-      },
-      {
-        "word": "answer",
-        "start": 67.62,
-        "end": 67.76,
-        "startMs": 67620,
-        "endMs": 67760
-      },
-      {
-        "word": "to",
-        "start": 67.76,
-        "end": 67.88,
-        "startMs": 67760,
-        "endMs": 67880
-      },
-      {
-        "word": "the",
-        "start": 67.88,
-        "end": 68.0,
-        "startMs": 67880,
-        "endMs": 68000
-      }
-    ],
-    "startMs": 67280,
-    "endMs": 67980
-  },
-  {
-    "start": 68.0,
-    "end": 69.1,
-    "text": "question that whenever your",
-    "words": [
-      {
-        "word": "question",
-        "start": 68.0,
-        "end": 68.26,
-        "startMs": 68000,
-        "endMs": 68260
-      },
-      {
-        "word": "that",
-        "start": 68.26,
-        "end": 68.64,
-        "startMs": 68260,
-        "endMs": 68640
-      },
-      {
-        "word": "whenever",
-        "start": 68.64,
-        "end": 68.92,
-        "startMs": 68640,
-        "endMs": 68920
-      },
-      {
-        "word": "your",
-        "start": 68.92,
-        "end": 69.12,
-        "startMs": 68920,
-        "endMs": 69120
-      }
-    ],
-    "startMs": 68000,
-    "endMs": 69100
-  },
-  {
-    "start": 69.12,
-    "end": 70.22,
-    "text": "friend sends you a text,",
-    "words": [
-      {
-        "word": "friend",
-        "start": 69.12,
-        "end": 69.44,
-        "startMs": 69120,
-        "endMs": 69440
-      },
-      {
-        "word": "sends",
-        "start": 69.44,
-        "end": 69.7,
-        "startMs": 69440,
-        "endMs": 69700
-      },
-      {
-        "word": "you",
-        "start": 69.7,
-        "end": 69.82,
-        "startMs": 69700,
-        "endMs": 69820
-      },
-      {
-        "word": "a",
-        "start": 69.82,
-        "end": 69.92,
-        "startMs": 69820,
-        "endMs": 69920
-      },
-      {
-        "word": "text,",
-        "start": 69.92,
-        "end": 70.24,
-        "startMs": 69920,
-        "endMs": 70240
-      }
-    ],
-    "startMs": 69120,
-    "endMs": 70220
-  },
-  {
-    "start": 70.24,
-    "end": 71.26,
-    "text": "it is actually sent as",
-    "words": [
-      {
-        "word": "it",
-        "start": 70.24,
-        "end": 70.36,
-        "startMs": 70240,
-        "endMs": 70360
-      },
-      {
-        "word": "is",
-        "start": 70.36,
-        "end": 70.46,
-        "startMs": 70360,
-        "endMs": 70460
-      },
-      {
-        "word": "actually",
-        "start": 70.46,
-        "end": 70.74,
-        "startMs": 70460,
-        "endMs": 70740
-      },
-      {
-        "word": "sent",
-        "start": 70.74,
-        "end": 71.04,
-        "startMs": 70740,
-        "endMs": 71040
-      },
-      {
-        "word": "as",
-        "start": 71.04,
-        "end": 71.28,
-        "startMs": 71040,
-        "endMs": 71280
-      }
-    ],
-    "startMs": 70240,
-    "endMs": 71260
-  },
-  {
-    "start": 71.28,
-    "end": 72.4,
-    "text": "a single message and it",
-    "words": [
-      {
-        "word": "a",
-        "start": 71.28,
-        "end": 71.36,
-        "startMs": 71280,
-        "endMs": 71360
-      },
-      {
-        "word": "single",
-        "start": 71.34,
-        "end": 71.72,
-        "startMs": 71340,
-        "endMs": 71720
-      },
-      {
-        "word": "message",
-        "start": 71.72,
-        "end": 72.1,
-        "startMs": 71720,
-        "endMs": 72100
-      },
-      {
-        "word": "and",
-        "start": 72.1,
-        "end": 72.32,
-        "startMs": 72100,
-        "endMs": 72320
-      },
-      {
-        "word": "it",
-        "start": 72.32,
-        "end": 72.42,
-        "startMs": 72320,
-        "endMs": 72420
-      }
-    ],
-    "startMs": 71280,
-    "endMs": 72400
-  },
-  {
-    "start": 72.42,
-    "end": 73.64,
-    "text": "appears to you at once.",
-    "words": [
-      {
-        "word": "appears",
-        "start": 72.42,
-        "end": 72.62,
-        "startMs": 72420,
-        "endMs": 72620
-      },
-      {
-        "word": "to",
-        "start": 72.62,
-        "end": 72.84,
-        "startMs": 72620,
-        "endMs": 72840
-      },
-      {
-        "word": "you",
-        "start": 72.84,
-        "end": 72.94,
-        "startMs": 72840,
-        "endMs": 72940
-      },
-      {
-        "word": "at",
-        "start": 72.94,
-        "end": 73.24,
-        "startMs": 72940,
-        "endMs": 73240
-      },
-      {
-        "word": "once.",
-        "start": 73.24,
-        "end": 73.56,
-        "startMs": 73240,
-        "endMs": 73560
-      }
-    ],
-    "startMs": 72420,
-    "endMs": 73640
-  },
-  {
-    "start": 73.66,
-    "end": 74.44,
-    "text": "But if we talk about",
-    "words": [
-      {
-        "word": "But",
-        "start": 73.66,
-        "end": 73.82,
-        "startMs": 73660,
-        "endMs": 73820
-      },
-      {
-        "word": "if",
-        "start": 73.82,
-        "end": 73.94,
-        "startMs": 73820,
-        "endMs": 73940
-      },
-      {
-        "word": "we",
-        "start": 73.94,
-        "end": 74.06,
-        "startMs": 73940,
-        "endMs": 74060
-      },
-      {
-        "word": "talk",
-        "start": 74.06,
-        "end": 74.2,
-        "startMs": 74060,
-        "endMs": 74200
-      },
-      {
-        "word": "about",
-        "start": 74.2,
-        "end": 74.46,
-        "startMs": 74200,
-        "endMs": 74460
-      }
-    ],
-    "startMs": 73660,
-    "endMs": 74440
-  },
-  {
-    "start": 74.46,
-    "end": 75.18,
-    "text": "the LLMs,",
-    "words": [
-      {
-        "word": "the",
-        "start": 74.46,
-        "end": 74.62,
-        "startMs": 74460,
-        "endMs": 74620
-      },
-      {
-        "word": "LLMs,",
-        "start": 74.62,
-        "end": 75.2,
-        "startMs": 74620,
-        "endMs": 75200
-      }
-    ],
-    "startMs": 74460,
-    "endMs": 75180
-  },
-  {
-    "start": 75.2,
-    "end": 76.22,
-    "text": "the LLM will give us",
-    "words": [
-      {
-        "word": "the",
-        "start": 75.2,
-        "end": 75.46,
-        "startMs": 75200,
-        "endMs": 75460
-      },
-      {
-        "word": "LLM",
-        "start": 75.46,
-        "end": 75.8,
-        "startMs": 75460,
-        "endMs": 75800
-      },
-      {
-        "word": "will",
-        "start": 75.8,
-        "end": 75.98,
-        "startMs": 75800,
-        "endMs": 75980
-      },
-      {
-        "word": "give",
-        "start": 75.98,
-        "end": 76.12,
-        "startMs": 75980,
-        "endMs": 76120
-      },
-      {
-        "word": "us",
-        "start": 76.12,
-        "end": 76.24,
-        "startMs": 76120,
-        "endMs": 76240
-      }
-    ],
-    "startMs": 75200,
-    "endMs": 76220
-  },
-  {
-    "start": 76.24,
-    "end": 77.24,
-    "text": "the response on the basis",
-    "words": [
-      {
-        "word": "the",
-        "start": 76.24,
-        "end": 76.36,
-        "startMs": 76240,
-        "endMs": 76360
-      },
-      {
-        "word": "response",
-        "start": 76.36,
-        "end": 76.72,
-        "startMs": 76360,
-        "endMs": 76720
-      },
-      {
-        "word": "on",
-        "start": 76.72,
-        "end": 76.96,
-        "startMs": 76720,
-        "endMs": 76960
-      },
-      {
-        "word": "the",
-        "start": 76.96,
-        "end": 77.08,
-        "startMs": 76960,
-        "endMs": 77080
-      },
-      {
-        "word": "basis",
-        "start": 77.08,
-        "end": 77.26,
-        "startMs": 77080,
-        "endMs": 77260
-      }
-    ],
-    "startMs": 76240,
-    "endMs": 77240
-  },
-  {
-    "start": 77.26,
-    "end": 78.68,
-    "text": "of the server-triggered events",
-    "words": [
-      {
-        "word": "of",
-        "start": 77.26,
-        "end": 77.38,
-        "startMs": 77260,
-        "endMs": 77380
-      },
-      {
-        "word": "the",
-        "start": 77.38,
-        "end": 77.52,
-        "startMs": 77380,
-        "endMs": 77520
-      },
-      {
-        "word": "server-triggered",
-        "start": 77.52,
-        "end": 78.42,
-        "startMs": 77520,
-        "endMs": 78420
-      },
-      {
-        "word": "events",
-        "start": 78.42,
-        "end": 78.7,
-        "startMs": 78420,
-        "endMs": 78700
-      }
-    ],
-    "startMs": 77260,
-    "endMs": 78680
-  },
-  {
-    "start": 78.7,
-    "end": 79.9,
-    "text": "and every time a token",
-    "words": [
-      {
-        "word": "and",
-        "start": 78.7,
-        "end": 78.98,
-        "startMs": 78700,
-        "endMs": 78980
-      },
-      {
-        "word": "every",
-        "start": 78.98,
-        "end": 79.38,
-        "startMs": 78980,
-        "endMs": 79380
-      },
-      {
-        "word": "time",
-        "start": 79.38,
-        "end": 79.56,
-        "startMs": 79380,
-        "endMs": 79560
-      },
-      {
-        "word": "a",
-        "start": 79.56,
-        "end": 79.7,
-        "startMs": 79560,
-        "endMs": 79700
-      },
-      {
-        "word": "token",
-        "start": 79.7,
-        "end": 79.92,
-        "startMs": 79700,
-        "endMs": 79920
-      }
-    ],
-    "startMs": 78700,
-    "endMs": 79900
-  },
-  {
-    "start": 79.92,
-    "end": 80.8,
-    "text": "is predicted,",
+    "text": "is GitHub repository ka link bhej dunga,",
+    "startMs": 25010,
+    "endMs": 26420,
     "words": [
       {
         "word": "is",
-        "start": 79.92,
-        "end": 80.06,
-        "startMs": 79920,
-        "endMs": 80060
+        "startMs": 25010,
+        "endMs": 25150
       },
       {
-        "word": "predicted,",
-        "start": 80.06,
-        "end": 80.84,
-        "startMs": 80060,
-        "endMs": 80840
+        "word": "GitHub",
+        "startMs": 25150,
+        "endMs": 25390
+      },
+      {
+        "word": "repository",
+        "startMs": 25390,
+        "endMs": 25770
+      },
+      {
+        "word": "ka",
+        "startMs": 25770,
+        "endMs": 25950
+      },
+      {
+        "word": "link",
+        "startMs": 25950,
+        "endMs": 26110
+      },
+      {
+        "word": "bhej",
+        "startMs": 26110,
+        "endMs": 26230
+      },
+      {
+        "word": "dunga,",
+        "startMs": 26230,
+        "endMs": 26430
       }
-    ],
-    "startMs": 79920,
-    "endMs": 80800
+    ]
   },
   {
-    "start": 80.82,
-    "end": 81.9,
-    "text": "that event is triggered and",
+    "text": "aur aisi aur video ke liye",
+    "startMs": 26430,
+    "endMs": 27280,
     "words": [
       {
-        "word": "that",
-        "start": 80.82,
-        "end": 80.9,
-        "startMs": 80820,
-        "endMs": 80900
+        "word": "aur",
+        "startMs": 26430,
+        "endMs": 26550
       },
       {
-        "word": "event",
-        "start": 80.84,
-        "end": 81.2,
-        "startMs": 80840,
-        "endMs": 81200
+        "word": "aisi",
+        "startMs": 26550,
+        "endMs": 26610
       },
       {
-        "word": "is",
-        "start": 81.2,
-        "end": 81.4,
-        "startMs": 81200,
-        "endMs": 81400
+        "word": "aur",
+        "startMs": 26610,
+        "endMs": 26790
       },
       {
-        "word": "triggered",
-        "start": 81.4,
-        "end": 81.62,
-        "startMs": 81400,
-        "endMs": 81620
+        "word": "video",
+        "startMs": 26790,
+        "endMs": 27010
       },
       {
-        "word": "and",
-        "start": 81.62,
-        "end": 81.92,
-        "startMs": 81620,
-        "endMs": 81920
+        "word": "ke",
+        "startMs": 27010,
+        "endMs": 27210
+      },
+      {
+        "word": "liye",
+        "startMs": 27210,
+        "endMs": 27290
       }
-    ],
-    "startMs": 80820,
-    "endMs": 81900
+    ]
   },
   {
-    "start": 81.92,
-    "end": 82.9,
-    "text": "then you see the data",
+    "text": "apne bhai ke channel Code Baithak",
+    "startMs": 27290,
+    "endMs": 28220,
     "words": [
       {
-        "word": "then",
-        "start": 81.92,
-        "end": 82.14,
-        "startMs": 81920,
-        "endMs": 82140
+        "word": "apne",
+        "startMs": 27290,
+        "endMs": 27450
       },
       {
-        "word": "you",
-        "start": 82.14,
-        "end": 82.32,
-        "startMs": 82140,
-        "endMs": 82320
+        "word": "bhai",
+        "startMs": 27450,
+        "endMs": 27570
       },
       {
-        "word": "see",
-        "start": 82.32,
-        "end": 82.5,
-        "startMs": 82320,
-        "endMs": 82500
+        "word": "ke",
+        "startMs": 27570,
+        "endMs": 27690
       },
-      {
-        "word": "the",
-        "start": 82.5,
-        "end": 82.64,
-        "startMs": 82500,
-        "endMs": 82640
-      },
-      {
-        "word": "data",
-        "start": 82.64,
-        "end": 82.92,
-        "startMs": 82640,
-        "endMs": 82920
-      }
-    ],
-    "startMs": 81920,
-    "endMs": 82900
-  },
-  {
-    "start": 82.92,
-    "end": 84.24,
-    "text": "coming up in a chunk",
-    "words": [
-      {
-        "word": "coming",
-        "start": 82.92,
-        "end": 83.52,
-        "startMs": 82920,
-        "endMs": 83520
-      },
-      {
-        "word": "up",
-        "start": 83.52,
-        "end": 83.74,
-        "startMs": 83520,
-        "endMs": 83740
-      },
-      {
-        "word": "in",
-        "start": 83.74,
-        "end": 83.92,
-        "startMs": 83740,
-        "endMs": 83920
-      },
-      {
-        "word": "a",
-        "start": 83.92,
-        "end": 84.02,
-        "startMs": 83920,
-        "endMs": 84020
-      },
-      {
-        "word": "chunk",
-        "start": 84.02,
-        "end": 84.26,
-        "startMs": 84020,
-        "endMs": 84260
-      }
-    ],
-    "startMs": 82920,
-    "endMs": 84240
-  },
-  {
-    "start": 84.26,
-    "end": 85.18,
-    "text": "by chunk format.",
-    "words": [
-      {
-        "word": "by",
-        "start": 84.26,
-        "end": 84.46,
-        "startMs": 84260,
-        "endMs": 84460
-      },
-      {
-        "word": "chunk",
-        "start": 84.46,
-        "end": 84.68,
-        "startMs": 84460,
-        "endMs": 84680
-      },
-      {
-        "word": "format.",
-        "start": 84.68,
-        "end": 85.06,
-        "startMs": 84680,
-        "endMs": 85060
-      }
-    ],
-    "startMs": 84260,
-    "endMs": 85180
-  },
-  {
-    "start": 85.48,
-    "end": 86.12,
-    "text": "So this is the answer",
-    "words": [
-      {
-        "word": "So",
-        "start": 85.48,
-        "end": 85.6,
-        "startMs": 85480,
-        "endMs": 85600
-      },
-      {
-        "word": "this",
-        "start": 85.6,
-        "end": 85.76,
-        "startMs": 85600,
-        "endMs": 85760
-      },
-      {
-        "word": "is",
-        "start": 85.76,
-        "end": 85.9,
-        "startMs": 85760,
-        "endMs": 85900
-      },
-      {
-        "word": "the",
-        "start": 85.9,
-        "end": 86.02,
-        "startMs": 85900,
-        "endMs": 86020
-      },
-      {
-        "word": "answer",
-        "start": 86.02,
-        "end": 86.14,
-        "startMs": 86020,
-        "endMs": 86140
-      }
-    ],
-    "startMs": 85480,
-    "endMs": 86120
-  },
-  {
-    "start": 86.14,
-    "end": 87.1,
-    "text": "to your question and make",
-    "words": [
-      {
-        "word": "to",
-        "start": 86.14,
-        "end": 86.3,
-        "startMs": 86140,
-        "endMs": 86300
-      },
-      {
-        "word": "your",
-        "start": 86.3,
-        "end": 86.4,
-        "startMs": 86300,
-        "endMs": 86400
-      },
-      {
-        "word": "question",
-        "start": 86.4,
-        "end": 86.7,
-        "startMs": 86400,
-        "endMs": 86700
-      },
-      {
-        "word": "and",
-        "start": 86.7,
-        "end": 86.9,
-        "startMs": 86700,
-        "endMs": 86900
-      },
-      {
-        "word": "make",
-        "start": 86.9,
-        "end": 87.12,
-        "startMs": 86900,
-        "endMs": 87120
-      }
-    ],
-    "startMs": 86140,
-    "endMs": 87100
-  },
-  {
-    "start": 87.12,
-    "end": 87.96,
-    "text": "sure you share it with",
-    "words": [
-      {
-        "word": "sure",
-        "start": 87.12,
-        "end": 87.32,
-        "startMs": 87120,
-        "endMs": 87320
-      },
-      {
-        "word": "you",
-        "start": 87.32,
-        "end": 87.52,
-        "startMs": 87320,
-        "endMs": 87520
-      },
-      {
-        "word": "share",
-        "start": 87.52,
-        "end": 87.74,
-        "startMs": 87520,
-        "endMs": 87740
-      },
-      {
-        "word": "it",
-        "start": 87.74,
-        "end": 87.86,
-        "startMs": 87740,
-        "endMs": 87860
-      },
-      {
-        "word": "with",
-        "start": 87.86,
-        "end": 87.98,
-        "startMs": 87860,
-        "endMs": 87980
-      }
-    ],
-    "startMs": 87120,
-    "endMs": 87960
-  },
-  {
-    "start": 87.98,
-    "end": 88.74,
-    "text": "your friends so that they",
-    "words": [
-      {
-        "word": "your",
-        "start": 87.98,
-        "end": 88.1,
-        "startMs": 87980,
-        "endMs": 88100
-      },
-      {
-        "word": "friends",
-        "start": 88.1,
-        "end": 88.3,
-        "startMs": 88100,
-        "endMs": 88300
-      },
-      {
-        "word": "so",
-        "start": 88.3,
-        "end": 88.42,
-        "startMs": 88300,
-        "endMs": 88420
-      },
-      {
-        "word": "that",
-        "start": 88.42,
-        "end": 88.58,
-        "startMs": 88420,
-        "endMs": 88580
-      },
-      {
-        "word": "they",
-        "start": 88.58,
-        "end": 88.76,
-        "startMs": 88580,
-        "endMs": 88760
-      }
-    ],
-    "startMs": 87980,
-    "endMs": 88740
-  },
-  {
-    "start": 88.76,
-    "end": 89.74,
-    "text": "also know what is actually",
-    "words": [
-      {
-        "word": "also",
-        "start": 88.76,
-        "end": 88.98,
-        "startMs": 88760,
-        "endMs": 88980
-      },
-      {
-        "word": "know",
-        "start": 88.98,
-        "end": 89.22,
-        "startMs": 88980,
-        "endMs": 89220
-      },
-      {
-        "word": "what",
-        "start": 89.22,
-        "end": 89.4,
-        "startMs": 89220,
-        "endMs": 89400
-      },
-      {
-        "word": "is",
-        "start": 89.4,
-        "end": 89.54,
-        "startMs": 89400,
-        "endMs": 89540
-      },
-      {
-        "word": "actually",
-        "start": 89.54,
-        "end": 89.76,
-        "startMs": 89540,
-        "endMs": 89760
-      }
-    ],
-    "startMs": 88760,
-    "endMs": 89740
-  },
-  {
-    "start": 89.76,
-    "end": 91.14,
-    "text": "happening in the AI model.",
-    "words": [
-      {
-        "word": "happening",
-        "start": 89.76,
-        "end": 90.12,
-        "startMs": 89760,
-        "endMs": 90120
-      },
-      {
-        "word": "in",
-        "start": 90.12,
-        "end": 90.32,
-        "startMs": 90120,
-        "endMs": 90320
-      },
-      {
-        "word": "the",
-        "start": 90.32,
-        "end": 90.4,
-        "startMs": 90320,
-        "endMs": 90400
-      },
-      {
-        "word": "AI",
-        "start": 90.38,
-        "end": 90.54,
-        "startMs": 90380,
-        "endMs": 90540
-      },
-      {
-        "word": "model.",
-        "start": 90.54,
-        "end": 91.02,
-        "startMs": 90540,
-        "endMs": 91020
-      }
-    ],
-    "startMs": 89760,
-    "endMs": 91140
-  },
-  {
-    "start": 91.26,
-    "end": 91.96,
-    "text": "And to get more such",
-    "words": [
-      {
-        "word": "And",
-        "start": 91.26,
-        "end": 91.38,
-        "startMs": 91260,
-        "endMs": 91380
-      },
-      {
-        "word": "to",
-        "start": 91.38,
-        "end": 91.48,
-        "startMs": 91380,
-        "endMs": 91480
-      },
-      {
-        "word": "get",
-        "start": 91.48,
-        "end": 91.64,
-        "startMs": 91480,
-        "endMs": 91640
-      },
-      {
-        "word": "more",
-        "start": 91.64,
-        "end": 91.86,
-        "startMs": 91640,
-        "endMs": 91860
-      },
-      {
-        "word": "such",
-        "start": 91.86,
-        "end": 91.98,
-        "startMs": 91860,
-        "endMs": 91980
-      }
-    ],
-    "startMs": 91260,
-    "endMs": 91960
-  },
-  {
-    "start": 91.98,
-    "end": 92.96,
-    "text": "amazing videos,",
-    "words": [
-      {
-        "word": "amazing",
-        "start": 91.98,
-        "end": 92.24,
-        "startMs": 91980,
-        "endMs": 92240
-      },
-      {
-        "word": "videos,",
-        "start": 92.24,
-        "end": 92.98,
-        "startMs": 92240,
-        "endMs": 92980
-      }
-    ],
-    "startMs": 91980,
-    "endMs": 92960
-  },
-  {
-    "start": 92.98,
-    "end": 93.8,
-    "text": "make sure you follow our",
-    "words": [
-      {
-        "word": "make",
-        "start": 92.98,
-        "end": 93.1,
-        "startMs": 92980,
-        "endMs": 93100
-      },
-      {
-        "word": "sure",
-        "start": 93.1,
-        "end": 93.24,
-        "startMs": 93100,
-        "endMs": 93240
-      },
-      {
-        "word": "you",
-        "start": 93.24,
-        "end": 93.38,
-        "startMs": 93240,
-        "endMs": 93380
-      },
-      {
-        "word": "follow",
-        "start": 93.38,
-        "end": 93.64,
-        "startMs": 93380,
-        "endMs": 93640
-      },
-      {
-        "word": "our",
-        "start": 93.64,
-        "end": 93.82,
-        "startMs": 93640,
-        "endMs": 93820
-      }
-    ],
-    "startMs": 92980,
-    "endMs": 93800
-  },
-  {
-    "start": 93.82,
-    "end": 94.9,
-    "text": "channel Code Baithak.",
-    "words": [
       {
         "word": "channel",
-        "start": 93.82,
-        "end": 94.08,
-        "startMs": 93820,
-        "endMs": 94080
+        "startMs": 27690,
+        "endMs": 27830
       },
       {
         "word": "Code",
-        "start": 94.08,
-        "end": 94.43,
-        "startMs": 94080,
-        "endMs": 94430
+        "startMs": 27830,
+        "endMs": 28030
       },
       {
-        "word": "Baithak.",
-        "start": 94.43,
-        "end": 94.78,
-        "startMs": 94430,
-        "endMs": 94780
+        "word": "Baithak",
+        "startMs": 28030,
+        "endMs": 28230
       }
-    ],
-    "startMs": 93820,
-    "endMs": 94900
+    ]
   },
   {
-    "start": 95.16,
-    "end": 95.62,
-    "text": "See you in the next",
+    "text": "ko follow kar sakte hain!",
+    "startMs": 28230,
+    "endMs": 29050,
     "words": [
       {
-        "word": "See",
-        "start": 95.16,
-        "end": 95.28,
-        "startMs": 95160,
-        "endMs": 95280
+        "word": "ko",
+        "startMs": 28230,
+        "endMs": 28370
       },
       {
-        "word": "you",
-        "start": 95.28,
-        "end": 95.36,
-        "startMs": 95280,
-        "endMs": 95360
+        "word": "follow",
+        "startMs": 28370,
+        "endMs": 28590
       },
       {
-        "word": "in",
-        "start": 95.34,
-        "end": 95.46,
-        "startMs": 95340,
-        "endMs": 95460
+        "word": "kar",
+        "startMs": 28590,
+        "endMs": 28750
       },
       {
-        "word": "the",
-        "start": 95.46,
-        "end": 95.54,
-        "startMs": 95460,
-        "endMs": 95540
+        "word": "sakte",
+        "startMs": 28750,
+        "endMs": 28950
       },
       {
-        "word": "next",
-        "start": 95.48,
-        "end": 95.64,
-        "startMs": 95480,
-        "endMs": 95640
+        "word": "hain!",
+        "startMs": 28950,
+        "endMs": 29050
       }
-    ],
-    "startMs": 95160,
-    "endMs": 95620
-  },
-  {
-    "start": 95.64,
-    "end": 96.17,
-    "text": "one.",
-    "words": [
-      {
-        "word": "one.",
-        "start": 95.64,
-        "end": 95.92,
-        "startMs": 95640,
-        "endMs": 95920
-      }
-    ],
-    "startMs": 95640,
-    "endMs": 96170
+    ]
   }
 ]

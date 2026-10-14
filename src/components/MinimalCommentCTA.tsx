@@ -35,10 +35,10 @@ export const MinimalCommentCTA: React.FC<MinimalCommentCTAProps> = ({
   const typedKeyword = keyword.slice(0, charsCount);
   const showCursor = localFrame >= 12 && Math.floor(localFrame / 8) % 2 === 0;
 
-  const exitFrame = 95;
+  const exitFrame = 115;
   const exitOpacity =
     localFrame > exitFrame
-      ? interpolate(localFrame, [exitFrame, exitFrame + 15], [1, 0], {
+      ? interpolate(localFrame, [exitFrame, exitFrame + 12], [1, 0], {
           extrapolateLeft: "clamp",
           extrapolateRight: "clamp",
         })
@@ -48,7 +48,7 @@ export const MinimalCommentCTA: React.FC<MinimalCommentCTAProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 330,
+        bottom: 145,
         left: 0,
         width: "100%",
         display: "flex",
