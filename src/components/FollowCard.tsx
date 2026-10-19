@@ -15,21 +15,9 @@ interface FollowCardProps {
   avatarFileName?: string;
 }
 
-const heavyTextShadow = `
-  0 4px 20px rgba(0, 0, 0, 0.96),
-  0 8px 34px rgba(0, 0, 0, 0.92),
-  0 2px 6px rgba(0, 0, 0, 0.95)
-`;
-
-const strokeStyle: React.CSSProperties = {
-  WebkitTextStroke: "2.2px rgba(0, 0, 0, 0.95)",
-  paintOrder: "stroke fill",
-  textShadow: heavyTextShadow,
-};
-
 export const FollowCard: React.FC<FollowCardProps> = ({
-  startFrame = 792,
-  pageName = "Code_baithak",
+  startFrame = 816,
+  pageName = "code_baithak",
   handle = "@code_baithak",
   avatarFileName = "avatar.jpg",
 }) => {
@@ -39,100 +27,65 @@ export const FollowCard: React.FC<FollowCardProps> = ({
 
   if (localFrame < 0) return null;
 
+  // Slide in from top-right with spring
   const enterSpring = spring({
     frame: localFrame,
     fps,
-    config: { damping: 12, stiffness: 125 },
+    config: { damping: 14, stiffness: 100 },
   });
 
-  const translateY = interpolate(enterSpring, [0, 1], [36, 0]);
+  const translateX = interpolate(enterSpring, [0, 1], [280, 0]);
   const opacity = interpolate(enterSpring, [0, 1], [0, 1]);
-  const scale = interpolate(enterSpring, [0, 1], [0.84, 1]);
-  const floatY = Math.sin(frame / 6.5) * 4;
+  const scale = interpolate(enterSpring, [0, 1], [0.85, 1]);
 
   const pulseSpring = spring({
-    frame: Math.max(0, localFrame - 10),
+    frame: Math.max(0, localFrame - 15),
     fps,
-    config: { damping: 10, stiffness: 160 },
+    config: { damping: 10, stiffness: 150 },
   });
-  const buttonScale = interpolate(pulseSpring, [0, 1], [0.85, 1.04]);
+  const buttonScale = interpolate(pulseSpring, [0, 1], [0.85, 1]);
 
   return (
     <div
       style={{
         position: "absolute",
-        top: 215,
-        left: 68,
-        zIndex: 60,
+        top: 90,
+        right: 40,
+        zIndex: 50,
         opacity,
-        transform: `translateY(${translateY + floatY}px) scale(${scale})`,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "flex-start",
-        gap: 16,
+        transform: `translateX(${translateX}px) scale(${scale})`,
         pointerEvents: "none",
       }}
     >
-      {/* Kinetic Typography Header Above Enlarged Follow Card */}
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <span
-          style={{
-            fontFamily: "'JetBrains Mono', monospace",
-            fontSize: 21,
-            fontWeight: 900,
-            letterSpacing: "3.5px",
-            color: "#00F0FF",
-            textTransform: "uppercase",
-            ...strokeStyle,
-          }}
-        >
-          ✦ DAILY TECH &amp; AI BREAKDOWNS ✦
-        </span>
-        <span
-          style={{
-            fontFamily: "'Impact', 'Arial Black', sans-serif",
-            fontSize: 64,
-            fontWeight: 900,
-            color: "#FFFFFF",
-            letterSpacing: "1.5px",
-            lineHeight: 1.04,
-            ...strokeStyle,
-          }}
-        >
-          FOLLOW <span style={{ color: "#FACC15" }}>CODE BAITHAK</span>
-        </span>
-      </div>
-
-      {/* Enlarged Liquid-Glass Follow Card in the Left Motion-Graphics Zone */}
       <div
         style={{
           display: "flex",
           alignItems: "center",
-          gap: 24,
-          backgroundColor: "rgba(10, 15, 26, 0.95)",
-          backdropFilter: "blur(28px)",
-          WebkitBackdropFilter: "blur(28px)",
-          padding: "20px 36px 20px 20px",
-          borderRadius: 72,
-          border: "2.5px solid rgba(0, 240, 255, 0.45)",
+          gap: 16,
+          backgroundColor: "rgba(10, 15, 26, 0.85)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(24px)",
+          padding: "14px 24px 14px 14px",
+          borderRadius: 50,
+          border: "1.5px solid rgba(255, 255, 255, 0.18)",
           boxShadow:
-            "0 28px 68px rgba(0, 0, 0, 0.85), 0 0 45px rgba(0, 149, 246, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.35)",
+            "0 20px 50px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.25)",
         }}
       >
-        {/* Enlarged Avatar with Instagram Gradient Ring (96px) */}
+        {/* Avatar with Instagram Gradient Ring */}
         <div
           style={{
             position: "relative",
-            width: 96,
-            height: 96,
+            width: 58,
+            height: 58,
             borderRadius: "50%",
             background:
               "linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)",
-            padding: 4,
+            padding: 2.5,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            boxShadow: "0 8px 26px rgba(220, 39, 67, 0.55)",
+            boxShadow: "0 4px 14px rgba(220, 39, 67, 0.35)",
             flexShrink: 0,
           }}
         >
@@ -143,29 +96,29 @@ export const FollowCard: React.FC<FollowCardProps> = ({
               height: "100%",
               borderRadius: "50%",
               objectFit: "cover",
-              border: "3px solid #0a0f1a",
+              border: "2px solid #0a0f1a",
             }}
           />
         </div>
 
-        {/* Enlarged Page Name + Handle */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+        {/* Page Name + Handle */}
+        <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
             <span
               style={{
                 color: "#FFFFFF",
-                fontSize: 34,
-                fontWeight: 900,
+                fontSize: 22,
+                fontWeight: 700,
                 letterSpacing: "-0.01em",
                 fontFamily: "'Inter', system-ui, sans-serif",
               }}
             >
               {pageName}
             </span>
-            {/* Verified Badge (30px) */}
+            {/* Verified Badge */}
             <svg
-              width="30"
-              height="30"
+              width="20"
+              height="20"
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -182,11 +135,11 @@ export const FollowCard: React.FC<FollowCardProps> = ({
           </div>
           <span
             style={{
-              color: "#00F0FF",
-              fontSize: 22,
-              fontWeight: 800,
-              letterSpacing: "0.02em",
-              fontFamily: "'JetBrains Mono', monospace",
+              color: "#0095F6",
+              fontSize: 15,
+              fontWeight: 600,
+              letterSpacing: "0.01em",
+              fontFamily: "'Inter', system-ui, sans-serif",
             }}
           >
             {handle}
@@ -196,32 +149,32 @@ export const FollowCard: React.FC<FollowCardProps> = ({
         {/* Divider */}
         <div
           style={{
-            width: 2,
-            height: 54,
-            backgroundColor: "rgba(255, 255, 255, 0.24)",
-            margin: "0 8px",
+            width: 1,
+            height: 32,
+            backgroundColor: "rgba(255, 255, 255, 0.16)",
+            margin: "0 4px",
           }}
         />
 
-        {/* Enlarged Follow Button */}
+        {/* Follow Button */}
         <div
           style={{
-            background: "linear-gradient(135deg, #0095F6 0%, #0066CC 100%)",
+            background: "linear-gradient(135deg, #0095F6 0%, #0077E6 100%)",
             color: "#FFFFFF",
-            fontSize: 24,
-            fontWeight: 900,
-            padding: "16px 32px",
-            borderRadius: 40,
-            boxShadow: "0 8px 28px rgba(0, 149, 246, 0.6)",
+            fontSize: 16,
+            fontWeight: 700,
+            padding: "9px 18px",
+            borderRadius: 24,
+            boxShadow: "0 4px 16px rgba(0, 149, 246, 0.35)",
             display: "flex",
             alignItems: "center",
-            gap: 8,
+            gap: 4,
             letterSpacing: "0.02em",
             fontFamily: "'Inter', system-ui, sans-serif",
             transform: `scale(${buttonScale})`,
           }}
         >
-          <span style={{ fontSize: 26, lineHeight: 1, fontWeight: 900 }}>+</span>{" "}
+          <span style={{ fontSize: 17, lineHeight: 1, fontWeight: 800 }}>+</span>{" "}
           Follow
         </div>
       </div>
