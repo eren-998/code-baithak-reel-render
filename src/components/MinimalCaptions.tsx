@@ -54,7 +54,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 220,
+        bottom: 52,
         left: 0,
         width: "100%",
         display: "flex",
