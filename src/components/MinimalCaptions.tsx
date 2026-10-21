@@ -54,29 +54,30 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        bottom: 52,
+        top: 960,
         left: 0,
         width: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "0 50px",
-        zIndex: 40,
+        padding: "0 40px",
+        zIndex: 60,
         opacity,
-        transform: `translateY(${translateY}px)`,
+        transform: `translateY(calc(-50% + ${translateY}px))`,
         pointerEvents: "none",
       }}
     >
       <div
         style={{
-          backgroundColor: "rgba(0, 0, 0, 0.55)",
-          backdropFilter: "blur(16px)",
-          WebkitBackdropFilter: "blur(16px)",
+          backgroundColor: "rgba(8, 12, 22, 0.88)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
           padding: "14px 32px",
           borderRadius: 28,
-          border: "1px solid rgba(255, 255, 255, 0.12)",
-          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.4)",
-          maxWidth: 920,
+          border: "1.5px solid rgba(255, 229, 0, 0.32)",
+          boxShadow:
+            "0 12px 36px rgba(0, 0, 0, 0.65), 0 0 24px rgba(255, 229, 0, 0.12)",
+          maxWidth: 960,
           display: "inline-flex",
           flexWrap: "wrap",
           justifyContent: "center",
