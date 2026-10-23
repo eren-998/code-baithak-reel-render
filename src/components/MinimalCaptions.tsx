@@ -35,7 +35,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
 
   if (!activeCaption) return null;
 
-  // Local spring entrance for the caption group (damping 18, stiffness 120)
+  // Entrance spring animation per skill reference (damping 18, stiffness 120)
   const captionStartFrame = Math.floor((activeCaption.startMs / 1000) * fps);
   const localFrame = Math.max(0, frame - captionStartFrame);
 
@@ -54,30 +54,29 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
     <div
       style={{
         position: "absolute",
-        top: 960,
+        bottom: 280,
         left: 0,
         width: "100%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "0 40px",
+        padding: "0 50px",
         zIndex: 60,
         opacity,
-        transform: `translateY(calc(-50% + ${translateY}px))`,
+        transform: `translateY(${translateY}px)`,
         pointerEvents: "none",
       }}
     >
       <div
         style={{
-          backgroundColor: "rgba(8, 12, 22, 0.88)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          padding: "14px 32px",
+          backgroundColor: "rgba(15, 18, 26, 0.72)",
+          backdropFilter: "blur(16px)",
+          WebkitBackdropFilter: "blur(16px)",
+          padding: "16px 34px",
           borderRadius: 28,
-          border: "1.5px solid rgba(255, 229, 0, 0.32)",
-          boxShadow:
-            "0 12px 36px rgba(0, 0, 0, 0.65), 0 0 24px rgba(255, 229, 0, 0.12)",
-          maxWidth: 960,
+          border: "1px solid rgba(255, 255, 255, 0.14)",
+          boxShadow: "0 8px 32px rgba(0, 0, 0, 0.45)",
+          maxWidth: 920,
           display: "inline-flex",
           flexWrap: "wrap",
           justifyContent: "center",
@@ -118,7 +117,7 @@ export const MinimalCaptions: React.FC<MinimalCaptionsProps> = ({
                   letterSpacing: "-0.01em",
                   fontFamily: "'Inter', system-ui, sans-serif",
                   textShadow: isWordActive
-                    ? "0 0 18px rgba(255, 229, 0, 0.55), 0 2px 8px rgba(0, 0, 0, 0.8)"
+                    ? "0 0 16px rgba(255, 229, 0, 0.45), 0 2px 8px rgba(0, 0, 0, 0.7)"
                     : "0 2px 8px rgba(0, 0, 0, 0.6)",
                   transform: `scale(${wordScale})`,
                 }}

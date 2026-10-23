@@ -49,7 +49,7 @@ export const FollowCard: React.FC<FollowCardProps> = ({
     <div
       style={{
         position: "absolute",
-        top: 90,
+        top: 42,
         right: 40,
         zIndex: 50,
         opacity,
